@@ -38,12 +38,12 @@
 |
 */
 
-$route['default_controller'] = "welcome/signin";
+$route['default_controller'] = "welcome";
 $route['404_override'] = '';
 
-$route['signin'] = "welcome/signin";
-$route['signout'] = "welcome/signout";
-
+$route['admin/signin'] = "admin/welcome/signin";
+$route['admin/signin_do'] = "admin/welcome/signin_do";
+$route['admin/signout'] = "admin/welcome/signout";
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
