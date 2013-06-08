@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+/*
+Author: jibin
+Author URI: http://www.houjibin.com/
+Author mail: gagucooper@gmail.com
+Version: 1.0
+Last Updated: 2013-05-30
+-------------------------------------------------------------- */
+
+
+/* 2.2.7 ansys
+--------------------------- */
+.smod {
+	border: 1px solid #B56703;
+	background: #FEFAEF;
+	border-radius: 5px;
+	box-shadow: 1px 2px 3px #ccc;
+}
+.smod .shd {
+	font-size: 16px;
+	height: 33px;
+	line-height: 33px;
+	overflow: hidden;
+	color: #fff;
+	background: url(../images/ansys/bg-smod.png) repeat-x top center;
+}
+.smod .shd h2 {
+	float: left;
+	background: url(../images/ansys/hd-smod.png) no-repeat top right;
+	height: 34px;
+	line-height: 34px;
+	overflow: hidden;
+	position: relative;
+	top: -1px;
+	padding: 0 50px 0 15px;
+}
+.smod .shd span {
+	font-size: 14px;
+	padding-left: 30px;
+}
+.smod .shd span a {
+	color: #fff;
+}
+.smod .shd span a:hover {
+	color: #fc0;
+}
+.smod .sbd {
+	padding: 15px 11px;
+}
+
+.ansys-swf {
+	width: 510px;
+}
+.ansys-login {
+	width: 458px;
+}
+.ansys-loginbox {
+	border: 1px dashed #ccc;
+	background: #fff;
+	margin-top: 10px;
+}
+.phone {
+    line-height: 32px;
+}
+.phone h3 {
+    color: #0066AA;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+}
+.phone p .red {
+    color: #CC0000;
+}
+.phone p a {
+    color: #0066AA;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 8px;
+}
+.phone p a:hover {
+    color: #CC0000;
+}
+.phone div {
+    background: none;
+    border: 0 solid;
+    height: 28px;
+    margin: 10px 0;
+}
+.ie6 .phone div {
+    margin: 4px 0;
+}
+.phone span {
+    display: block;
+    height: 28px;
+}
+.phone .title {
+    color: #333;
+    display: block;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: right;
+    width: 140px;
+    padding-right: 5px;
+}
+.phone .cone {
+    display: block;
+    float: left;
+}
+.button {
+    background: url("../images/ansys/imgbutton.gif") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    height: 33px;
+    width: 180px;
+}
+.tishi {
+    border-top: 1px dashed #aaa;
+    line-height: 25px;
+    padding: 10px 0 0 80px;
+}
+
+.ad-ansys {
+	padding: 10px 0;
+}
+.soft-info {
+	text-indent: 2em;
+	color: #666;
+	font-size: 14px;
+	line-height: 180%;
+}
+.phone-wrap a {
+	float: left;
+	padding: 0 5px;
+}
+.sfeature-pic img {
+	float: left;
+	margin: 10px 10px 10px;
+}
+.step-pic img {
+	border: 4px solid #F1E1C0;
+	border-radius: 3px;
+	float: left;
+	margin: 10px 15px 10px;
+}

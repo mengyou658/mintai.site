@@ -18,18 +18,16 @@
 						</div>
 					</div>
 					
-					<div class="accordion-group">
+					<div class="accordion-group  <?php if($menu == 'user') echo 'fs';?>">
 						<div class="accordion-heading">
 							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionSB" href="#articlesb">
 								<i class="icon-large icon-th-large head_icon"></i>开户管理
 							</a>
 						</div>
-						<div id="articlesb" class="accordion-body collapse">
+						<div id="articlesb" class="accordion-body collapse   <?php if($menu == 'user') echo 'in';?>">
 							<div class="accordion-inner">
 								<ul class="nav nav-list">
-									<li><a href="articles.html"><i class="icon-large icon-th"></i>用户列表</a></li>
-									<li><a href="articles.html"><i class="icon-large icon-th"></i>签名列表</a></li>
-									<li><a href="articles.html"><i class="icon-large icon-th"></i>黑名单</a></li>
+									<li <?php if($sub_menu == 'user_list') echo 'class="active"';?>><a href="/admin/user"><i class="icon-large icon-th"></i>申请列表</a></li>
 								</ul>
 							</div>
 						</div>
@@ -44,7 +42,7 @@
 						<div id="pagesb" class="accordion-body collapse   <?php if($menu == 'article') echo 'in';?>">
 							<div class="accordion-inner">
 								<ul class="nav nav-list">
-									<li><a href="pages.html"><i class="icon-large icon-th"></i>文章列表</a></li>
+									<li <?php if($sub_menu == 'article_list') echo 'class="active"';?>><a href="/admin/article"><i class="icon-large icon-th"></i>文章列表</a></li>
 									<li <?php if($sub_menu == 'article_from') echo 'class="active"';?>><a href="/admin/article/form"><i class="icon-large icon-th"></i>文章添加</a></li>
 									<li <?php if($sub_menu == 'articletype_list') echo 'class="active"';?>><a href="/admin/articletype/"><i class="icon-large icon-th"></i>分类列表</a></li>
 									<li <?php if($sub_menu == 'articletype_form') echo 'class="active"';?>><a href="/admin/articletype/form"><i class="icon-large icon-th"></i>分类添加</a></li>

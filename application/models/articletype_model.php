@@ -14,8 +14,15 @@ class Articletype_Model extends CI_Model {
 		$data = array(
 			'name' => $name,
 			'createtime' => date('Y-m-d H:m:s')
-			);	
+			);
 		$this->db->insert('article_type', $data);
+	}
+
+	function findById($id) 
+	{
+		$this->db->where('id', $id);
+		$query = $this->db->get("article_type");
+		return $query->row_array();
 	}
 
 	function findAll() 
