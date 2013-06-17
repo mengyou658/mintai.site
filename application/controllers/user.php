@@ -14,7 +14,7 @@ class User extends CI_Controller {
 
 	public function form()
 	{
-		$this->load->view('user_apply');
+		$this->load->view('online');
 	}	
 
 	public function add()
