@@ -33,8 +33,17 @@ CREATE TABLE `article` (
   `post_time` varchar(45) DEFAULT NULL,
   `status` int(11) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=68 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `article`
+--
+
+LOCK TABLES `article` WRITE;
+/*!40000 ALTER TABLE `article` DISABLE KEYS */;
+/*!40000 ALTER TABLE `article` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `article_type`
@@ -48,8 +57,17 @@ CREATE TABLE `article_type` (
   `name` varchar(45) DEFAULT NULL,
   `createtime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `article_type`
+--
+
+LOCK TABLES `article_type` WRITE;
+/*!40000 ALTER TABLE `article_type` DISABLE KEYS */;
+/*!40000 ALTER TABLE `article_type` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `employer`
@@ -67,8 +85,17 @@ CREATE TABLE `employer` (
   `remark` mediumtext,
   `createtime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `employer`
+--
+
+LOCK TABLES `employer` WRITE;
+/*!40000 ALTER TABLE `employer` DISABLE KEYS */;
+/*!40000 ALTER TABLE `employer` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `user_apply`
@@ -85,8 +112,17 @@ CREATE TABLE `user_apply` (
   `remark` varchar(45) DEFAULT NULL,
   `createtime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `user_apply`
+--
+
+LOCK TABLES `user_apply` WRITE;
+/*!40000 ALTER TABLE `user_apply` DISABLE KEYS */;
+/*!40000 ALTER TABLE `user_apply` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -97,4 +133,4 @@ CREATE TABLE `user_apply` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-06-08 15:04:34
+-- Dump completed on 2013-06-17 10:17:53
