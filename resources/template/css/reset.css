@@ -72,6 +72,9 @@ input[type="button"], input[type=submit], a { cursor: pointer; }
 
 /** 重置焦点无虚线框 **/
 :focus { outline: 0; }
+input[type=button]:focus, input[type=submit]:focus { outline: none; }
+input[type=button]::-moz-focus-inner { outline: 0; }
+a { outline:none; }
 
 abbr[title], acronym[title] { /* 注：1.ie6 不支持 abbr; 2.这里用了属性选择符，ie6 下无效果 */
  border-bottom: 1px dotted;

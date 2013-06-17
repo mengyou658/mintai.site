@@ -148,3 +148,83 @@ Last Updated: 2013-05-30
 	float: left;
 	margin: 10px 15px 10px;
 }
+
+/* software download */
+.classtitle {
+    background-color: #F6EACE;
+    color: #723300;
+    font-size: 16px;
+    height: 36px;
+    line-height: 36px;
+    padding-left: 10px;
+    text-align: left;
+}
+.shipin a {
+    color: #723300;
+    font-size: 14px;
+    line-height: 40px;
+}
+
+/* online tutor */
+.online-tutor .ui-tabs a {
+    width: auto;
+    padding: 0 8px;
+}
+.online-tutor .ui-tabs-panes-wrap {
+	padding-bottom: 20px;
+}
+
+/* online tutor */
+.tutor-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #980000;
+    text-align: center;
+    padding-top: 10px;
+}
+.tutor-title2 {
+    font-size:14px;
+    height:30px;
+    line-height:30px;
+    margin-top:5px;
+    font-weight:bold;
+    color: #792600;
+}
+.tutor-pic dl {
+    float: left;
+    margin: 10px 25px;
+    overflow: hidden;
+    width: 179px;
+}
+.tutor-pic img {
+    border: 2px solid #999;
+    height: 237px;
+    margin: 0;
+    padding: 0;
+    width: 175px;
+}
+.tutor-pic img.zhuanzhang {
+    border: 2px solid #999;
+    height: 96px;
+    margin: 0;
+    padding: 0;
+    width: 175px;
+}
+.online .tutor-pic dt, .online .tutor-pic dd, .tutor-pic dt, .tutor-pic dd {
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 175px;
+    font-size: 12px;
+    color: #333;
+}
+#tabs-6, #tabs-6 *, #tabs-7, #tabs-7 *, #tabs-8, #tabs-8 *, #tabs-9, #tabs-9 * {
+    font-size: 12px;
+    line-height: 20px;
+}
+#tabs-6 img, #tabs-7 img {
+    border: medium none;
+    height: 55px;
+    width: 192px;
+}
