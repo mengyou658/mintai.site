@@ -116,7 +116,7 @@
 </div><!-- //Service Box -->
 
 
-<script type="text/javascript" src="js/banner.js"></script>
+<script type="text/javascript" src="/resources/template/js/banner.js"></script>
 <script>
 $(function() {
     $(".ui-tabs2").tabs(".ui-tabs-panes2 > div");

@@ -115,43 +115,43 @@ document.onclick = Subnav_close;
         		</li>
         		<li><a href="guide.html">新手指南</a>
 					<ul>
-						<li><a href="guide.html">新手入门</a></li>
-						<li><a target="_blank" href="online-variety.html">开户指南</a></li>
-						<li><a href="guide-notice.html">交易须知</a></li>
+						<li><a href="/item/show/guide">新手入门</a></li>
+						<li><a target="_blank" href="/item/show/online_variety">开户指南</a></li>
+						<li><a href="/item/show/guide_notice">交易须知</a></li>
 					</ul>
         		</li>
         		<li><a href="invest.html">投资入门</a>
 					<ul>
-						<li><a href="invest.html">投资入门</a></li>
+						<li><a href="/item/show/invest">投资入门</a></li>
 						<li><a href="#">投资技巧</a></li>
-						<li><a href="invest-guide.html">名师指导</a></li>
-						<li><a target="_blank" href="online-faq.html">常见问题</a></li>
-						<li><a href="invest-imitate.html">注册模拟帐户</a></li>
+						<li><a href="/item/show/invest_guide">名师指导</a></li>
+						<li><a target="_blank" href="/item/show/online_faq">常见问题</a></li>
+						<li><a href="/item/show/invest_imitate">注册模拟帐户</a></li>
 					</ul>
         		</li>
         		<li><a href="sdownload.html">软件下载</a>
 					<ul>
-						<li><a href="sdownload.html">软件下载</a></li>
-						<li><a href="svideo.html">软件操作视频</a></li>
+						<li><a href="/item/show/sdownload">软件下载</a></li>
+						<li><a href="/item/show/svideo">软件操作视频</a></li>
 					</ul>
         		</li>
-        		<li><a target="_blank" href="app-ios.html">手机交易</a>
+        		<li><a target="_blank" href="/item/show/app_ios">手机交易</a>
 					<ul>
-						<li><a target="_blank" href="app-ios.html">IOS版下载</a></li>
-						<li><a target="_blank" href="app-android.html">Android版下载</a></li>
+						<li><a target="_blank" href="/item/show/app_ios">IOS版下载</a></li>
+						<li><a target="_blank" href="/item/show/app_android">Android版下载</a></li>
 					</ul>
         		</li>
         		<li><a href="news.html">媒体报道</a>
 					<ul>
-						<li><a href="news.html">媒体报道</a></li>
+						<li><a href="/news/">媒体报道</a></li>
 					</ul>
         		</li>
-        		<li><a href="online.html">在线咨询</a>
+        		<li><a href="/user/form">在线咨询</a>
 					<ul>
-						<li><a href="online.html">预约开户</a></li>
-						<li><a href="online-variety.html">开户流程</a></li>
-						<li><a href="online-tutor.html">签约辅导</a></li>
-						<li><a href="online-faq.html">常见问题</a></li>
+						<li><a href="/user/form">预约开户</a></li>
+						<li><a href="/item/show/online_variety">开户流程</a></li>
+						<li><a href="/item/show/online_tutor">签约辅导</a></li>
+						<li><a href="/item/show/online_faq">常见问题</a></li>
 					</ul>
         		</li>
         	</ul>
