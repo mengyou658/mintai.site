@@ -1,3 +1,25 @@
+<div class="friends mb-12">
+	<div class="gridsystem cf">
+		<div class="mod">
+			<div class="hd">
+				<h2>资金第三方存管合作银行</h2>
+			</div>
+			<div class="cf">
+				<img src="/resources/template/images/icon-bank.png" alt="bank" usemap="#Map" />
+				<map name="Map">
+				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-5" coords="11,9,192,69" shape="rect">
+				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-2" coords="260,10,440,70" shape="rect">
+				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-4" coords="514,7,694,67" shape="rect">
+				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-3" coords="774,7,954,67" shape="rect">
+				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-6" coords="10,85,190,146" shape="rect">
+				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-8" coords="258,83,439,143" shape="rect">
+				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-7" coords="514,87,694,147" shape="rect">
+				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-9" coords="772,84,954,144" shape="rect">
+				</map>
+			</div>
+		</div>
+	</div>
+</div><!-- /bank -->
 
 <div id="footer-links" class="gridsystem cf">
 	<div class="pd-10 cf">
@@ -40,29 +62,6 @@
 
 <div class="friends mb-12">
 	<div class="gridsystem cf">
-		<div class="mod">
-			<div class="hd">
-				<h2>资金第三方存管合作银行</h2>
-			</div>
-			<div class="cf">
-				<img src="/resources/template/images/icon-bank.png" alt="bank" usemap="#Map" />
-				<map name="Map">
-				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-5" coords="11,9,192,69" shape="rect">
-				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-2" coords="260,10,440,70" shape="rect">
-				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-4" coords="514,7,694,67" shape="rect">
-				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-3" coords="774,7,954,67" shape="rect">
-				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-6" coords="10,85,190,146" shape="rect">
-				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-8" coords="258,83,439,143" shape="rect">
-				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-7" coords="514,87,694,147" shape="rect">
-				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-9" coords="772,84,954,144" shape="rect">
-				</map>
-			</div>
-		</div>
-	</div>
-</div><!-- /bank -->
-
-<div class="friends mb-12">
-	<div class="gridsystem cf">
 		<div class="mod2">
 			<div class="hd2">
 				<h2>合作单位</h2>
@@ -102,7 +101,22 @@
     </div>
 </footer><!-- //footer -->
 
-<script type="text/javascript" src="/resources/template/js/banner.js"></script>
+
+<div id="ServiceBox" class="service-box">
+	<div id="onLineService" class="service-box-list">
+		<dl>
+			<dt class="pngfix">在线咨询</dt>
+			<dd><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=123456780&amp;site=qq&amp;menu=yes" target="_blank"><img border="0" title="点击这里给我发消息" alt="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:12345678:51" /></a></dd>
+			<dd><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=123456780&amp;site=qq&amp;menu=yes" target="_blank"><img border="0" title="点击这里给我发消息" alt="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:12345678:51" /></a></dd>
+			<dd><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=123456780&amp;site=qq&amp;menu=yes" target="_blank"><img border="0" title="点击这里给我发消息" alt="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:12345678:51" /></a></dd>
+		</ul>
+	</div>
+	<a id="serviceBtn" class="service-box-btn" href="javascript:void(0);" style="display:block;">在线客服</a>
+	<a id="serviceBtn2" class="service-box-btn" href="javascript:void(0);" style="display:none;">在线客服</a>
+</div><!-- //Service Box -->
+
+
+<script type="text/javascript" src="js/banner.js"></script>
 <script>
 $(function() {
     $(".ui-tabs2").tabs(".ui-tabs-panes2 > div");

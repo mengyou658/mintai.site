@@ -26,6 +26,31 @@
 <script src="/resources/template/js/jquery/jquery.js"></script>
 <script src="/resources/template/js/jquery/jquery.tools.min.js"></script>
 <script>
+$(document).ready(function(){
+	$("#serviceBtn").bind("hover",function(){
+		$("#onLineService").animate({width:"show", opacity:"show"}, "normal" ,function(){
+			$("#onLineService").show();
+		});
+		$("#serviceBtn").attr("style","display:none");
+		$("#serviceBtn2").attr("style","display:block");
+		return false;
+	});
+	$("#ServiceBox").bind("hover",function(){
+		$("#onLineService").animate({width:"hide", opacity:"hide"}, "normal" ,function(){
+			$("#onLineService").hide();
+		});
+		$("#serviceBtn").attr("style","display:block");
+		$("#serviceBtn2").attr("style","display:none");
+		return false;
+	});
+
+	var menuYloc = $("#ServiceBox").offset().top;  
+    $(window).scroll(function (){  
+        var offsetTop = menuYloc + $(window).scrollTop() +"px";  
+        $("#ServiceBox").animate({top : offsetTop },{ duration:700 , queue:false });  
+    });
+});
+
 var timeout         = 0;
 var closetimer		= 0;
 var ddmenuitem      = 0;
@@ -60,79 +85,79 @@ document.onclick = Subnav_close;
         <nav id="nav" class="css3 cf">
         	<ul>
         		<li><a class="acitve" href="/">首 页</a></li>
-        		<li><a href="#">产品介绍</a>
+        		<li><a href="products.html">产品介绍</a>
 					<ul>
-						<li><a href="#">产品详情</a></li>
-						<li><a href="#">投资特点</a></li>
-						<li><a href="#">交易细则</a></li>
-						<li><a href="#">投资案例</a></li>
-						<li><a href="#">投资者权益保</a></li>
+						<li><a href="/item/show/product_detail">产品详情</a></li>
+						<li><a href="/item/show/pro_features">投资特点</a></li>
+						<li><a href="/item/show/pro_trade">交易细则</a></li>
+						<li><a href="/item/show/pro_case">投资案例</a></li>
+						<li><a href="/item/show/pro_guarantee">投资者权益保障</a></li>
 					</ul>
         		</li>
-        		<li><a href="#">公司资质</a>
+        		<li><a href="aboutus.html">公司资质</a>
 					<ul>
-						<li><a href="#">公司简介</a></li>
-						<li><a href="#">民泰优势</a></li>
-						<li><a href="#">资质证书</a></li>
-						<li><a href="#">所获荣誉</a></li>
-						<li><a href="#">媒体报道</a></li>
-						<li><a href="#">关于交易所</a></li>
+						<li><a href="/item/show/aboutus">公司简介</a></li>
+						<li><a target="_blank" href="/item/show/about_advantage">民泰优势</a></li>
+						<li><a href="/item/show/about_license">资质证书</a></li>
+						<li><a target="_blank" href="/item/show/about_news">媒体报道</a></li>
+						<li><a href="/item/show/about_mcx">关于交易所</a></li>
 					</ul>
         		</li>
-        		<li><a href="#">民泰研究所</a>
+        		<li><a href="research.html">民泰研究所</a>
 					<ul>
-						<li><a href="#">明星团队</a></li>
-						<li><a href="#">原创研究</a></li>
+						<li><a target="_blank" href="/analyst/analyst_list">明星团队</a></li>
+						<li><a href="/item/show/research">原创研究</a></li>
 						<li><a href="#">盘面播报</a></li>
-						<li><a href="#">分析评论</a></li>
-						<li><a href="#">市场要闻</a></li>
-						<li><a href="#">行情中心</a></li>
+						<li><a href="research-analyse.html">分析评论</a></li>
+						<li><a href="research-video.html">市场要闻</a></li>
+						<li><a href="research-price.html">行情中心</a></li>
 					</ul>
         		</li>
-        		<li><a href="#">新手指南</a>
+        		<li><a href="guide.html">新手指南</a>
 					<ul>
-						<li><a href="#">新手入门</a></li>
-						<li><a href="#">开户指南</a></li>
-						<li><a href="#">交易须知</a></li>
+						<li><a href="guide.html">新手入门</a></li>
+						<li><a target="_blank" href="online-variety.html">开户指南</a></li>
+						<li><a href="guide-notice.html">交易须知</a></li>
 					</ul>
         		</li>
-        		<li><a href="#">投资入门</a>
+        		<li><a href="invest.html">投资入门</a>
 					<ul>
-						<li><a href="#">投资入门</a></li>
+						<li><a href="invest.html">投资入门</a></li>
 						<li><a href="#">投资技巧</a></li>
-						<li><a href="#">名师指导</a></li>
-						<li><a href="#">常见问题</a></li>
-						<li><a href="#">注册模拟帐户</a></li>
+						<li><a href="invest-guide.html">名师指导</a></li>
+						<li><a target="_blank" href="online-faq.html">常见问题</a></li>
+						<li><a href="invest-imitate.html">注册模拟帐户</a></li>
 					</ul>
         		</li>
-        		<li><a href="#">软件下载</a>
+        		<li><a href="sdownload.html">软件下载</a>
 					<ul>
-						<li><a href="#">软件下载</a></li>
-						<li><a href="#">软件操作视频</a></li>
+						<li><a href="sdownload.html">软件下载</a></li>
+						<li><a href="svideo.html">软件操作视频</a></li>
 					</ul>
         		</li>
-        		<li><a href="#">手机交易</a>
+        		<li><a target="_blank" href="app-ios.html">手机交易</a>
 					<ul>
-						<li><a href="#">IOS版下载</a></li>
-						<li><a href="#">Android版下载</a></li>
+						<li><a target="_blank" href="app-ios.html">IOS版下载</a></li>
+						<li><a target="_blank" href="app-android.html">Android版下载</a></li>
 					</ul>
         		</li>
         		<li><a href="news.html">媒体报道</a>
 					<ul>
-						<li><a href="#">媒体报道</a></li>
+						<li><a href="news.html">媒体报道</a></li>
 					</ul>
         		</li>
         		<li><a href="online.html">在线咨询</a>
 					<ul>
-						<li><a href="/user/form">预约开户</a></li>
-						<li><a href="#">开户流程</a></li>
-						<li><a href="#">签约辅导</a></li>
-						<li><a href="#">常见问题</a></li>
+						<li><a href="online.html">预约开户</a></li>
+						<li><a href="online-variety.html">开户流程</a></li>
+						<li><a href="online-tutor.html">签约辅导</a></li>
+						<li><a href="online-faq.html">常见问题</a></li>
 					</ul>
         		</li>
         	</ul>
         </nav>
     </header>
 </div><!-- //header -->
+
 
 

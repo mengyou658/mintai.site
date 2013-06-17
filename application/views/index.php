@@ -77,7 +77,7 @@
 					<div class="mod3">
 						<div class="hd3 cf">
 							<h2 class="fl">原创研究</h2>
-				    		<span class="more fr"><a href="/news/news_list" title="更多">更多&gt;&gt;</a></span>
+				    		<span class="more fr"><a href="#" title="更多">更多&gt;&gt;</a></span>
 						</div>
 				    	<div class="new-cont bd cf">
 				    		<div class="new-zy">
@@ -111,7 +111,7 @@
 					    			</div>
 					    			<div class="new-topwrap cf">
 							          	<h2><a title="晚评：伯南克讲话定调 黄金白银或重拾跌势" href="#">晚评：伯南克讲话定调 黄金白银或重拾跌势</a></h2>
-										<div class="new-zycont">伯南克国会证词及此后的美联储会议纪要显示，最早将于6月讨论缩小QE规模。贵金属价格遭重创或重拾跌势。 <span>[05/23]</span> <a title="晚评：伯南克讲话定调" href="#">全文</a> 
+										<div class="new-zycont">伯南克国会证词及此后的美联储会议纪要显示，最早将于6月讨论缩小QE规模。贵金属价格遭重创或... <span>[05/23]</span> <a title="晚评：伯南克讲话定调" href="#">全文</a> 
 							            </div>
 							        </div>
 					            </div>
@@ -180,7 +180,14 @@
 		    </div>
 
 		    <div class="ad mb-12">
-		    	<img src="/resources/template/images/ad3.jpg" alt="ad" />
+		    	<object data="/resources/template/images/swf/topBanner4.swf" type="application/x-shockwave-flash" width="780" height="96">             
+					<param name="movie" value="/resources/template/images/swf/topBanner4.swf" />
+					<param name="quality" value="high" />
+					<param name="bgcolor" value="#ffffff" />
+					<param name="allowScriptAccess" value="sameDomain" />
+					<param name="allowFullScreen" value="true" />
+					<param name="wmode" value="transparent"/>
+				</object>
 		    </div>
 
 		    <div class="mod2 mb-12">
@@ -226,7 +233,14 @@
 		    </div>
 
 		    <div class="ad mb-12">
-		    	<img src="/resources/template/images/ad.jpg" alt="ad" />
+		    	<object data="/resources/template/images/swf/bannertop.swf" type="application/x-shockwave-flash" width="780" height="202">             
+					<param name="movie" value="/resources/template/images/swf/bannertop.swf" />
+					<param name="quality" value="high" />
+					<param name="bgcolor" value="#ffffff" />
+					<param name="allowScriptAccess" value="sameDomain" />
+					<param name="allowFullScreen" value="true" />
+					<param name="wmode" value="transparent"/>
+				</object>
 		    </div>
 
 		    <div class="mod2 mb-12">
@@ -238,7 +252,7 @@
 					<ul>
 						<li>
 							<div class="pic-analyst">
-			    				<a target="_blank" href="/analyst/analyst_list"><img src="/resources/template/images/zd.jpg" alt="章鼎" /></a>
+			    				<a target="_blank" href="analyst.html"><img src="/resources/template/images/zd.jpg" alt="章鼎" /></a>
 			    			</div>
 			    			<dl>
 			    				<dt><strong><a target="_blank" href="analyst.html">章鼎</a></strong></dt>
@@ -516,8 +530,15 @@
 			    </div>
 		    </div>
 
-		     <div class="ad">
-		    	<img src="/resources/template/images/ad2.jpg" alt="ad2" />
+		    <div class="ad">
+		    	<object id="flashSeg" data="/resources/template/images/swf/topBanner3.swf" type="application/x-shockwave-flash" width="780" height="72">           
+					<param name="movie" value="/resources/template/images/swf/topBanner3.swf" />
+					<param name="quality" value="high" />
+					<param name="bgcolor" value="#ffffff" />
+					<param name="allowScriptAccess" value="sameDomain" />
+					<param name="allowFullScreen" value="true" />
+					<param name="wmode" value="transparent"/>
+				</object>
 		    </div>
 
 		</section><!-- /main -->
@@ -532,11 +553,20 @@
 					<li class="ksdh5"><a href="#">培训预约表</a></li>
 				</ul>
 		    </div>
+		    <div class="mod2 mb-12">
+				<div class="hd2">
+					<h2>联系我们</h2>
+				</div>
+				<div class="sidebar-contact bd2">
+				    <img alt="客服咨询电话400 610 1155" src="/resources/template/images/lxwm-img.gif" />
+				    <p>周一早8：00到周六早4：00<br>周六日早9：00到晚17：00</p>
+				</div>
+			</div>
 		    <div class="mb-12 border-gray">
-		    	<a href="#"><img src="/resources/template/images/video.jpg" width="186" height="160" alt="video" /></a>
+		    	<a href="#"><img src="/resources/template/images/sp.jpg" alt="贵金属开户须知" /></a>
 		    </div>
-		    <div class="mb-12">
-		    	<a href="#"><img src="/resources/template/images/sidebar_banner.jpg" width="187" height="187" alt="sidebar_banner" /></a>
+		    <div class="mb-12 border-gray">
+		    	<a href="#"><img src="/resources/template/images/nonghang_pic.jpg" alt="农业银行网上签约" /></a>
 		    </div>
 		    <div class="mod2 mb-12">
 				<div class="hd2">
@@ -593,15 +623,6 @@
 			       </dl>
 				</div>
 			</div>
-			<div class="mod2">
-				<div class="hd2">
-					<h2>联系我们</h2>
-				</div>
-				<div class="sidebar-contact bd2">
-				    <img alt="客服咨询电话400 610 1155" src="/resources/template/images/lxwm-img.gif" />
-				    <p>周一早8：00到周六早4：00<br>周六日早9：00到晚17：00</p>
-				</div>
-			</div>
 		</section><!-- /sidebar -->
 
 	</div>
@@ -610,3 +631,4 @@
 <?php
 	$this->load->view('_footer');
 ?>
+
