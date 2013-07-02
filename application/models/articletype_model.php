@@ -20,9 +20,10 @@ class Articletype_Model extends CI_Model {
 
 	function findById($id) 
 	{
-		$this->db->where('id', $id);
+		//$this->db->where('id', $id);
+		$this->db->like('id', $id);
 		$query = $this->db->get("article_type");
-		return $query->row_array();
+		return $query->result_array();
 	}
 
 	function findAll() 

@@ -39,6 +39,9 @@
 
 	            <div class="details-wrap">
 					<div class="details-content">
+	<div class="ac mt-20 mb-20">
+							<embed width="664" height="520" align="middle" type="application/x-shockwave-flash" src="http://player.youku.com/player.php/sid/XNTA1MzgzNjY0/v.swf" quality="high" allowscriptaccess="always" allowfullscreen="true">
+						</div>
 						<p>民泰(天津)贵金属经营有限公司为天津贵金属交易所166号综合会员。公司致力为客户提供优质服务。以客户的资产增值为最高目标。全力构建国内贵金属的五星级综合投资交易服务平台。</p>
 						<h4>多渠道传递星级服务</h4>
 					　　<p>公司拥有专业的研究所。汇集了国际国内宏观经济战略研究专家、经典技术分析专家、策略研究专家、实战操作专家、风险管理专家，分别从基本面、技术面、交易策略、实战操作、风险管理等方面为客户提供星级服务。我们将通过短信、电话、网站客户端为客户提供及时、贴身的理财服务。公司拥有功能强大的行情分析交易系统。并免费提供给本公司客户使用。</p>

@@ -44,6 +44,9 @@ $route['404_override'] = '';
 $route['admin/signin'] = "admin/welcome/signin";
 $route['admin/signin_do'] = "admin/welcome/signin_do";
 $route['admin/signout'] = "admin/welcome/signout";
+$route['WEB/MobileApp_android.html'] = "item/show/app_android";
+$route['WEB/MobileApp_ios.html'] = "item/show/app_ios";
+$route['web/pages/cpmm/Default.aspx'] = "item/show/trader";
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

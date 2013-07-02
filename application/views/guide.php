@@ -10,6 +10,7 @@
 						<dd class="active"><a href="guide.html">新手入门</a></dd>
 						<dd><a target="_blank" href="online-variety.html">开户指南</a></dd>
 						<dd><a href="guide-notice.html">交易须知</a></dd>
+						<dd><a href="/item/show/invest_imitate">注册模拟帐户</a></dd>
         		</li>
 					</dl>
 				</div>
@@ -39,17 +40,17 @@
 		            		<dt><strong>第一步：了解贵金属市场、贵金属交易</strong></dt>
 		            		<dd>
 		            			<p>了解贵金属市场的特点及优势，阅读"新手入门"掌握贵金属交易的必备基础知识。亦可学习《贵金属市场入门讲义》，打下更扎实的理论基础。</p>
-		            			<p><input type="button" class="btn-submit" value="立即开始学习" /></p>
+		            			<p><input type="button" class="btn-submit" value="立即开始学习" onclick="window.location.href='/item/show/study'"/></p>
 		            		</dd>
 		            		<dt><strong>第二步：注册模拟帐户，无风险练习交易</strong></dt>
 		            		<dd>
 		            			<p>注册模拟帐户，获得专家的系统指导，并利用模拟帐户，在真实市场中无风险练习交易。</p>
-		            			<p><input type="button" class="btn-submit" value="申请模拟账号" /></p>
+		            			<p><input type="button" class="btn-submit" value="申请模拟账号" onclick="window.location.href='/item/show/invest_imitate'"/></p>
 		            		</dd>
 		            		<dt><strong>第三步：开设真实帐户，进行实战！</strong></dt>
 		            		<dd>
 		            			<p>根据自己的交易风格、经验，开立真实帐户。</p>
-		            			<p><input type="button" class="btn-submit" value="预约开户" /></p>
+		            			<p><input type="button" class="btn-submit" value="预约开户" onclick="window.location.href='/user/account'"/></p>
 		            		</dd>
 		            		<dd>学习时遇到问题？请在第一时间联系我们的24小时在线客服！</dd>
 		            		<dd>客户服务电话：<strong>400-0175-166</strong></dd>

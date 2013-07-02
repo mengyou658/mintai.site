@@ -10,7 +10,20 @@
 				<div class="topmenu">
 					<dl>
 						<dt>媒体报道</dt>
-						<dd class="active"><a href="#">媒体报道</a></dd>
+							<?php 
+							if($types['id'] == 0)
+							{
+								?>
+						<dd class="active"><a href="/news/"><?php echo $types['name'];?></a></dd>
+								<?php
+							}
+							else{
+								?>
+						<dd class="active"><a href="/news/more/<?php echo $types['id'];?>"><?php echo $types['name'];?></a></dd>
+								<?php	
+							}
+
+						?>
 					</dl>
 				</div>
 				<div class="sidebar-menu">
@@ -30,7 +43,7 @@
 				</div>
 
 				<div class="crumbs">
-	            	本页位置：<a href="index.html">首页</a><span>&gt;&gt;</span><a href="news.html">媒体报道</a><span>&gt;&gt;</span>媒体报道 
+				本页位置：<a href="index.html">首页</a><span>&gt;&gt;</span><a href="/news">媒体报道</a><span>&gt;&gt;</span><?php echo $types['name'];?>
 	            </div>
 
 	            <div class="mod3">
@@ -50,25 +63,21 @@
 					            </div>
 				            </div>
 				            <ul style="margin-top:6px;" class="news-list">
-				          		<li><span>2013-5-27 9:59:24</span><a title="午评：伯老讲话留下压力 今日逢高做空为主" target="_blank" href="#">午评：伯老讲话留下压力 今日逢高做空为主</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="早评：市场表现出现变化 金银后市震荡偏多" target="_blank" href="#">早评：市场表现出现变化 金银后市震荡偏多今日逢高做空为主</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="午评：伯老讲话留下压力 今日逢高做空为主" target="_blank" href="#">午评：伯老讲话留下压力 今日逢高做空为主</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="早评：市场表现出现变化 金银后市震荡偏多" target="_blank" href="#">早评：市场表现出现变化 金银后市震荡偏多</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="早评：市场表现出现变化 金银后市震荡偏多" target="_blank" href="#">早评：市场表现出现变化 金银后市震荡偏多今日逢高做空为主今日逢高做空为主</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="早评：市场表现出现变化 金银后市震荡偏多" target="_blank" href="#">早评：市场表现出现变化 金银后市震荡偏多今日逢高做空为主</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="早评：市场表现出现变化 金银后市震荡偏多" target="_blank" href="#">早评：市场表现出现变化 金银后市震荡偏多</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="早评：市场表现出现变化 金银后市震荡偏多" target="_blank" href="#">早评：市场表现出现变化 金银后市震荡偏多</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="早评：市场表现出现变化 金银后市震荡偏多" target="_blank" href="#">早评：市场表现出现变化 金银后市震荡偏多今日逢高做空为主今日逢高做空为主</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="早评：市场表现出现变化 金银后市震荡偏多" target="_blank" href="#">早评：市场表现出现变化 金银后市震荡偏多今日逢高做空为主</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="早评：市场表现出现变化 金银后市震荡偏多" target="_blank" href="#">早评：市场表现出现变化 金银后市震荡偏多</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="早评：市场表现出现变化 金银后市震荡偏多" target="_blank" href="#">早评：市场表现出现变化 金银后市震荡偏多今日逢高做空为主今日逢高做空为主</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="早评：市场表现出现变化 金银后市震荡偏多" target="_blank" href="#">早评：市场表现出现变化 金银后市震荡偏多</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="早评：市场表现出现变化 金银后市震荡偏多" target="_blank" href="#">早评：市场表现出现变化 金银后市震荡偏多今日逢高做空为主今日逢高做空为主</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="早评：市场表现出现变化 金银后市震荡偏多" target="_blank" href="#">早评：市场表现出现变化 金银后市震荡偏多</a></li>
+								<?php
+									foreach($list as $news)
+									{
+										?>
+											<li><span><?php echo $news['post_time'];?></span><a title="<?php echo $news['title'];?>" target="_blank" href="/news/show/<?php echo $news['id'];?>"><?php echo $news['title'];?></a></li>
+										<?php
+									}
+								?>
 				          	</ul>
 			          	</div>
 
 			          	<div class="paging">
+							<!--
+							<?php echo $this->pagination->create_links();?>
+							-->
 			          		<a href="#">首页</a>
 			          		<a class="on" href="#">1</a>
 			          		<a href="#">2</a>

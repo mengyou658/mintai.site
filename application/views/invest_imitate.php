@@ -37,42 +37,51 @@
 	            <div class="online online-form mod4">
 	            	<p class="txt-i2 mb-15">当下的贵金属投资火热异常，所谓贵金属投资就是俗称的炒黄金炒白银，许多投资者喜欢购买实物黄金，白银，但是这样资金利用率低。民泰贵金属模拟交易账户为天津贵金属交易所仿真交易平台，提供虚拟资金，让您熟悉贵金属电子交易平台。在民泰贵金属您只要投入实物黄金白银价值的5％资金即可拥有100%的权益。收到您的申请后，客服代表将用短信通知您登入交易平台的模拟账号和密码。</p>
 	            	<p class="txt-i2 mb-15">根据交易所规定开立真实账户需要不少于20笔的模拟交易记录，因此模拟账户身份信息必须与实盘账户身份信息一致，实施一户一码制。请您如实填写真实姓名以及身份证号，这样您的模拟交易记录就会被认可，大大节省您开户需要的手续和等待的时间。联系电话请填写手机号码，方便我们系统给您发送短信。 </p>
-	            	<p class="txt-i2 mb-15"><em class="color-red">特别提示：天津贵金属交易模拟账号注册请填写二代18位身份证号。</em></p>
+	            	<p class="txt-i2 mb-15"><a name="reg"></a><em class="color-red">特别提示：天津贵金属交易模拟账号注册请填写二代18位身份证号。</em></p>
 	            	<table class="form-table mb-15">
+						<form action="/register/simulationReg" method="post" id="simReg">
 						<tbody>
 							<tr>
 								<th width="18%"><span>*</span>您的姓名：</th>
-								<td width="82%"><input type="text" class="input-txt"></td>
+								<td width="82%"><input type="text" class="input-txt" name="name"></td>
 							</tr>
 							<tr>
 								<th width="14%"><span>*</span>身份证号码：</th>
-								<td width="86%"><input type="text" class="input-txt"></td>
+								<td width="86%"><input type="text" class="input-txt" name="idcard"></td>
 							</tr>
 							<tr>
 								<th><span>*</span>手机号码：</th>
-								<td><input type="text" class="input-txt"></td>
+								<td><input type="text" class="input-txt" name="phone"></td>
 							</tr>
 							<tr>
 								<th><span>*</span>省份：</th>
-								<td><select class="select"><option value="请选择省份！">请选择省份！</option></select></td>
+								<td><select class="select" name="province" id="province_sel" onchange="selProvince(this.value)"><option value="请选择省份！">请选择省份！</option></select></td>
 							</tr>
 							<tr>
 								<th><span>*</span>城市：</th>
-								<td><select class="select"><option value="请选择相应的城市！">请选择相应的城市！</option></td>
+								<td><select class="select" name="city" id="city_sel"><option value="请选择相应的城市！">请选择相应的城市！</option></td>
 							</tr>
 							<tr>
 								<th width="14%"><span>*</span>区/县：</th>
-								<td width="86%"><input type="text" class="input-txt"></td>
+								<td width="86%"><input type="text" name="area" class="input-txt"></td>
 							</tr>
 							<tr>
 								<th width="14%"><span>*</span>QQ号码：</th>
-								<td width="86%"><input type="text" class="input-txt"></td>
+								<td width="86%"><input type="text" class="input-txt" name="qqnum"></td>
 							</tr>
 							<tr>
 								<th></th>
 								<td>
-									<input type="image" style="height:46px;width:165px;border:0" onclick="return checkTel();" src="/resources/template/images/btn_ok.png" />
-									<p><a href="#">点击这里复制网址，推荐给QQ/MSN好友获取模拟帐户 </a></p>
+									<input type="image" style="height:46px;width:165px;border:0" onclick="simReg();" src="/resources/template/images/btn_ok.png" />
+									<p><a href="#">点击这里复制网址，推荐给QQ/MSN好友获取模拟帐户 </a>
+								<?php
+								if($this->session->flashdata('success'))
+								{
+									echo "<br/><span style='color:red;'>" . $this->session->flashdata('success') . "</span>";		
+								}
+							?>
+
+									</p>
 								</td>
 							</tr>
 						</tbody>
@@ -95,5 +104,45 @@
 		</div>	
 	</div><!-- //container -->
 </div><!-- //main -->
+<script type="text/javascript" charset="utf-8">
+
+function simReg()
+{
+	var simReg = document.getElementById('simReg');
+	simReg.submit();
+}
+
+
+function selProvince(pid)
+{
+	$.ajax({
+		dataType: "json",
+		url: "/area/ajaxcity/" + pid,
+		success:function(data) {
+			var city_sel = $("#city_sel").html();
+			$.each(data, function(i, item){
+				city_sel += '<option value="'+item['id'] + "-" + item['name'] +'">'+item['name']+'</option>';
+			});
+			$("#city_sel").html(city_sel);
+		}
+	});
+}
+
+
+$(document).ready(function(){
+	$.ajax({
+		dataType: "json",
+		url: "/area/ajaxprovince",
+		success:function(data) {
+			var province_sel = $("#province_sel").html();
+			$.each(data, function(i, item){
+				province_sel += '<option value="'+item["id"] + "-" + item['name'] + '">'+item['name']+'</option>';
+			});
+			$("#province_sel").html(province_sel);
+		}
+	});
+});
+
+</script>
 
 <?php $this->load->view("_footer");?>

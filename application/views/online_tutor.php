@@ -1,147 +1,6 @@
-<!DOCTYPE HTML>
-<!--[if IE 6]><html class="ie6 ielt9 no-css3 no-js lte7" lang="en" dir="ltr"><![endif]-->
-<!--[if IE 7]><html class="ie7 ielt9 no-css3 no-js lte7" lang="en" dir="ltr"><![endif]-->
-<!--[if IE 8]><html class="ie8 ielt9 no-css3 no-js" lang="en" dir="ltr"><![endif]-->
-<!--[if IE 9]><html class="ie9 ielt9 no-css3 no-js" lang="en" dir="ltr"><![endif]-->
-<!--[if !(IE 6) | !(IE 7) | !(IE 8) | !(IE 9) ]><!--><html lang="en" dir="ltr" class="no-js"><!--<![endif]-->
-<head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<title>签约辅导 - 民泰贵金属</title>
-<link rel="shortcut icon" href="/resources/template/favicon.ico" />
-<link rel="stylesheet" href="/resources/template/css/reset.css" />
-<link rel="stylesheet" href="/resources/template/css/public.css" />
-<link rel="stylesheet" href="/resources/template/css/screen.css" />
-<link rel="stylesheet" href="/resources/template/js/jquery/colorbox/colorbox.css" />
-<!--[if IE]>
-<script src="/resources/template/js/ie/html5.js"></script>
-<![endif]-->
-<!--[if lt IE 9]>
-<style type="text/css">.css3{behavior: url(/resources/template/js/ie/css3.htc);-pie-lazy-init: true; position: relative;}.ie6png{-pie-png-fix: true;}</style>
-<script src="/resources/template/js/ie/ie9.js"></script>
-<![endif]-->
-<!--[if IE 6]>
-<script src="/resources/template/js/ie/png.js"></script>
-<script>DD_belatedPNG.fix('.pngfix, .pngfix img');</script>
-<![endif]-->
-<script src="/resources/template/js/ie/modernizr.js"></script>
-<script src="/resources/template/js/jquery/jquery.js"></script>
-<script src="/resources/template/js/jquery/jquery.tools.min.js"></script>
-<script src="/resources/template/js/jquery/jquery.colorbox.min.js"></script>
-<script>
-var timeout         = 0;
-var closetimer		= 0;
-var ddmenuitem      = 0;
-function Subnav_open()
-{	Subnav_canceltimer();
-	Subnav_close();
-	ddmenuitem = $(this).find('ul').eq(0).css('visibility', 'visible');}
-function Subnav_close()
-{	if(ddmenuitem) ddmenuitem.css('visibility', 'hidden');}
-function Subnav_timer()
-{	closetimer = window.setTimeout(Subnav_close, timeout);}
-function Subnav_canceltimer()
-{	if(closetimer)
-	{	window.clearTimeout(closetimer);
-		closetimer = null;}}
-$(document).ready(function()
-{	$('#nav > ul > li').bind('mouseover', Subnav_open);
-	$('#nav > ul > li').bind('mouseout',  Subnav_timer);});
-document.onclick = Subnav_close;
-</script>
-<script>
-$(document).ready(function(){
-	$(".group1").colorbox({rel:'group1'});
-});
-</script>
-</head>
-<body>
-<div class="gridsystem top-wrap cf">
-	<header id="header" class="cf">
-		<div class="header-top pngfix cf">
-	    	<h1 id="logo" class="pngfix">
-	    		<a href="index.html">
-	    			<img src="/resources/template/images/logo.png" alt="民泰贵金属" title="民泰贵金属" />
-	    		</a>
-	    	</h1>
-    	</div>
-        <nav id="nav" class="css3 cf">
-        	<ul>
-        		<li><a href="index.html">首 页</a></li>
-        		<li><a href="products.html">产品介绍</a>
-					<ul>
-						<li><a href="products.html">产品详情</a></li>
-						<li><a href="pro-features.html">投资特点</a></li>
-						<li><a href="pro-trade.html">交易细则</a></li>
-						<li><a href="pro-case.html">投资案例</a></li>
-						<li><a href="pro-guarantee.html">投资者权益保障</a></li>
-					</ul>
-        		</li>
-        		<li><a href="aboutus.html">公司资质</a>
-					<ul>
-						<li><a href="aboutus.html">公司简介</a></li>
-						<li><a target="_blank" href="about-advantage.html">民泰优势</a></li>
-						<li><a href="about-license.html">资质证书</a></li>
-						<li><a target="_blank" href="news.html">媒体报道</a></li>
-						<li><a href="about-mcx.html">关于交易所</a></li>
-					</ul>
-        		</li>
-        		<li><a href="research.html">民泰研究所</a>
-					<ul>
-						<li><a target="_blank" href="analyst.html">明星团队</a></li>
-						<li><a href="research.html">原创研究</a></li>
-						<li><a href="#">盘面播报</a></li>
-						<li><a href="research-analyse.html">分析评论</a></li>
-						<li><a href="research-video.html">市场要闻</a></li>
-						<li><a href="research-price.html">行情中心</a></li>
-					</ul>
-        		</li>
-        		<li><a href="guide.html">新手指南</a>
-					<ul>
-						<li><a href="guide.html">新手入门</a></li>
-						<li><a target="_blank" href="online-variety.html">开户指南</a></li>
-						<li><a href="guide-notice.html">交易须知</a></li>
-					</ul>
-        		</li>
-        		<li><a href="invest.html">投资入门</a>
-					<ul>
-						<li><a href="invest.html">投资入门</a></li>
-						<li><a href="invest-skill.html">投资技巧</a></li>
-						<li><a href="invest-guide.html">名师指导</a></li>
-						<li><a target="_blank" href="online-faq.html">常见问题</a></li>
-						<li><a href="invest-imitate.html">注册模拟帐户</a></li>
-					</ul>
-        		</li>
-        		<li><a href="sdownload.html">软件下载</a>
-					<ul>
-						<li><a href="sdownload.html">软件下载</a></li>
-						<li><a href="svideo.html">软件操作视频</a></li>
-					</ul>
-        		</li>
-        		<li><a target="_blank" href="app-ios.html">手机交易</a>
-					<ul>
-						<li><a target="_blank" href="app-ios.html">IOS版下载</a></li>
-						<li><a target="_blank" href="app-android.html">Android版下载</a></li>
-					</ul>
-        		</li>
-        		<li><a href="news.html">媒体报道</a>
-					<ul>
-						<li><a href="news.html">媒体报道</a></li>
-					</ul>
-        		</li>
-        		<li><a class="acitve" href="online.html">在线咨询</a>
-					<ul>
-						<li><a href="online.html">预约开户</a></li>
-						<li><a href="online-variety.html">开户流程</a></li>
-						<li><a href="online-tutor.html">签约辅导</a></li>
-						<li><a href="online-faq.html">常见问题</a></li>
-					</ul>
-        		</li>
-        	</ul>
-        </nav>
-    </header>
-</div><!-- //header -->
-
+<?php
+	$this->load->view("_header");
+?>
 
 <div class="main-wrap wrapper cf">
 	<div id="container" class="gridsystem cf">
@@ -183,7 +42,29 @@ $(document).ready(function(){
 						<h2 class="fl">签约辅导</h2>
 					</div>
 					<div class="content-wrap">
+							<div class="online mod4 mt-20 mb-20">
+								<dl>
+									<dt><strong>投资贵金属，民泰为您保驾护航</strong></dt>
+									<dd>• 天津贵金属交易所166号会员，专业、正规、实力，账户资金由银行三方存管；</dd>
+									<dd>• 资深投资顾问与您一对一咨询交流，更好了解相关业务及参与投资的程序；</dd>
+									<dd>• 明星分析师团队实时解盘，让您充分把握投资黄金、白银的良机。</dd>
+									<dd>• 贵金属投资有风险，我们将坚守诚信、勤勉、尽责的职业道德，为您答疑解惑；</dd>
+								</dl>
+							</div>
+
+							<div class="online online-qq mod4 mb-15">
+								<dl>
+									<dt><strong>企业QQ在线</strong></dt>
+									<dd>
+										咨询1：<a href="#"><img src="/resources/template/images/icon-qq.png" alt="qq" /></a> 
+										咨询2：<a href="#"><img src="/resources/template/images/icon-qq.png" alt="qq" /></a>
+										咨询3：<a href="#"><img src="/resources/template/images/icon-qq.png" alt="qq" /></a> 
+										咨询4：<a href="#"><img src="/resources/template/images/icon-qq.png" alt="qq" /></a>
+									</dd>
+								</dl>
+							</div>
 						<div class="border-gray online-tutor mt-20">
+						
 							<ul class="ui-tabs">
 								<li><a href="#">客户协议书</a></li>
 								<li><a href="#">交行签约</a></li>
@@ -660,115 +541,7 @@ $(document).ready(function(){
 		</div>	
 	</div><!-- //container -->
 </div><!-- //main -->
+<?php
+	$this->load->view("_footer");
+?>
 
-
-<div id="footer-links" class="gridsystem cf">
-	<div class="pd-10 cf">
-		<dl>
-			<dt>开户指南</dt>
-			<dd><a target="_blank" href="#">出入金流程</a></dd>
-			<dd><a target="_blank" href="#">开户咨询</a></dd>
-			<dd><a target="_blank" href="#">开户流程</a></dd>
-			<dd><a target="_blank" href="#">预约开户</a></dd>
-		</dl>
-		<dl>
-			<dt>交易所规则</dt>
-			<dd><a target="_blank" href="#">黄金交易规则</a></dd>
-			<dd><a target="_blank" href="#">白银交易规则</a></dd>
-			<dd><a target="_blank" href="#">现货交割规则</a></dd>
-		</dl>
-		<dl>
-			<dt>三方托管流程</dt>
-			<dd><a target="_blank" href="#">招商银行</a></dd>
-			<dd><a target="_blank" href="#">工商银行</a></dd>
-			<dd><a target="_blank" href="#">中信银行</a></dd>
-			<dd><a target="_blank" href="#">光大银行</a></dd>
-			<dd><a target="_blank" href="#">交通银行</a></dd>
-			<dd><a target="_blank" href="#">农业银行</a></dd>
-		</dl>
-		<dl>
-			<dt>文件下载</dt>
-			<dd><a target="_blank" href="#">投资者确认函</a></dd>
-			<dd><a target="_blank" href="#">客户协议书</a></dd>
-			<dd><a target="_blank" href="#">风险揭示书</a></dd>
-			<dd><a target="_blank" href="#">客户调查表</a></dd>
-		</dl>
-		<dl>
-			<dt>帮助中心</dt>
-			<dd><a target="_blank" href="#">常见问题</a></dd>
-			<dd><a target="_blank" href="#">联系我们</a></dd>
-		</dl>
-	</div>
-</div><!-- /footer links -->
-
-<div class="friends mb-12">
-	<div class="gridsystem cf">
-		<div class="mod">
-			<div class="hd">
-				<h2>资金第三方存管合作银行</h2>
-			</div>
-			<div class="cf">
-				<img src="/resources/template/images/icon-bank.png" alt="bank" usemap="#Map" />
-				<map name="Map">
-				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-5" coords="11,9,192,69" shape="rect">
-				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-2" coords="260,10,440,70" shape="rect">
-				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-4" coords="514,7,694,67" shape="rect">
-				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-3" coords="774,7,954,67" shape="rect">
-				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-6" coords="10,85,190,146" shape="rect">
-				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-8" coords="258,83,439,143" shape="rect">
-				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-7" coords="514,87,694,147" shape="rect">
-				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-9" coords="772,84,954,144" shape="rect">
-				</map>
-			</div>
-		</div>
-	</div>
-</div><!-- /bank -->
-
-<div class="friends mb-12">
-	<div class="gridsystem cf">
-		<div class="mod2">
-			<div class="hd2">
-				<h2>合作单位</h2>
-			</div>
-			<div class="bd2 pd-10">
-				<a target="_blank" href="http://www.tjpme.com/">天津贵金属交易所</a>
-				<a target="_blank" href="http://finance.sina.com.cn/nmetal/">新浪黄金</a>
-				<a target="_blank" href="http://gold.jrj.com.cn/">金融界黄金频道</a>
-				<a target="_blank" href="http://finance.qq.com/gold/">腾讯黄金频道</a>
-				<a target="_blank" href="http://gold.cnfol.com/">中金在线黄金网</a>
-				<a target="_blank" href="http://www.muchinfo.cn/">多元世纪</a>
-				<a target="_blank" href="http://www.gold678.com/">汇金网</a>
-				<a target="_blank" href="http://www.fx678.com/">汇通网</a>
-			</div>
-		</div>
-	</div>
-</div><!-- /friends -->
-
-
-<div class="footer-tips">
-	<div class="gridsystem cf">
-		<strong>风险提示：</strong>本网站所刊载文章均转载自公开信息，不构成对投资者的建议，所有文章、数据仅供参考，使用前请仔细阅读法律声明，风险自负
-	</div>
-</div><!-- /tips -->
-
-
-<footer id="footer" class="wrapper cf">
-	<div class="gridsystem cf">
-    	<div id="about">
-			<a target="_blank" href="/WEB/AboutUs.aspx">关于我们</a> | <a target="_blank" href="/WEB/ArticleList.aspx?CID=33">常见问题</a> | <a target="_blank" href="/WEB/RisksPrompt.aspx">风险提示</a> | <a target="_blank" href="/WEB/ArticleShow.aspx?ID=42">免责声明</a> | <a target="_blank" href="/WEB/AboutUs.aspx?ID=5">联系我们</a> | <a target="_blank" href="/WEB/ArticleShow.aspx?ID=41">隐私保密条款</a> | <a target="_blank" href="http://mail.dxdmc.com/">交易查证</a> | <a target="_blank" href="#">OA系统</a>
-		</div>
-		<p class="tips">贵金属交易有风险，入市需谨慎</p>
-    	<div id="copyright">
-			<p>Copyright(C)2011-2013. <a title="民泰贵金属|黄金,白银,铂金,钯金贵金属现货交易" href="http://www.166pm.com">166pm.com.</a>&nbsp;<a title="民泰贵金属|黄金,白银,铂金,钯金贵金属现货交易" href="http://www.mintai166.com">Mintai166.com.</a> ALL RIGHT RESERVED.</p>
-			<p><a target="_blank" href="http://www.miitbeian.gov.cn/">沪ICP备12002745</a></p>
-    	</div><!-- /copyright -->
-    </div>
-</footer><!-- //footer -->
-
-<script>
-$(function() {
-    $(".ui-tabs").tabs(".ui-tabs-panes > div");
-});
-</script>
-</body>
-</html>

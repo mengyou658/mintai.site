@@ -23,50 +23,58 @@
 							</div>
 												
 							<div class="subnav nobg">
+								<form action="/index.php" method="get">
 								<div class="span2">
-									<select name="m">
-									<option selected="selected" value="0">Show all dates</option>
-									<option value="201206">June 2012</option>
-									<option value="201205">May 2012</option>
-								</select>
-								</div>
-
-								<div class="span2">
-									<select name="cat" id="cat" class="postform">
-										<option value="0">View all categories</option>
-										<option class="level-0" value="1">Breaking News</option>
+									<select name="type" id="cat" class="postform">
+									<option value='0'>全部</option>
+									<?php 
+										foreach($types as $type)
+										{
+											?>
+												<option value="<?php echo $type['id'];?>" <?php if($type_id == $type['id']) echo "selected";?>><?php echo $type['name'];?></option>
+											<?php
+										}
+									?>
 									</select>
 								</div>
 								<div class="span1">
-									<button class="btn btn-small btn-duadua">Filter</button>
-								</div>
+								<input type="hidden" name="d" value="admin">
+								<input type="hidden" name="c" value="article">
+								<input type="hidden" name="m" value="index">
+								<input type="hidden" name="per_page" value="<?php echo $num;?>">
 
+									<button type="submit" class="btn btn-small btn-duadua">搜索</button>
+								</div>
 								<div class="span2">
 								</div>
+								<div class="span2">
+								</div>
+
+
 								<div class="span1">
 								</div>
 								<div class="span4">
 									<div class="pagination">
 										<ul>
-											<li class="active"><a href="#">1</a></li>
-											<li><a href="#">2</a></li>
-											<li><a href="#">3</a></li>
-											<li><a href="#">4</a></li>
-											<li><a href="#">5</a></li>
+										<?php echo $this->pagination->create_links();?>
 										</ul>
 									</div>
 								</div>
+								</form>	
 							</div>
 							<table class="table smallfont">
 								<thead>
 									<tr>
-										<td style="width:20px;"><input type="checkbox" id="chkbck" /></td>
-										<td>Title</td>
-										<td>Author</td>
-										<td>Categories</td>
-										<td>Tags</td>
-										<td><i class="icon-large icon-comment-alt-1"></i></td>
-										<td>Date</td>
+										<td>ID</td>
+										<td>标题</td>
+										<td>摘要</td>
+										<td>来源</td>
+										<td>分类</td>
+										<td>发表时间</td>
+										<td>创建人</td>
+										<td>状态</td>
+										<td>页面类型</td>
+										<td>是否首页大标题显示</td>
 									</tr>
 								</thead>
 								<tbody>
@@ -75,22 +83,25 @@
 									foreach($articles as $article) {
 										?>
 									<tr>
-										<td><input type="checkbox" class="chkbck" /></td>
+										<td><span class="label label-info"><?php echo $article['id'];?></span></td>
 										<td>
-										<a href="#" class="post_title"><?php echo $article['title'];?></a>
+										<a target="blank" href="/news/show/<?php echo $article['id'];?>" class="post_title"><?php echo $article['title'];?></a>
 											<div class="operation">
 												<div class="btn-group" style="display:none;">
-												  <button class="btn btn-small"><i class="icon-pencil-1"></i> Edit</button>
-												  <a target="blank" class="btn btn-small" onclick='window.location.href="/news/show/<?php echo $article['id'];?>"'><i class="icon-eye-2"></i> View</a>
-												  <button class="btn btn-small"><i class="icon-trash-empty"></i> Delete</button>
+												  <a class="btn btn-small" href="/admin/article/edit/<?php echo $article['id'];?>"><i class="icon-eye-2"></i>编辑</a>
+												  <a target="blank" class="btn btn-small" href="/news/show/<?php echo $article['id'];?>"><i class="icon-eye-2"></i>查看</a>
+												  <a class="btn btn-small" href="/admin/article/del/<?php echo $article['id'];?>" onclick="return confirm('确认删除?')"><i class="icon-eye-2"></i>删除</a>
 												</div>
 											</div>
 										</td>
-										<td>Admin</td>
-										<td><a href="#"><span class="label label-info">Breaking News</span></a></td>
-										<td>No Tags</td>
-										<td><span class="badge badge-info">0</span></td>
-										<td>2012/05/03<br />Published</td>
+										<td><?php echo $article['source'];?></td>
+										<td><?php if($article['outline'] != "") echo "<span class='label label-info'>有摘要</span>"; else echo '没有'?></td>
+										<td><a href="#"><span class="label label-info"><?php echo $article['typename']?></span></a></td>
+										<td><?php echo $article['post_time'];?></td>
+										<td>杨鹏</td>
+										<td><?php if($article['status'] == 1 ) echo '<span class="label label-info">已发表</span>'; else echo '存档';?></td>
+										<td><?php if($article['show_page'] == 1 ) echo '显示页面'; else echo '<span class="label label-info">正常新闻</span>';?></td>
+										<td><?php if($article['index_show'] == 0 ) echo '显示'; else echo '<span class="label label-info">不显示</span>';?></td>
 									</tr>
 
 
@@ -101,14 +112,8 @@
 							</table>
 							<div class="subnav nobg">
 								<div class="span2">
-									<select name="action">
-										<option value="-1" selected="selected">Bulk Actions</option>
-										<option value="edit">Edit</option>
-										<option value="trash">Move to Trash</option>
-									</select>
-								</div>
+															</div>
 								<div class="span1">
-									<button class="btn btn-small btn-duadua">Apply</button>
 								</div>
 								<div class="span2">
 								
@@ -122,11 +127,7 @@
 								<div class="span4">
 									<div class="pagination">
 										<ul>
-											<li class="active"><a href="#">1</a></li>
-											<li><a href="#">2</a></li>
-											<li><a href="#">3</a></li>
-											<li><a href="#">4</a></li>
-											<li><a href="#">5</a></li>
+											<?php echo $this->pagination->create_links();?>
 										</ul>
 									</div>
 								</div>

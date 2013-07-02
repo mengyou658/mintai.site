@@ -18,21 +18,84 @@
 						</div>
 					</div>
 					
+				<div class="accordion-group  <?php if($menu == 'register') echo 'fs';?>">
+						<div class="accordion-heading">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionSB" href="#registersb">
+								<i class="icon-large icon-th-large head_icon"></i>注册管理
+							</a>
+						</div>
+						<div id="registersb" class="accordion-body collapse   <?php if($menu == 'register') echo 'in';?>">
+							<div class="accordion-inner">
+								<ul class="nav nav-list">
+									<li <?php if($sub_menu == 'register_list') echo 'class="active"';?>><a href="/admin/register"><i class="icon-large icon-th"></i>注册列表</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				<div class="accordion-group  <?php if($menu == 'subscribe') echo 'fs';?>">
+						<div class="accordion-heading">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionSB" href="#subscribesb">
+								<i class="icon-large icon-th-large head_icon"></i>预约开户
+							</a>
+						</div>
+						<div id="subscribesb" class="accordion-body collapse   <?php if($menu == 'subscribe') echo 'in';?>">
+							<div class="accordion-inner">
+								<ul class="nav nav-list">
+									<li <?php if($sub_menu == 'subscribe_list') echo 'class="active"';?>><a href="/admin/subscribe"><i class="icon-large icon-th"></i>预约开户列表</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+			<div class="accordion-group  <?php if($menu == 'simulation') echo 'fs';?>">
+						<div class="accordion-heading">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionSB" href="#simulationsb">
+								<i class="icon-large icon-th-large head_icon"></i>模拟帐户
+							</a>
+						</div>
+						<div id="simulationsb" class="accordion-body collapse   <?php if($menu == 'simulation') echo 'in';?>">
+							<div class="accordion-inner">
+								<ul class="nav nav-list">
+									<li <?php if($sub_menu == 'simulation_list') echo 'class="active"';?>><a href="/admin/simulation"><i class="icon-large icon-th"></i>申请模拟帐户列表</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+
+
 					<div class="accordion-group  <?php if($menu == 'user') echo 'fs';?>">
 						<div class="accordion-heading">
 							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionSB" href="#articlesb">
-								<i class="icon-large icon-th-large head_icon"></i>开户管理
+								<i class="icon-large icon-th-large head_icon"></i>咨询管理
 							</a>
 						</div>
 						<div id="articlesb" class="accordion-body collapse   <?php if($menu == 'user') echo 'in';?>">
 							<div class="accordion-inner">
 								<ul class="nav nav-list">
-									<li <?php if($sub_menu == 'user_list') echo 'class="active"';?>><a href="/admin/user"><i class="icon-large icon-th"></i>申请列表</a></li>
+									<li <?php if($sub_menu == 'user_list') echo 'class="active"';?>><a href="/admin/user"><i class="icon-large icon-th"></i>咨询列表</a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
-					
+
+					<div class="accordion-group  <?php if($menu == 'focus') echo 'fs';?>">
+						<div class="accordion-heading">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionSB" href="#focussb">
+								<i class="icon-large icon-th-large head_icon"></i>首页焦点图
+							</a>
+						</div>
+						<div id="focussb" class="accordion-body collapse   <?php if($menu == 'focus') echo 'in';?>">
+							<div class="accordion-inner">
+								<ul class="nav nav-list">
+									<li <?php if($sub_menu == 'focus_list') echo 'class="active"';?>><a href="/admin/focus"><i class="icon-large icon-th"></i>焦点图列表</a></li>
+									<li <?php if($sub_menu == 'focus_form') echo 'class="active"';?>><a href="/admin/focus/form"><i class="icon-large icon-th"></i>增加焦点图</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
 					<div class="accordion-group  <?php if($menu == 'article') echo 'fs';?>">
 						<div class="accordion-heading">
 							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionSB" href="#pagesb">

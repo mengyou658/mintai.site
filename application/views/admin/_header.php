@@ -49,7 +49,7 @@
 	<div id="header" class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container-fluid">
-				<a class="brand" href="index.html">民泰后台管理系统</a>
+				<a class="brand" href="/admin">民泰后台管理系统</a>
 
 				<div class="btn-toolbar pull-right">
 				

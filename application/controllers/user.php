@@ -22,14 +22,7 @@ class User extends CI_Controller {
 		$name = $this->input->post('name');
 		$phone = $this->input->post('phone');
 		$gender = $this->input->post('gender');
-		if($gender == "yes")
-		{
-			$gender == 1;	
-		}
-		else
-		{
-			$gender == 0;
-		}
+		$gender = $gender == "yes" ? 1 : 0;
 		$remark = $this->input->post('remark');
 		$user = array(
 			'name'	=> $name,
@@ -38,10 +31,9 @@ class User extends CI_Controller {
 			'remark' => $remark, 
 			'createtime' => date('Y-m-d H:m:s')
 			); 
-
 		$this->User_Model->save($user);				
-		echo "<script>alert('预约成功');</script>";
-		redirect('/user/form/');
+		$this->session->set_flashdata('add_success', '申请成功，随后客服人员会跟您取得联系!');	
+		redirect('/user/form/#qq_online');
 	}
 
 	public function edit()

@@ -35,15 +35,27 @@
 	            <div class="details-wrap">
 					<div class="details-title">
 					<h1><?php echo $article['title'];?></h1>
-						<p><span>发布时间：<?php echo $article['post_time'];?></span><span>来源：<?php echo $article['source'];?></span></p>
+						<p><span>发布时间：<?php echo $article['post_time'];?></span>
+						<?php 
+							if(!empty($artcile['source']))
+							{
+								?>
+								<span>来源：<?php echo $article['source'];?></span>
+								<?php
+							}
+						?>
+						</p>
 					</div>
 					<div class="details-content">
+							<?php 
+							if(!empty($article['outline']))
+							{
+								?>
+									<p>摘要: <?php echo $article['outline']?></p>
+								<?php
+							}
+						?>
 						<?php echo $article['content'];?>
-					</div>
-
-					<div class="pages">
-						<p>上一篇：<a href="#">伯南克讲话令金市纠结 黄金ETF仍在继续减仓</a></p>
-						<p>下一篇：<a href="#">日股大跌引发投资者寻求避险 金价大涨1.8%</a></p>
 					</div>
 			    </div>
 
