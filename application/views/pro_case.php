@@ -5,35 +5,16 @@
 	<div id="container" class="gridsystem cf">
 		<div class="container-wrap cf">
 
-			<section class="grid-1 fl">
-				<div class="topmenu">
-					<dl>
-						<dt>产品介绍</dt>
-						<dd><a href="products.html">产品详情</a></dd>
-						<dd><a href="pro-features.html">投资特点</a></dd>
-						<dd><a href="pro-trade.html">交易细则</a></dd>
-						<dd class="active"><a href="pro-case.html">投资案例</a></dd>
-						<dd><a href="pro-guarantee.html">投资者权益保障</a></dd>
-					</dl>
-				</div>
-				<div class="sidebar-menu">
-					<ul>
-						<li class="ksdh1"><a href="#">预约开户</a></li>
-						<li class="ksdh2"><a href="#">在线咨询</a></li>
-						<li class="ksdh3"><a href="#">注册模拟账户</a></li>
-						<li class="ksdh4"><a href="#">软件下载</a></li>
-						<li class="ksdh5"><a href="#">培训预约表</a></li>
-					</ul>
-			    </div>
-			</section><!-- /sidebar -->
-				
+			<?php
+				$this->load->view("_left");
+			?>				
 			<section class="grid-4 fr">
 				<div class="subbanner">
 					<img src="/resources/template/images/pro.jpg" alt="产品介绍" />
 				</div>
 
 				<div class="crumbs">
-	            	本页位置：<a href="index.html">首页</a><span>&gt;&gt;</span><a href="products.html">产品介绍</a><span>&gt;&gt;</span>投资案例 
+	            	本页位置：<a href="/">首页</a><span>&gt;&gt;</span><a href="/item/show/pro_detail">产品介绍</a><span>&gt;&gt;</span>投资案例 
 	            </div>
 
 	            <div class="mod3">

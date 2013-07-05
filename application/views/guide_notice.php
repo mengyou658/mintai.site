@@ -14,35 +14,16 @@ $(function() {
 <div class="main-wrap wrapper cf">
 	<div id="container" class="gridsystem cf">
 		<div class="container-wrap cf">
-
-			<section class="grid-1 fl">
-				<div class="topmenu">
-					<dl>
-						<dt>新手指南</dt>
-						<dd><a href="guide.html">新手入门</a></dd>
-						<dd><a href="guide-variety.html">开户指南</a></dd>
-						<dd class="active"><a href="guide-notice.html">交易须知</a></dd>
-						<dd><a href="invest-imitate.html">注册模拟帐户</a></dd>
-					</dl>
-				</div>
-				<div class="sidebar-menu">
-					<ul>
-						<li class="ksdh1"><a href="#">预约开户</a></li>
-						<li class="ksdh2"><a href="#">在线咨询</a></li>
-						<li class="ksdh3"><a href="#">注册模拟账户</a></li>
-						<li class="ksdh4"><a href="#">软件下载</a></li>
-						<li class="ksdh5"><a href="#">培训预约表</a></li>
-					</ul>
-			    </div>
-			</section><!-- /sidebar -->
-				
+		<?php
+			$this->load->view("_left");
+		?>				
 			<section class="grid-4 fr">
 				<div class="subbanner">
 					<img src="/resources/template/images/tutorial.jpg" alt="新手指南" />
 				</div>
 
 				<div class="crumbs">
-	            	本页位置：<a href="index.html">首页</a><span>&gt;&gt;</span><a href="guide.html">新手指南</a><span>&gt;&gt;</span>交易须知 
+	            	本页位置：<a href="/">首页</a><span>&gt;&gt;</span><a href="/item/show/guide_guide">新手指南</a><span>&gt;&gt;</span>交易须知 
 	            </div>
 
 				<div class="mod3">
@@ -106,7 +87,7 @@ $(function() {
 											<br />
 											<table class="tzjy_table">
 												<tr>
-													<th width="10%" valign="top"><div align="left">&nbsp;</div></th><th width="20%" valign="top">权益&lt;5万</th><th width="20%" valign="top">5万≤权益&lt;10万</th><th width="25%" valign="top">5万≤权益&lt;10万</th><th width="25%" valign="top">20万≤权益</th></tr><tr><td valign="top"><div align="left" class="STYLE2"><h5 style="font-size: 12px;color:#792600;text-align:center;"><strong>5</strong>%</h5></div></td><td valign="top">&nbsp;</td><td valign="top">&nbsp;</td><td valign="top">&nbsp;</td><td valign="top" style="font-size:12px; background:#FEF9E5; ">交易所推出的所有产品合约</td></tr><tr><td valign="top"><div align="left" class="STYLE2"><h5 style="font-size: 12px;color:#792600;text-align:center;"><strong>8</strong>%</h5></div></td><td valign="top">&nbsp;</td><td valign="top">&nbsp;</td><td valign="top" style="font-size:12px; background:#FEF9E5; ">交易所推出的所有产品合约</td><td valign="top">&nbsp;</td></tr><tr><td valign="top"><div align="left" class="STYLE2"><h5 style="font-size: 12px;color:#792600;text-align:center;"><strong>12</strong>%</h5></div></td><td valign="top">&nbsp;</td><td valign="top" style="font-size:12px; background:#FEF9E5; ">仅可操作迷你合约</td><td valign="top">&nbsp;</td><td valign="top">&nbsp;</td></tr><tr><td valign="top"><div align="left" class="STYLE2"><h5 style="font-size: 12px;color:#792600;text-align:center;"><strong>18</strong>%</h5></div></td><td valign="top" style="font-size:12px; background:#FEF9E5; ">仅可操作迷你合约</td><td valign="top">&nbsp;</td><td valign="top">&nbsp;</td><td valign="top">&nbsp;</td>
+													<th width="10%" valign="top"><div align="left">&nbsp;</div></th><th width="20%" valign="top">权益&lt;5万</th><th width="20%" valign="top">5万≤权益&lt;10万</th><th width="25%" valign="top">10万≤权益&lt;20万</th><th width="25%" valign="top">20万≤权益</th></tr><tr><td valign="top"><div align="left" class="STYLE2"><h5 style="font-size: 12px;color:#792600;text-align:center;"><strong>5</strong>%</h5></div></td><td valign="top">&nbsp;</td><td valign="top">&nbsp;</td><td valign="top">&nbsp;</td><td valign="top" style="font-size:12px; background:#FEF9E5; ">交易所推出的所有产品合约</td></tr><tr><td valign="top"><div align="left" class="STYLE2"><h5 style="font-size: 12px;color:#792600;text-align:center;"><strong>8</strong>%</h5></div></td><td valign="top">&nbsp;</td><td valign="top">&nbsp;</td><td valign="top" style="font-size:12px; background:#FEF9E5; ">交易所推出的所有产品合约</td><td valign="top">&nbsp;</td></tr><tr><td valign="top"><div align="left" class="STYLE2"><h5 style="font-size: 12px;color:#792600;text-align:center;"><strong>12</strong>%</h5></div></td><td valign="top">&nbsp;</td><td valign="top" style="font-size:12px; background:#FEF9E5; ">仅可操作迷你合约</td><td valign="top">&nbsp;</td><td valign="top">&nbsp;</td></tr><tr><td valign="top"><div align="left" class="STYLE2"><h5 style="font-size: 12px;color:#792600;text-align:center;"><strong>18</strong>%</h5></div></td><td valign="top" style="font-size:12px; background:#FEF9E5; ">仅可操作迷你合约</td><td valign="top">&nbsp;</td><td valign="top">&nbsp;</td><td valign="top">&nbsp;</td>
 												</tr>
 											</table>
 											<br>

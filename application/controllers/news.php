@@ -20,7 +20,11 @@ class News extends CI_Controller {
 
 	public function show($id)
 	{
+		$data['curr'] = 'research';
 		$result = $this->Article_Model->findById($id);
+		$type = $this->Articletype_Model->findById($result['curr']['type_id']);
+		$data['types'] = $type[0];
+
 		$data['article'] = $result['curr'];
 		if(!empty($result['pre'])) $data['pre'] = $result['pre'];
 		if(!empty($result['next'])) $data['next'] = $result['next'];
@@ -28,18 +32,229 @@ class News extends CI_Controller {
 			$this->load->view('news_show', $data);	
 		else
 			$this->load->view('show_news', $data);	
+	}
 
+	public function xyshow($id)
+	{
+		$data['curr'] = 'xy';
+		$result = $this->Article_Model->findById($id);
+		$type = $this->Articletype_Model->findById($result['curr']['type_id']);
+		$data['types'] = $type[0];
+
+		$data['article'] = $result['curr'];
+		if(!empty($result['pre'])) $data['pre'] = $result['pre'];
+		if(!empty($result['next'])) $data['next'] = $result['next'];
+		$this->load->view('xynews_show', $data);	
+	}
+
+	public function abshow($id)
+	{
+		$data['curr'] = 'xy';
+		$result = $this->Article_Model->findById($id);
+		$type = $this->Articletype_Model->findById($result['curr']['type_id']);
+		$data['types'] = $type[0];
+
+		$data['article'] = $result['curr'];
+		if(!empty($result['pre'])) $data['pre'] = $result['pre'];
+		if(!empty($result['next'])) $data['next'] = $result['next'];
+		$this->load->view('abnews_show', $data);	
 	}
 
 
-	public function more($type_id)
+	public function mdshow($id)
 	{
+		$data['curr'] = 'about';
+		$result = $this->Article_Model->findById($id);
+		$type = $this->Articletype_Model->findById($result['curr']['type_id']);
+		$data['types'] = $type[0];
 
+		$data['article'] = $result['curr'];
+		if(!empty($result['pre'])) $data['pre'] = $result['pre'];
+		if(!empty($result['next'])) $data['next'] = $result['next'];
+		$this->load->view('abnews_show', $data);	
+	}
+
+
+
+	public function media_news($type_id = 17)
+	{
+		$data['curr'] = "about";
+		$limit = 20;
+		$offset = 0;
+		$num = $this->input->get('per_page');
+		$count = $this->Article_Model->findCount($type_id);
+		$data['num'] = $num;
+		$data['type_id'] = $type_id;
+		//分页配置
+		$config['base_url'] = 'index.php?d=admin&c=article&m=index';
+		if(!empty($type_id))
+		{
+			$config['base_url'] = 'index.php?d=admin&c=article&m=index&type=' . $type_id;
+		}
+
+		$config['total_rows'] = $count[0]['count'];
+		$config['per_page'] = $limit;
+		$config['uri_segment'] = $this->input->get('per_page');
+		$config['cur_tag_open'] = '<li class="active"><a href="javascript:void(0);">';
+		$config['cur_tag_close'] = '</a></li>';
+		
+		$config['prev_tag_open'] = '<li>';
+		$config['prev_tag_close'] = '</li>';
+		$config['next_tag_open'] = '<li>';
+		$config['next_tag_close'] = '</li>';
+		$config['num_tag_open'] = '<li>';	
+		$config['num_tag_close'] = '</li>';
+		$config['first_tag_open'] = '<li>';	
+		$config['first_tag_close'] = '</li>';
+		$config['last_tag_open'] = '<li>';	
+		$config['last_tag_close'] = '</li>';
+		$config['use_page_numbers'] = TRUE;
+	
+		$this->pagination->initialize($config);
+
+		if(empty($num))
+		{
+			$num = 0;	
+			$offset = 0;
+		}
+		else
+		{
+			$offset = ($num - 1 ) * $limit;	
+		}
+		
+		$articles = $this->Article_Model->findAll($type_id, $offset, $limit);
+		$data['articles'] = $articles;
+		$type = $this->Articletype_Model->findById($type_id);
+		$data['types'] = $type[0];
+
+		$this->load->view("media_news", $data);	
+	}
+
+	public function media($type_id = 17)
+	{
+		$data['curr'] = "media";
 
 		$limit = 20;
 		$offset = 0;
 		$num = $this->input->get('per_page');
-		$type_id = $this->input->get('type');
+		$count = $this->Article_Model->findCount($type_id);
+		$data['num'] = $num;
+		$data['type_id'] = $type_id;
+		//分页配置
+		$config['base_url'] = 'index.php?d=admin&c=article&m=index';
+		if(!empty($type_id))
+		{
+			$config['base_url'] = 'index.php?d=admin&c=article&m=index&type=' . $type_id;
+		}
+
+		$config['total_rows'] = $count[0]['count'];
+		$config['per_page'] = $limit;
+		$config['uri_segment'] = $this->input->get('per_page');
+		$config['cur_tag_open'] = '<li class="active"><a href="javascript:void(0);">';
+		$config['cur_tag_close'] = '</a></li>';
+		
+		$config['prev_tag_open'] = '<li>';
+		$config['prev_tag_close'] = '</li>';
+		$config['next_tag_open'] = '<li>';
+		$config['next_tag_close'] = '</li>';
+		$config['num_tag_open'] = '<li>';	
+		$config['num_tag_close'] = '</li>';
+		$config['first_tag_open'] = '<li>';	
+		$config['first_tag_close'] = '</li>';
+		$config['last_tag_open'] = '<li>';	
+		$config['last_tag_close'] = '</li>';
+		$config['use_page_numbers'] = TRUE;
+	
+		$this->pagination->initialize($config);
+
+		if(empty($num))
+		{
+			$num = 0;	
+			$offset = 0;
+		}
+		else
+		{
+			$offset = ($num - 1 ) * $limit;	
+		}
+		
+		$articles = $this->Article_Model->findAll($type_id, $offset, $limit);
+		$data['articles'] = $articles;
+		$type = $this->Articletype_Model->findById($type_id);
+		$data['types'] = $type[0];
+
+		$this->load->view("about_news", $data);	
+
+	}
+
+	public function online_faq()
+	{
+		$data['curr'] = "online";
+		$this->load->view("online_faq", $data);	
+	}
+
+
+	public function morexy($type_id)
+	{
+		$data['curr'] = "xy";
+		$limit = 20;
+		$offset = 0;
+		$num = $this->input->get('per_page');
+		$type_id = empty($type_id) ?  0 : $type_id;
+		$count = $this->Article_Model->findCount($type_id);
+		$data['num'] = $num;
+		$data['type_id'] = $type_id;
+		//分页配置
+		$config['base_url'] = 'index.php?d=admin&c=article&m=index';
+		if(!empty($type_id))
+		{
+			$config['base_url'] = 'index.php?d=admin&c=article&m=index&type=' . $type_id;
+		}
+
+		$config['total_rows'] = $count[0]['count'];
+		$config['per_page'] = $limit;
+		$config['uri_segment'] = $this->input->get('per_page');
+		$config['cur_tag_open'] = '<li class="active"><a href="javascript:void(0);">';
+		$config['cur_tag_close'] = '</a></li>';
+		
+		$config['prev_tag_open'] = '<li>';
+		$config['prev_tag_close'] = '</li>';
+		$config['next_tag_open'] = '<li>';
+		$config['next_tag_close'] = '</li>';
+		$config['num_tag_open'] = '<li>';	
+		$config['num_tag_close'] = '</li>';
+		$config['first_tag_open'] = '<li>';	
+		$config['first_tag_close'] = '</li>';
+		$config['last_tag_open'] = '<li>';	
+		$config['last_tag_close'] = '</li>';
+		$config['use_page_numbers'] = TRUE;
+	
+		$this->pagination->initialize($config);
+
+		if(empty($num))
+		{
+			$num = 0;	
+			$offset = 0;
+		}
+		else
+		{
+			$offset = ($num - 1 ) * $limit;	
+		}
+		
+		$articles = $this->Article_Model->findAll($type_id, $offset, $limit);
+		$data['articles'] = $articles;
+		$type = $this->Articletype_Model->findById($type_id);
+		$data['list'] = $articles;
+		$data['types'] = $type[0];
+		$this->load->view('news_xy_list', $data);	
+	}	
+	
+
+	public function more($type_id)
+	{
+		$data['curr'] = "research";
+		$limit = 20;
+		$offset = 0;
+		$num = $this->input->get('per_page');
 		$type_id = empty($type_id) ?  0 : $type_id;
 		$count = $this->Article_Model->findCount($type_id);
 		$data['num'] = $num;

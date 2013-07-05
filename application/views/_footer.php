@@ -1,3 +1,4 @@
+
 <div class="friends mb-12">
 	<div class="gridsystem cf">
 		<div class="mod">
@@ -58,7 +59,8 @@
 			<dd><a target="_blank" href="#">联系我们</a></dd>
 		</dl>
 	</div>
-</div>-->
+</div>
+-->
 <div class="friends mb-12">
 	<div class="gridsystem cf">
 		<div class="mod2">
@@ -94,8 +96,8 @@
 		</div>
 		<p class="tips">贵金属交易有风险，入市需谨慎</p>
     	<div id="copyright">
-			<p>Copyright(C)2011-2013. <a title="民泰贵金属|黄金,白银,铂金,钯金贵金属现货交易" href="http://www.166pm.com">166pm.com.</a>&nbsp;<a title="民泰贵金属|黄金,白银,铂金,钯金贵金属现货交易" href="http://www.mintai166.com">Mintai166.com.</a> ALL RIGHT RESERVED.</p>
-			<p><a target="_blank" href="http://www.miitbeian.gov.cn/">沪ICP备12002745</a></p>
+			<p>Copyright(C)2011-2013. <a title="民泰贵金属|黄金,白银,铂金,钯金贵金属现货交易" href="http://www.166jin.com">166jin.com.</a>&nbsp;<a title="民泰贵金属|黄金,白银,铂金,钯金贵金属现货交易" href="http://www.166jin.com">166jin.com.</a> ALL RIGHT RESERVED.</p>
+			<p><a target="_blank" href="http://www.miitbeian.gov.cn/">京ICP备13028347号-1</a></p>
     	</div><!-- /copyright -->
     </div>
 </footer><!-- //footer -->
@@ -105,9 +107,9 @@
 	<div id="onLineService" class="service-box-list">
 		<dl>
 			<dt class="pngfix">在线咨询</dt>
-			<dd><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2355428577&amp;site=qq&amp;menu=yes" target="_blank"><img border="0" title="点击这里给我发消息" alt="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:12345678:51" /></a></dd>
-			<dd><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2355428533&amp;site=qq&amp;menu=yes" target="_blank"><img border="0" title="点击这里给我发消息" alt="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:12345678:51" /></a></dd>
-			<dd><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2355428534&amp;site=qq&amp;menu=yes" target="_blank"><img border="0" title="点击这里给我发消息" alt="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:12345678:51" /></a></dd>
+			<dd><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=123456780&amp;site=qq&amp;menu=yes" target="_blank"><img border="0" title="点击这里给我发消息" alt="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:12345678:51" /></a></dd>
+			<dd><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=123456780&amp;site=qq&amp;menu=yes" target="_blank"><img border="0" title="点击这里给我发消息" alt="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:12345678:51" /></a></dd>
+			<dd><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=123456780&amp;site=qq&amp;menu=yes" target="_blank"><img border="0" title="点击这里给我发消息" alt="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:12345678:51" /></a></dd>
 		</ul>
 	</div>
 	<a id="serviceBtn" class="service-box-btn" href="javascript:void(0);" style="display:block;">在线客服</a>

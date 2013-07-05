@@ -11,7 +11,6 @@
 <link rel="shortcut icon" href="/resources/template/favicon.ico" />
 <link rel="stylesheet" href="/resources/template/css/reset.css" />
 <link rel="stylesheet" href="/resources/template/css/public.css" />
-<link rel="stylesheet" href="/resources/template/css/screen.css" />
 <!--[if IE]>
 <script src="/resources/template/js/ie/html5.js"></script>
 <![endif]-->
@@ -73,7 +72,35 @@ $(document).ready(function()
 document.onclick = Subnav_close;
 </script>
 </head>
+<style>
+body {
+    background: #FEF9E5 url(/resources/template/images/bg-body.png) repeat-x center 95px;
+    color: #2B2B2B;
+    height: 100%;
+    width: 100%;
+}
+.ads-wrap {
+	background: #F5F5F5;
+}
+</style>
+
 <body>
+<div class="ads-wrap cf">
+	<div class="gridsystem cf">
+		<div class="ad">
+			<object id="flashSeg" data="/resources/template/images/swf/topBanner3.swf" type="application/x-shockwave-flash" width="980" height="90">           
+				<param name="movie" value="/resources/template/images/swf/topBanner3.swf" />
+				<param name="quality" value="high" />
+				<param name="bgcolor" value="#ffffff" />
+				<param name="allowScriptAccess" value="sameDomain" />
+				<param name="allowFullScreen" value="true" />
+				<param name="wmode" value="transparent"/>
+			</object>
+		</div>
+	</div>
+</div><!-- //top ads -->
+
+
 <div class="gridsystem top-wrap cf">
 	<header id="header" class="cf">
 		<div class="header-top pngfix cf">
@@ -84,7 +111,7 @@ document.onclick = Subnav_close;
 	    	</h1>
 	    	<div class="head-banner">
 				<object data="/resources/template/images/swf/Banner.swf" type="application/x-shockwave-flash" width="445" height="75">             
-					<param name="movie" value="images/swf/Banner.swf" />
+					<param name="movie" value="/resources/template/images/swf/Banner.swf" />
 					<param name="quality" value="high" />
 					<param name="bgcolor" value="#ffffff" />
 					<param name="allowScriptAccess" value="sameDomain" />
@@ -95,71 +122,71 @@ document.onclick = Subnav_close;
     	</div>
         <nav id="nav" class="css3 cf">
         	<ul>
-        		<li><a class="acitve" href="/">首 页</a></li>
-        		<li><a href="/item/show/product_detail">产品介绍</a>
+			<li><a <?php if($curr == "index") echo 'class="acitve"';?> href="/">首 页</a></li>
+				<li><a <?php if($curr == "pro") echo 'class="acitve"';?> href="/item/show/pro_detail">产品介绍</a>
 					<ul>
-						<li><a href="/item/show/product_detail">产品详情</a></li>
+						<li><a href="/item/show/pro_detail">产品详情</a></li>
 						<li><a href="/item/show/pro_features">投资特点</a></li>
 						<li><a href="/item/show/pro_trade">交易细则</a></li>
 						<li><a href="/item/show/pro_case">投资案例</a></li>
 						<li><a href="/item/show/pro_guarantee">投资者权益保障</a></li>
 					</ul>
         		</li>
-        		<li><a href="/item/show/aboutus">公司资质</a>
+        		<li><a  <?php if($curr == "about") echo 'class="acitve"';?> href="/item/show/about_us">公司资质</a>
 					<ul>
-						<li><a href="/item/show/aboutus">公司简介</a></li>
+						<li><a href="/item/show/about_us">公司简介</a></li>
 						<li><a target="_blank" href="/item/show/about_advantage">民泰优势</a></li>
 						<li><a href="/item/show/about_license">资质证书</a></li>
-						<li><a target="_blank" href="/item/show/about_news">媒体报道</a></li>
+						<li><a href="/item/show/about_news">媒体报道</a></li>
 						<li><a href="/item/show/about_mcx">关于交易所</a></li>
 					</ul>
         		</li>
-        		<li><a href="/analyst/analyst_list">民泰研究所</a>
+        		<li><a  <?php if($curr == "research") echo 'class="acitve"';?> href="/item/show/research_analyst">民泰研究所</a>
 					<ul>
-						<li><a target="_blank" href="/analyst/analyst_list">明星团队</a></li>
+						<li><a target="_blank" href="/item/show/research_analyst">明星团队</a></li>
 						<li><a href="/news/more/1">原创研究</a></li>
-						<li><a href="#">盘面播报</a></li>
-						<li><a href="research-analyse.html">分析评论</a></li>
-						<li><a href="research-video.html">市场要闻</a></li>
-						<li><a href="research-price.html">行情中心</a></li>
+						<li><a href="/news/more/2">盘面播报</a></li>
+						<li><a href="/news/more/3">分析评论</a></li>
+						<li><a href="/news/more/4">市场要闻</a></li>
+						<li><a href="/item/show/research_price">行情中心</a></li>
 					</ul>
         		</li>
-        		<li><a href="/item/show/guide">新手指南</a>
+        		<li><a  <?php if($curr == "guide") echo 'class="acitve"';?> href="/item/show/guide_guide">新手指南</a>
 					<ul>
-						<li><a href="/item/show/guide">新手入门</a></li>
-						<li><a target="_blank" href="/item/show/guide_variety">开户指南</a></li>
+						<li><a href="/item/show/guide_guide">新手入门</a></li>
+						<li><a href="/item/show/guide_variety">开户指南</a></li>
 						<li><a href="/item/show/guide_notice">交易须知</a></li>
-						<li><a href="/item/show/invest_imitate">注册模拟帐户</a></li>
+						<li><a href="/item/show/guide_imitate">注册模拟帐户</a></li>
 					</ul>
         		</li>
-        		<li><a href="/item/show/invest">贵金属学院</a>
+        		<li><a  <?php if($curr == "xy") echo 'class="acitve"';?> href="/news/morexy/9">贵金属学院</a>
 					<ul>
-						<li><a href="/item/show/invest">投资入门</a></li>
-						<li><a href="#">投资技巧</a></li>
-						<li><a href="/item/show/invest_guide">名师指导</a></li>
-						<li><a target="_blank" href="/item/show/online_faq">常见问题</a></li>
+						<li><a href="/news/morexy/9">投资入门</a></li>
+						<li><a href="/news/morexy/10">投资技巧</a></li>
+						<li><a href="/news/morexy/11">名师指导</a></li>
+						<li><a href="/news/morexy/12">常见问题</a></li>
 					</ul>
         		</li>
-        		<li><a href="/item/show/sdownload">软件下载</a>
+        		<li><a  <?php if($curr == "sd") echo 'class="acitve"';?> href="/item/show/sd_download">软件下载</a>
 					<ul>
-						<li><a href="/item/show/sdownload">软件下载</a></li>
-						<li><a href="/item/show/svideo">软件操作视频</a></li>
+						<li><a href="/item/show/sd_download">软件下载</a></li>
+						<li><a href="/item/show/sd_video">软件操作视频</a></li>
 					</ul>
         		</li>
-        		<li><a target="_blank" href="/item/show/app_ios">手机交易</a>
+        		<li><a  <?php if($curr == "app") echo 'class="acitve"';?> target="_blank" href="/item/show/app_ios">手机交易</a>
 					<ul>
 						<li><a target="_blank" href="/item/show/app_ios">IOS版下载</a></li>
 						<li><a target="_blank" href="/item/show/app_android">Android版下载</a></li>
 					</ul>
         		</li>
-        		<li><a href="/news/">媒体报道</a>
+        		<li><a  <?php if($curr == "media") echo 'class="acitve"';?> href="/news/media_news">媒体报道</a>
 					<ul>
-						<li><a href="/news/">媒体报道</a></li>
+						<li><a href="/news/media_news">媒体报道</a></li>
 					</ul>
         		</li>
-        		<li><a href="/user/form">在线咨询</a>
+        		<li><a  <?php if($curr == "online") echo 'class="acitve"';?> href="/item/show/online_userform">在线咨询</a>
 					<ul>
-						<li><a href="/user/form">咨询建议</a></li>
+						<li><a href="/item/show/online_userform">咨询建议</a></li>
 						<li><a href="/item/show/online_account">预约开户</a></li>
 						<li><a href="/item/show/online_variety">开户流程</a></li>
 						<li><a href="/item/show/online_tutor">签约辅导</a></li>
@@ -170,5 +197,4 @@ document.onclick = Subnav_close;
         </nav>
     </header>
 </div><!-- //header -->
-
 

@@ -35,16 +35,16 @@ class Welcome extends CI_Controller {
 		$data['data8'] = $this->Article_Model->findByType(8);
 		$data['article8'] = $this->Article_Model->findByTypeIndex(8);
 
-		$data['data9'] = $this->Article_Model->findByType(9);
+		$data['data9'] = $this->Article_Model->findByType(9, 5);
 		$data['article9'] = $this->Article_Model->findByTypeIndex(9);
 
-		$data['data10'] = $this->Article_Model->findByType(10);
+		$data['data10'] = $this->Article_Model->findByType(10, 5);
 		$data['article10'] = $this->Article_Model->findByTypeIndex(10);
 
-		$data['data11'] = $this->Article_Model->findByType(11);
+		$data['data11'] = $this->Article_Model->findByType(11, 5);
 		$data['article11'] = $this->Article_Model->findByTypeIndex(11);
 
-		$data['data12'] = $this->Article_Model->findByType(12);
+		$data['data12'] = $this->Article_Model->findByType(12, 5);
 		$data['article12'] = $this->Article_Model->findByTypeIndex(12);
 
 			
@@ -53,6 +53,7 @@ class Welcome extends CI_Controller {
 		$data['notice'] = $this->_proceNotice($notices);
 
 		$data['focus'] = $this->Focus_Model->findAll();
+		$data['curr'] = "index";
 
 		$this->load->view('index', $data);
 	}

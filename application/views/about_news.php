@@ -10,17 +10,21 @@
 			<section class="grid-1 fl">
 				<div class="topmenu">
 					<dl>
-						<dt>媒体报道</dt>
-						<dd class="active"><a href="#">媒体报道</a></dd>
+						<dt>公司资质</dt>
+						<dd><a href="/item/show/about_us">公司简介</a></dd>
+						<dd><a href="/item/show/about_advtanage">民泰优势</a></dd>
+						<dd><a href="/item/show/about_license">资质证书</a></dd>
+						<dd class="active"><a href="/news/media">媒体报道</a></dd>
+						<dd><a href="/item/show/about_mcx">关于交易所</a></dd>
 					</dl>
 				</div>
 				<div class="sidebar-menu">
 					<ul>
-						<li class="ksdh1"><a href="#">预约开户</a></li>
-						<li class="ksdh2"><a href="#">在线咨询</a></li>
-						<li class="ksdh3"><a href="#">注册模拟账户</a></li>
-						<li class="ksdh4"><a href="#">软件下载</a></li>
-						<li class="ksdh5"><a href="#">培训预约表</a></li>
+						<li class="ksdh1"><a href="/item/show/online_account">预约开户</a></li>
+						<li class="ksdh2"><a href="/user/form">在线咨询</a></li>
+						<li class="ksdh3"><a href="/item/show/invest_imitate">注册模拟账户</a></li>
+						<li class="ksdh4"><a href="/item/show/sdownload">软件下载</a></li>
+						<li class="ksdh5"><a href="/item/show/app_ios">手机交易</a></li>
 					</ul>
 			    </div>
 			</section><!-- /sidebar -->
@@ -31,7 +35,7 @@
 				</div>
 
 				<div class="crumbs">
-	            	本页位置：<a href="index.html">首页</a><span>&gt;&gt;</span><a href="news.html">媒体报道</a><span>&gt;&gt;</span>媒体报道 
+	            	本页位置：<a href="/">首页</a><span>&gt;&gt;</span><a href="/item/show/about_us">公司资质</a><span>&gt;&gt;</span>媒体报道 
 	            </div>
 
 	            <div class="mod3">
@@ -51,21 +55,17 @@
 					            </div>
 				            </div>
 				            <ul class="news-list">
-				          		<li><span>2013-5-27 9:59:24</span><a title="午评：伯老讲话留下压力 今日逢高做空为主" target="_blank" href="#">午评：伯老讲话留下压力 今日逢高做空为主</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="早评：市场表现出现变化 金银后市震荡偏多" target="_blank" href="#">早评：市场表现出现变化 金银后市震荡偏多今日逢高做空为主</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="午评：伯老讲话留下压力 今日逢高做空为主" target="_blank" href="#">午评：伯老讲话留下压力 今日逢高做空为主</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="早评：市场表现出现变化 金银后市震荡偏多" target="_blank" href="#">早评：市场表现出现变化 金银后市震荡偏多</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="早评：市场表现出现变化 金银后市震荡偏多" target="_blank" href="#">早评：市场表现出现变化 金银后市震荡偏多今日逢高做空为主今日逢高做空为主</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="早评：市场表现出现变化 金银后市震荡偏多" target="_blank" href="#">早评：市场表现出现变化 金银后市震荡偏多今日逢高做空为主</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="早评：市场表现出现变化 金银后市震荡偏多" target="_blank" href="#">早评：市场表现出现变化 金银后市震荡偏多</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="早评：市场表现出现变化 金银后市震荡偏多" target="_blank" href="#">早评：市场表现出现变化 金银后市震荡偏多</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="早评：市场表现出现变化 金银后市震荡偏多" target="_blank" href="#">早评：市场表现出现变化 金银后市震荡偏多今日逢高做空为主今日逢高做空为主</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="早评：市场表现出现变化 金银后市震荡偏多" target="_blank" href="#">早评：市场表现出现变化 金银后市震荡偏多今日逢高做空为主</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="早评：市场表现出现变化 金银后市震荡偏多" target="_blank" href="#">早评：市场表现出现变化 金银后市震荡偏多</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="早评：市场表现出现变化 金银后市震荡偏多" target="_blank" href="#">早评：市场表现出现变化 金银后市震荡偏多今日逢高做空为主今日逢高做空为主</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="早评：市场表现出现变化 金银后市震荡偏多" target="_blank" href="#">早评：市场表现出现变化 金银后市震荡偏多</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="早评：市场表现出现变化 金银后市震荡偏多" target="_blank" href="#">早评：市场表现出现变化 金银后市震荡偏多今日逢高做空为主今日逢高做空为主</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="早评：市场表现出现变化 金银后市震荡偏多" target="_blank" href="#">早评：市场表现出现变化 金银后市震荡偏多</a></li>
+								<?php
+									if(!empty($articles))	
+									{
+										foreach($articles as $article)	
+										{
+											?>
+												<li><span><?php echo $article['post_time']?></span><a title="<?php echo $article['title']?>" target="_blank" href="/news/abshow/<?php echo $article['id'];?>"><?php echo $article['title']?></a></li>
+											<?php
+										}
+									}
+								?>
 				          	</ul>
 			          	</div>
 

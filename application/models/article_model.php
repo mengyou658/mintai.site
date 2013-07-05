@@ -40,7 +40,7 @@ class Article_Model extends CI_Model {
 		return $data;
 	}
 
-	function findByType($typeId, $limit = 5)
+	function findByType($typeId, $limit = 6)
 	{
 		$query = $this->db->query("select * from article where type_id = " . $typeId . "  and index_show = 1 and status = 1 order by id desc limit " . $limit);
 		return $query->result_array();

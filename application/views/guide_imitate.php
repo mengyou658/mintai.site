@@ -2,36 +2,16 @@
 <div class="main-wrap wrapper cf">
 	<div id="container" class="gridsystem cf">
 		<div class="container-wrap cf">
-
-			<section class="grid-1 fl">
-				<div class="topmenu">
-					<dl>
-						<dt>投资入门</dt>
-						<dd><a href="invest.html">投资入门</a></dd>
-						<dd><a href="#">投资技巧</a></dd>
-						<dd><a href="invest-guide.html">名师指导</a></dd>
-						<dd><a target="_blank" href="online-faq.html">常见问题</a></dd>
-						<dd class="active"><a href="invest-imitate.html">注册模拟帐户</a></dd>
-					</dl>
-				</div>
-				<div class="sidebar-menu">
-					<ul>
-						<li class="ksdh1"><a href="#">预约开户</a></li>
-						<li class="ksdh2"><a href="#">在线咨询</a></li>
-						<li class="ksdh3"><a href="#">注册模拟账户</a></li>
-						<li class="ksdh4"><a href="#">软件下载</a></li>
-						<li class="ksdh5"><a href="#">培训预约表</a></li>
-					</ul>
-			    </div>
-			</section><!-- /sidebar -->
-				
+		<?php
+			$this->load->view("_left");
+		?>				
 			<section class="grid-4 fr">
 				<div class="subbanner">
 					<img src="/resources/template/images/school.jpg" alt="投资入门" />
 				</div>
 
 				<div class="crumbs">
-	            	本页位置：<a href="index.html">首页</a><span>&gt;&gt;</span><a href="invest.html">投资入门</a><span>&gt;&gt;</span>注册模拟帐户 
+	            	本页位置：<a href="/">首页</a><span>&gt;&gt;</span><a href="/item/show/guide_guide">新手指南</a><span>&gt;&gt;</span>注册模拟帐户 
 	            </div>
 
 	            <div class="online online-form mod4">

@@ -9,30 +9,22 @@
 			<section class="grid-1 fl">
 				<div class="topmenu">
 					<dl>
-						<dt>媒体报道</dt>
-							<?php 
-							if($types['id'] == 0)
-							{
-								?>
-						<dd class="active"><a href="/news/"><?php echo $types['name'];?></a></dd>
-								<?php
-							}
-							else{
-								?>
-						<dd class="active"><a href="/news/more/<?php echo $types['id'];?>"><?php echo $types['name'];?></a></dd>
-								<?php	
-							}
-
-						?>
+						<dt>民泰研究所</dt>
+						<dd><a href="/item/show/research_analyst">明星团队</a></dd>
+						<dd  <?php if($types['id'] == 1) echo 'class="active"';?> ><a href="/news/more/1">原创研究</a></dd>
+						<dd <?php if($types['id'] == 2) echo 'class="active"';?> ><a  href="/news/more/2">盘面播报</a></dd>
+						<dd <?php if($types['id'] == 3) echo 'class="active"';?> ><a href="/news/more/3">分析评论</a></dd>
+						<dd <?php if($types['id'] == 4) echo 'class="active"';?> ><a  href="/news/more/4">市场要闻</a></dd>
+						<dd><a href="/item/show/research_price">行情中心</a></dd>
 					</dl>
 				</div>
 				<div class="sidebar-menu">
 					<ul>
-						<li class="ksdh1"><a href="#">预约开户</a></li>
-						<li class="ksdh2"><a href="#">在线咨询</a></li>
-						<li class="ksdh3"><a href="#">注册模拟账户</a></li>
-						<li class="ksdh4"><a href="#">软件下载</a></li>
-						<li class="ksdh5"><a href="#">培训预约表</a></li>
+						<li class="ksdh1"><a href="/item/show/online_account">预约开户</a></li>
+						<li class="ksdh2"><a href="/user/form">在线咨询</a></li>
+						<li class="ksdh3"><a href="/item/show/invest_imitate">注册模拟账户</a></li>
+						<li class="ksdh4"><a href="/item/show/sdownload">软件下载</a></li>
+						<li class="ksdh5"><a href="/item/show/app_ios">手机交易</a></li>
 					</ul>
 			    </div>
 			</section><!-- /sidebar -->

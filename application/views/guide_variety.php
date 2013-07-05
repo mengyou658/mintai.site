@@ -9,27 +9,9 @@
 <div class="main-wrap wrapper cf">
 	<div id="container" class="gridsystem cf">
 		<div class="container-wrap cf">
-
-			<section class="grid-1 fl">
-				<div class="topmenu">
-					<dl>
-						<dt>新手指南</dt>
-						<dd><a href="guide.html">新手入门</a></dd>
-						<dd class="active"><a href="guide-variety.html">开户指南</a></dd>
-						<dd><a href="guide-notice.html">交易须知</a></dd>
-						<dd><a href="invest-imitate.html">注册模拟帐户</a></dd>
-					</dl>
-				</div>
-				<div class="sidebar-menu">
-					<ul>
-						<li class="ksdh1"><a href="#">预约开户</a></li>
-						<li class="ksdh2"><a href="#">在线咨询</a></li>
-						<li class="ksdh3"><a href="#">注册模拟账户</a></li>
-						<li class="ksdh4"><a href="#">软件下载</a></li>
-						<li class="ksdh5"><a href="#">培训预约表</a></li>
-					</ul>
-			    </div>
-			</section><!-- /sidebar -->
+			<?php
+				$this->load->view("_left");
+			?>
 				
 			<section class="grid-4 fr">
 				<div class="subbanner">
@@ -37,7 +19,7 @@
 				</div>
 
 				<div class="crumbs">
-	            	本页位置：<a href="index.html">首页</a><span>&gt;&gt;</span><a href="guide.html">新手指南</a><span>&gt;&gt;</span>开户指南 
+	            	本页位置：<a href="/">首页</a><span>&gt;&gt;</span><a href="/item/show/guide_guide">新手指南</a><span>&gt;&gt;</span>开户指南 
 	            </div>
 				
 				<div class="mod3">
