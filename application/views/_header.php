@@ -74,7 +74,6 @@ document.onclick = Subnav_close;
 </script>
 </head>
 <style>
-
 .top_img {
 	width:770px;
 	height:123px;
