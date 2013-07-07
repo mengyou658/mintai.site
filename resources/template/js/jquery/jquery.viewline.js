@@ -54,7 +54,7 @@ leftArrow.hide();
 // and remove the object from the DOM.
 var contentArray = [];
 var contentCount = 0;
-var contentWidth = 10000;
+var contentWidth = 100000;
 viewline.children('div').each(function()
 {
 var content = $(this);
