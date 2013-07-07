@@ -12,7 +12,7 @@
 						<dt>贵金属学院</dt>
 						<dd  <?php if($types['id'] == 9) echo 'class="active"';?> ><a href="/news/morexy/9">投资入门</a></dd>
 						<dd <?php if($types['id'] == 10) echo 'class="active"';?> ><a  href="/news/morexy/10">投资技巧</a></dd>
-						<dd <?php if($types['id'] == 11) echo 'class="active"';?> ><a href="/news/morexy/11">明石指导</a></dd>
+						<dd <?php if($types['id'] == 11) echo 'class="active"';?> ><a href="/news/morexy/11">名师指导</a></dd>
 						<dd <?php if($types['id'] == 12) echo 'class="active"';?> ><a  href="/news/morexy/12">常见问题</a></dd>
 					</dl>
 				</div>
