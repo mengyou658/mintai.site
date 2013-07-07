@@ -11,7 +11,7 @@
 			?>				
 			<section class="grid-4 fr">
 				<div class="subbanner">
-					<img src="/resources/template/images/pro.jpg" alt="公司资质" />
+					<img class="top_img" src="/resources/template/images/gongsizizhi.jpg" alt="公司资质" />
 				</div>
 
 				<div class="crumbs">

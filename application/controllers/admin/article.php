@@ -108,10 +108,6 @@ class Article extends CI_Controller {
 		$source = $this->input->post('source');
 		$status = $this->input->post('status');
 		$status = ($status == 'yes') ? 1 : 0;
-		$show_page = $this->input->post('show_page');
-		$show_page = ($show_page == 'yes') ? 0 : 1;
-		$index_show = $this->input->post('index_show');
-		$index_show = ($index_show == 'yes') ? 1 : 0;
 
 		$type = $this->input->post('type_id');
 		$type_id = split("_", $type)[0];
@@ -127,8 +123,6 @@ class Article extends CI_Controller {
 			'status' => $status,
 			'type_id' => $type_id,
 			'typename' => $typename,
-			'show_page' => $show_page,
-			'index_show' => $index_show,
 			'createtime' => date('Y-m-d H:m:s')
 			); 
 
@@ -152,10 +146,6 @@ class Article extends CI_Controller {
 		$source = $this->input->post('source');
 		$status = $this->input->post('status');
 		$status = ($status == 'yes') ? 1 : 0;
-		$show_page = $this->input->post('show_page');
-		$show_page = ($show_page == 'yes') ? 0 : 1;
-		$index_show = $this->input->post('index_show');
-		$index_show = ($index_show== 'yes') ? 1 : 0;
 
 
 		$type_id = $this->input->post('type_id');
@@ -167,18 +157,13 @@ class Article extends CI_Controller {
 			'post_time' => $post_time,
 			'source' => $source,
 			'status' => $status,
-			'show_page' => $show_page,
-			'index_show' => $index_show,
 			'type_id' => $type_id,
 			'createtime' => date('Y-m-d H:m:s')
 			); 
 		$data['article'] = $article;
 		$data['type'] = $type;
 
-		if($show_page == 0)
-			$this->load->view('admin/news_preview', $data);	
-		else
-			$this->load->view('admin/show_preview', $data);	
+		$this->load->view('admin/news_preview', $data);	
 	}
 
 	public function edit( $article_id )
@@ -218,10 +203,6 @@ class Article extends CI_Controller {
 		$source = $this->input->post('source');
 		$status = $this->input->post('status');
 		$status = ($status == 'yes') ? 1 : 0;
-		$show_page = $this->input->post('show_page');
-		$show_page = ($show_page == 'yes') ? 0 : 1;
-		$index_show = $this->input->post('index_show');
-		$index_show = ($index_show== 'yes') ? 1 : 0;
 
 
 		$type = $this->input->post('type_id');
@@ -238,8 +219,6 @@ class Article extends CI_Controller {
 			'status' => $status,
 			'type_id' => $type_id,
 			'typename' => $typename,
-			'show_page' => $show_page,
-			'index_show' => $index_show,
 			); 
 
 		$this->Article_Model->update($news_id, $article);				

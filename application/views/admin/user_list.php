@@ -50,23 +50,23 @@
 										<td>ID</td>
 										<td>名字</td>
 										<td>手机号</td>
-										<td>注册类型</td>
+										<td>性别</td>
 										<td>注册时间</td>
 									</tr>
 								</thead>
 								<tbody>
 							<?php
-								if(!empty($registers))
+								if(!empty($users))
 								{
-									foreach($registers as $reg)
+									foreach($users as $reg)
 									{
 										?>
 									<tr>
 									<td><?php echo $reg['id'];?></td>
 									<td><span style='font-size:16px;'><?php echo $reg['name'];?></span></td>
-									<td><span style='font-size:16px;'><?php echo $reg['phone'];?></span></td>
-									<td><span class="label label-info" style='font-size:16px;'><?php echo $reg['typename'];?></span></td>
-									<td><?php echo $reg['createtime'];?></td>
+									<td><span class="label label-info" style='font-size:16px;'><?php echo $reg['phone'];?></span></td>
+									<td><span  style='font-size:16px;'><?php if($reg['gender'] == 1) echo "男"; else echo "女";?></span></td>
+									<td><?php echo $reg['remark'];?></td>
 									</tr>
 
 										<?php

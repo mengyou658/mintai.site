@@ -60,18 +60,6 @@ foreach($types as $type){
 							<input type="radio" class="input-xlarge-fluid" name="status"  <?php  if(isset($article) && $article['status'] == 0) echo "checked";?>/> 存档	
 							<br/>	
 							<br/>	
-							<label>显示首页</label>
-							<input type="radio" class="input-xlarge-fluid" name="index_show" value="yes" <?php  if(isset($article) && $article['index_show'] == 1) echo "checked";?>/>正常新闻 	
-							<input type="radio" class="input-xlarge-fluid" name="index_show" <?php  if(isset($article) && $article['index_show'] == 0) echo "checked";?>/> 显示首页大标题			
-							<br/>	
-							<br/>	
-
-
-							<label>显示页面</label>
-							<input type="radio" class="input-xlarge-fluid" name="show_page" value="yes"  <?php  if(isset($article) && $article['show_page'] == 0) echo "checked";?>/>正常新闻 	
-							<input type="radio" class="input-xlarge-fluid" name="show_page" value="no"  <?php  if(isset($article) && $article['show_page'] == 1) echo "checked";?>/> 展示页面					
-							<br/>	
-							<br/>	
 
 							<label>标题</label>
 							<input type="text" name="title" class="input-xxlarge-fluid" value="<?php  if(isset($article)) echo $article['title'];?>">

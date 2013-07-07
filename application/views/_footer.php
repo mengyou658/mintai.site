@@ -8,14 +8,14 @@
 			<div class="cf">
 				<img src="/resources/template/images/icon-bank.png" alt="bank" usemap="#Map" />
 				<map name="Map">
-				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-5" coords="11,9,192,69" shape="rect">
-				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-2" coords="260,10,440,70" shape="rect">
-				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-4" coords="514,7,694,67" shape="rect">
-				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-3" coords="774,7,954,67" shape="rect">
-				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-6" coords="10,85,190,146" shape="rect">
-				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-8" coords="258,83,439,143" shape="rect">
-				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-7" coords="514,87,694,147" shape="rect">
-				<area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-9" coords="772,84,954,144" shape="rect">
+				<area target="_blank" href="http://166jin.com/news/xyshow/348" coords="11,9,192,69" shape="rect">
+				<area target="_blank" href="http://166jin.com/news/xyshow/349" coords="260,10,440,70" shape="rect">
+				<area target="_blank" href="http://166jin.com/news/xyshow/350" coords="514,7,694,67" shape="rect">
+				<area target="_blank" href="http://166jin.com/news/xyshow/344" coords="774,7,954,67" shape="rect">
+				<area target="_blank" href="http://166jin.com/news/xyshow/343" coords="10,85,190,146" shape="rect">
+				<area target="_blank" href="http://166jin.com/news/xyshow/346" coords="258,83,439,143" shape="rect">
+				<area target="_blank" href="http://166jin.com/news/xyshow/351" coords="514,87,694,147" shape="rect">
+				<area target="_blank" href="http://166jin.com/news/xyshow/353" coords="772,84,954,144" shape="rect">
 				</map>
 			</div>
 		</div>

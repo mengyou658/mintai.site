@@ -37,7 +37,7 @@ class Register extends CI_Controller {
 
 		$this->Register_Model->save($register);
 		$this->session->set_flashdata('success', '您的信息已经提交，网站工作人员会尽快与您取得联系!');
-		redirect("/item/show/robot#reg");
+		redirect("/item/show/robot_robot#reg");
 	}
 
 	public function tryReg()
@@ -57,7 +57,7 @@ class Register extends CI_Controller {
 
 		$this->Register_Model->save($register);
 		$this->session->set_flashdata('success', '您的信息已经提交，网站工作人员会尽快与您取得联系!');
-		redirect("/item/show/trader");
+		redirect("/item/show/trader_trader");
 
 	}
 
@@ -106,7 +106,7 @@ class Register extends CI_Controller {
 		);
 		$this->Register_Model->saveSim($sim);
 		$this->session->set_flashdata('success', '您的信息已经提交，网站工作人员会尽快与您取得联系!');
-		redirect("/item/show/invest_imitate#reg");
+		redirect("/item/show/guide_imitate#reg");
 	}
 
 	public function subscribeReg()

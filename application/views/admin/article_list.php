@@ -73,8 +73,6 @@
 										<td>发表时间</td>
 										<td>创建人</td>
 										<td>状态</td>
-										<td>页面类型</td>
-										<td>是否首页大标题显示</td>
 									</tr>
 								</thead>
 								<tbody>
@@ -100,8 +98,6 @@
 										<td><?php echo $article['post_time'];?></td>
 										<td>杨鹏</td>
 										<td><?php if($article['status'] == 1 ) echo '<span class="label label-info">已发表</span>'; else echo '存档';?></td>
-										<td><?php if($article['show_page'] == 1 ) echo '显示页面'; else echo '<span class="label label-info">正常新闻</span>';?></td>
-										<td><?php if($article['index_show'] == 0 ) echo '显示'; else echo '<span class="label label-info">不显示</span>';?></td>
 									</tr>
 
 

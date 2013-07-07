@@ -11,6 +11,7 @@
 <link rel="shortcut icon" href="/resources/template/favicon.ico" />
 <link rel="stylesheet" href="/resources/template/css/reset.css" />
 <link rel="stylesheet" href="/resources/template/css/public.css" />
+<link rel="stylesheet" href="/resources/template/css/screen.css" />
 <!--[if IE]>
 <script src="/resources/template/js/ie/html5.js"></script>
 <![endif]-->
@@ -73,6 +74,11 @@ document.onclick = Subnav_close;
 </script>
 </head>
 <style>
+
+.top_img {
+	width:770px;
+	height:123px;
+}
 body {
     background: #FEF9E5 url(/resources/template/images/bg-body.png) repeat-x center 95px;
     color: #2B2B2B;
@@ -122,8 +128,8 @@ body {
     	</div>
         <nav id="nav" class="css3 cf">
         	<ul>
-			<li><a <?php if($curr == "index") echo 'class="acitve"';?> href="/">首 页</a></li>
-				<li><a <?php if($curr == "pro") echo 'class="acitve"';?> href="/item/show/pro_detail">产品介绍</a>
+			<li><a <?php if(isset($curr) && $curr == "index") echo 'class="acitve"';?> href="/">首 页</a></li>
+				<li><a <?php if(isset($curr) && $curr == "pro") echo 'class="acitve"';?> href="/item/show/pro_detail">产品介绍</a>
 					<ul>
 						<li><a href="/item/show/pro_detail">产品详情</a></li>
 						<li><a href="/item/show/pro_features">投资特点</a></li>
@@ -132,16 +138,16 @@ body {
 						<li><a href="/item/show/pro_guarantee">投资者权益保障</a></li>
 					</ul>
         		</li>
-        		<li><a  <?php if($curr == "about") echo 'class="acitve"';?> href="/item/show/about_us">公司资质</a>
+        		<li><a  <?php if(isset($curr) && $curr == "about") echo 'class="acitve"';?> href="/item/show/about_us">公司资质</a>
 					<ul>
 						<li><a href="/item/show/about_us">公司简介</a></li>
 						<li><a target="_blank" href="/item/show/about_advantage">民泰优势</a></li>
 						<li><a href="/item/show/about_license">资质证书</a></li>
-						<li><a href="/item/show/about_news">媒体报道</a></li>
+						<li><a href="/news/media">媒体报道</a></li>
 						<li><a href="/item/show/about_mcx">关于交易所</a></li>
 					</ul>
         		</li>
-        		<li><a  <?php if($curr == "research") echo 'class="acitve"';?> href="/item/show/research_analyst">民泰研究所</a>
+        		<li><a  <?php if(isset($curr) && $curr == "research") echo 'class="acitve"';?> href="/item/show/research_analyst">民泰研究所</a>
 					<ul>
 						<li><a target="_blank" href="/item/show/research_analyst">明星团队</a></li>
 						<li><a href="/news/more/1">原创研究</a></li>
@@ -151,7 +157,7 @@ body {
 						<li><a href="/item/show/research_price">行情中心</a></li>
 					</ul>
         		</li>
-        		<li><a  <?php if($curr == "guide") echo 'class="acitve"';?> href="/item/show/guide_guide">新手指南</a>
+        		<li><a  <?php if(isset($curr) && $curr == "guide") echo 'class="acitve"';?> href="/item/show/guide_guide">新手指南</a>
 					<ul>
 						<li><a href="/item/show/guide_guide">新手入门</a></li>
 						<li><a href="/item/show/guide_variety">开户指南</a></li>
@@ -159,7 +165,7 @@ body {
 						<li><a href="/item/show/guide_imitate">注册模拟帐户</a></li>
 					</ul>
         		</li>
-        		<li><a  <?php if($curr == "xy") echo 'class="acitve"';?> href="/news/morexy/9">贵金属学院</a>
+        		<li><a  <?php if(isset($curr) && $curr == "xy") echo 'class="acitve"';?> href="/news/morexy/9">贵金属学院</a>
 					<ul>
 						<li><a href="/news/morexy/9">投资入门</a></li>
 						<li><a href="/news/morexy/10">投资技巧</a></li>
@@ -167,30 +173,30 @@ body {
 						<li><a href="/news/morexy/12">常见问题</a></li>
 					</ul>
         		</li>
-        		<li><a  <?php if($curr == "sd") echo 'class="acitve"';?> href="/item/show/sd_download">软件下载</a>
+        		<li><a  <?php if(isset($curr) && $curr == "sd") echo 'class="acitve"';?> href="/item/show/sd_download">软件下载</a>
 					<ul>
 						<li><a href="/item/show/sd_download">软件下载</a></li>
 						<li><a href="/item/show/sd_video">软件操作视频</a></li>
 					</ul>
         		</li>
-        		<li><a  <?php if($curr == "app") echo 'class="acitve"';?> target="_blank" href="/item/show/app_ios">手机交易</a>
+        		<li><a  <?php if(isset($curr) && $curr == "app") echo 'class="acitve"';?> target="_blank" href="/item/show/app_ios">手机交易</a>
 					<ul>
 						<li><a target="_blank" href="/item/show/app_ios">IOS版下载</a></li>
 						<li><a target="_blank" href="/item/show/app_android">Android版下载</a></li>
 					</ul>
         		</li>
-        		<li><a  <?php if($curr == "media") echo 'class="acitve"';?> href="/news/media_news">媒体报道</a>
+        		<li><a  <?php if(isset($curr) && $curr == "media") echo 'class="acitve"';?> href="/news/media_news">媒体报道</a>
 					<ul>
 						<li><a href="/news/media_news">媒体报道</a></li>
 					</ul>
         		</li>
-        		<li><a  <?php if($curr == "online") echo 'class="acitve"';?> href="/item/show/online_userform">在线咨询</a>
+        		<li><a  <?php if(isset($curr) && $curr == "online") echo 'class="acitve"';?> href="/item/show/online_userform">在线咨询</a>
 					<ul>
 						<li><a href="/item/show/online_userform">咨询建议</a></li>
 						<li><a href="/item/show/online_account">预约开户</a></li>
 						<li><a href="/item/show/online_variety">开户流程</a></li>
 						<li><a href="/item/show/online_tutor">签约辅导</a></li>
-						<li><a href="/item/show/online_faq">常见问题</a></li>
+						<li><a href="/news/wt_news">常见问题</a></li>
 					</ul>
         		</li>
         	</ul>

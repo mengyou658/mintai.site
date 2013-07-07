@@ -10,7 +10,7 @@
 			?>				
 			<section class="grid-4 fr">
 				<div class="subbanner">
-					<img src="/resources/template/images/software.jpg" alt="软件下载" />
+					<img class="top_img" src="/resources/template/images/ruanjianxiazai.jpg" alt="软件下载" />
 				</div>
 
 				<div class="crumbs">

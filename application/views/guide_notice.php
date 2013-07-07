@@ -19,7 +19,7 @@ $(function() {
 		?>				
 			<section class="grid-4 fr">
 				<div class="subbanner">
-					<img src="/resources/template/images/tutorial.jpg" alt="新手指南" />
+					<img class="top_img" src="/resources/template/images/xinshouzhinan.jpg" alt="新手指南" />
 				</div>
 
 				<div class="crumbs">

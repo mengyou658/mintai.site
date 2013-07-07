@@ -10,11 +10,11 @@
 		?>				
 			<section class="grid-4 fr">
 				<div class="subbanner">
-					<img src="/resources/template/images/pro.jpg" alt="产品介绍" />
+					<img class="top_img" src="/resources/template/images/chanpingjieshao.jpg" alt="产品介绍" />
 				</div>
 
 				<div class="crumbs">
-	            	本页位置：<a href="index.html">首页</a><span>&gt;&gt;</span><a href="products.html">产品介绍</a><span>&gt;&gt;</span>产品详情 
+	            	本页位置：<a href="/">首页</a><span>&gt;&gt;</span><a href="/item/show/pro_detail">产品介绍</a><span>&gt;&gt;</span>产品详情 
 	            </div>
 
 	            <div class="details-wrap">

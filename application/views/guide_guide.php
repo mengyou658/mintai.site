@@ -7,7 +7,7 @@
 			?>
 			<section class="grid-4 fr">
 				<div class="subbanner">
-					<img src="/resources/template/images/tutorial.jpg" alt="新手指南" />
+					<img class="top_img" src="/resources/template/images/xinshouzhinan.jpg" alt="新手指南" />
 				</div>
 
 				<div class="crumbs">
@@ -25,12 +25,12 @@
 		            		<dt><strong>第二步：注册模拟帐户，无风险练习交易</strong></dt>
 		            		<dd>
 		            			<p>注册模拟帐户，获得专家的系统指导，并利用模拟帐户，在真实市场中无风险练习交易。</p>
-		            			<p><input type="button" class="btn-submit" value="申请模拟账号" onclick="window.location.href='/item/show/invest_imitate'"/></p>
+		            			<p><input type="button" class="btn-submit" value="申请模拟账号" onclick="window.location.href='/item/show/guide_imitate'"/></p>
 		            		</dd>
 		            		<dt><strong>第三步：开设真实帐户，进行实战！</strong></dt>
 		            		<dd>
 		            			<p>根据自己的交易风格、经验，开立真实帐户。</p>
-		            			<p><input type="button" class="btn-submit" value="预约开户" onclick="window.location.href='/user/account'"/></p>
+		            			<p><input type="button" class="btn-submit" value="预约开户" onclick="window.location.href='/item/show/online_account'"/></p>
 		            		</dd>
 		            		<dd>学习时遇到问题？请在第一时间联系我们的24小时在线客服！</dd>
 		            		<dd>客户服务电话：<strong>400-0175-166</strong></dd>

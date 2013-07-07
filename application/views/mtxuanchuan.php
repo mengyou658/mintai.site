@@ -22,8 +22,7 @@ ul li{ list-style:none; }
 }
 #banner #viewline img {   
 	width: 950px;
-	height: 536px;
-
+	height: 574px;
 }
 #banner #left-arrow, #banner #right-arrow {
 	position: absolute;
@@ -91,7 +90,20 @@ $(document).ready(function()
 		    <div><img src="/resources/template/images/vi/11.jpg" alt="民泰贵金属电子宣传册" title="民泰贵金属电子宣传册" /></div>
 		    <div><img src="/resources/template/images/vi/12.jpg" alt="民泰贵金属电子宣传册" title="民泰贵金属电子宣传册" /></div>
 		    <div><img src="/resources/template/images/vi/13.jpg" alt="民泰贵金属电子宣传册" title="民泰贵金属电子宣传册" /></div>
-		    <div><img src="/resources/template/images/vi/14.jpg" alt="民泰贵金属电子宣传册" title="民泰贵金属电子宣传册" /></div>
+		    <div><img src="/resources/template/images/vi/15.jpg" alt="民泰贵金属电子宣传册" title="民泰贵金属电子宣传册" /></div>
+		    <div><img src="/resources/template/images/vi/16.jpg" alt="民泰贵金属电子宣传册" title="民泰贵金属电子宣传册" /></div>
+		    <div><img src="/resources/template/images/vi/17.jpg" alt="民泰贵金属电子宣传册" title="民泰贵金属电子宣传册" /></div>
+		    <div><img src="/resources/template/images/vi/18.jpg" alt="民泰贵金属电子宣传册" title="民泰贵金属电子宣传册" /></div>
+		    <div><img src="/resources/template/images/vi/19.jpg" alt="民泰贵金属电子宣传册" title="民泰贵金属电子宣传册" /></div>
+		    <div><img src="/resources/template/images/vi/20.jpg" alt="民泰贵金属电子宣传册" title="民泰贵金属电子宣传册" /></div>
+	    <div><img src="/resources/template/images/vi/21.jpg" alt="民泰贵金属电子宣传册" title="民泰贵金属电子宣传册" /></div>
+		    <div><img src="/resources/template/images/vi/22.jpg" alt="民泰贵金属电子宣传册" title="民泰贵金属电子宣传册" /></div>
+		    <div><img src="/resources/template/images/vi/23.jpg" alt="民泰贵金属电子宣传册" title="民泰贵金属电子宣传册" /></div>
+		    <div><img src="/resources/template/images/vi/24.jpg" alt="民泰贵金属电子宣传册" title="民泰贵金属电子宣传册" /></div>
+		    <div><img src="/resources/template/images/vi/25.jpg" alt="民泰贵金属电子宣传册" title="民泰贵金属电子宣传册" /></div>
+		    <div><img src="/resources/template/images/vi/26.jpg" alt="民泰贵金属电子宣传册" title="民泰贵金属电子宣传册" /></div>
+		    <div><img src="/resources/template/images/vi/27.jpg" alt="民泰贵金属电子宣传册" title="民泰贵金属电子宣传册" /></div>
+		    <div><img src="/resources/template/images/vi/28.jpg" alt="民泰贵金属电子宣传册" title="民泰贵金属电子宣传册" /></div>
 		</div>
 	</div>
 </div>

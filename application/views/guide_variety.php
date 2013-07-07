@@ -15,7 +15,7 @@
 				
 			<section class="grid-4 fr">
 				<div class="subbanner">
-					<img src="/resources/template/images/tutorial.jpg" alt="新手指南" />
+					<img class="top_img" src="/resources/template/images/xinshouzhinan.jpg" alt="新手指南" />
 				</div>
 
 				<div class="crumbs">
@@ -34,7 +34,7 @@
 								<li><a href="#">禁入规定</a></li>
 								<li class="glast"><a href="#">销户流程</a></li>
 							</ul>
-							<a class="gone" target="_blank" href="/item/show/invest_imitate">注册模拟账户</a>
+							<a class="gone" target="_blank" href="/item/show/guide_imitate">注册模拟账户</a>
 							<div class="ui-tabs-panes">
 								<div class="ui-tabs-panes-wrap">
 									<table width="100%">

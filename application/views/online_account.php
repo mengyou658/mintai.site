@@ -10,7 +10,7 @@
 			?>				
 			<section class="grid-4 fr">
 				<div class="subbanner">
-					<img src="/resources/template/images/online.jpg" alt="在线咨询" />
+					<img class="top_img" src="/resources/template/images/zaixianzixun.jpg" alt="在线咨询" />
 				</div>
 
 				<div class="crumbs">

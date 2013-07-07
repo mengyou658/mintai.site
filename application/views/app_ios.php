@@ -72,8 +72,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 </table>
 <table class="auto" width="984">
   <tr>
-    <td height="80" align="center" style="color:#666; line-height:20px;">Copyright(C)2011-2012. Mintai166.com. ALL RIGHT RESERVED.<br />
-    <a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备12002745</a></td>
+    <td height="80" align="center" style="color:#666; line-height:20px;">Copyright(C)2011-2012. 166jin.com. ALL RIGHT RESERVED.<br />
+    <a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备13028347号-1</a></td>
   </tr>
 </table>
 </body>

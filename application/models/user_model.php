@@ -13,10 +13,20 @@ class User_Model extends CI_Model {
 		$this->db->insert('user_apply', $user);	
 	}
 
-	public function findAll()
+
+	function findAllSub($offset = 0, $limit = 10) 
 	{
-		$users = $this->db->get('user_apply');	
-		return $users->result_array();
+		$this->db->order_by('id', 'DESC');
+		$query = $this->db->get("user_apply", $limit, $offset);
+		return $query->result_array();
 	}
+
+	function findCountSub() 
+	{
+		$sql = "select count(1) as count from user_apply";	
+		$query = $this->db->query($sql);
+		return $query->result_array();
+	}
+
 
 }

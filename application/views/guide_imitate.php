@@ -7,7 +7,7 @@
 		?>				
 			<section class="grid-4 fr">
 				<div class="subbanner">
-					<img src="/resources/template/images/school.jpg" alt="投资入门" />
+					<img class="top_img" src="/resources/template/images/xinshouzhinan.jpg" alt="投资入门" />
 				</div>
 
 				<div class="crumbs">
@@ -66,8 +66,8 @@
 							</tr>
 						</tbody>
 					</table>
-					<p><em class="link-blue"><a target="_blank" href="svideo.html">点击观看交易系统视频教程</a></em></p>
- 					<p class="mb-20"><em class="link-blue"><a target="_blank" href="sdownload.html">点击下载交易系统以及行情软件</a></em></p>
+					<p><em class="link-blue"><a target="_blank" href="/item/show/sd_video">点击观看交易系统视频教程</a></em></p>
+ 					<p class="mb-20"><em class="link-blue"><a target="_blank" href="/item/show/sd_download">点击下载交易系统以及行情软件</a></em></p>
 	            	<dl>
 	            		<dt><strong>服务及隐私条款：</strong></dt>
 	            		<dd>

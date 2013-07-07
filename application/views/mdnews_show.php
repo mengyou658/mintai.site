@@ -23,7 +23,7 @@
 				
 			<section class="grid-4 fr">
 				<div class="subbanner">
-					<img src="/resources/template/images/institute.jpg" alt="媒体报道" />
+					<img class="top_img" src="/resources/template/images/meitibaodao.jpg" alt="媒体报道" />
 				</div>
 
 				<div class="crumbs">
@@ -73,7 +73,7 @@
 						if(isset($pre))
 						{
 							?>
-								<p>上一篇：<a href="/news/show/<?php echo $pre['id'];?>"><?php echo $pre['title']?></a></p>
+								<p>上一篇：<a href="/news/mdshow/<?php echo $pre['id'];?>"><?php echo $pre['title']?></a></p>
 
 						<?php
 						}
@@ -82,7 +82,7 @@
 						if(isset($next))
 						{
 							?>
-								<p>下一篇：<a href="/news/show/<?php echo $next['id'];?>"><?php echo $next['title']?></a></p>
+								<p>下一篇：<a href="/news/mdshow/<?php echo $next['id'];?>"><?php echo $next['title']?></a></p>
 
 						<?php
 						}

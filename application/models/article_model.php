@@ -27,11 +27,13 @@ class Article_Model extends CI_Model {
 
 	function findById($id)
 	{
-		$next_data = $this->db->query('select id, title from article where id >'.$id.' order by id asc limit 1');
 		$cur_data = $this->db->query('select * from article where id =' . $id);
-		$pre_data = $this->db->query('select id, title from article where id <'.$id.' order by id desc limit 1');
-		$next = $next_data->result_array();
 		$curr = $cur_data->result_array();
+
+		$type_id = $curr[0]['type_id'];
+		$next_data = $this->db->query('select id, title from article where id >'.$id.' and type_id = '.$type_id.' order by id asc limit 1');
+		$pre_data = $this->db->query('select id, title from article where id <'.$id.' and type_id = '.$type_id.' order by id desc limit 1');
+		$next = $next_data->result_array();
 		$pre = $pre_data->result_array();
 		$data = array();
 		if(!empty($next)) $data['next'] = $next[0];
@@ -42,25 +44,9 @@ class Article_Model extends CI_Model {
 
 	function findByType($typeId, $limit = 6)
 	{
-		$query = $this->db->query("select * from article where type_id = " . $typeId . "  and index_show = 1 and status = 1 order by id desc limit " . $limit);
+		$query = $this->db->query("select * from article where type_id = " . $typeId . " and status = 1 order by id desc limit " . $limit);
 		return $query->result_array();
 	}
-
-	function findByTypeIndex($typeId)
-	{
-		$sql = "select * from article where type_id = " . $typeId . " and index_show = 0 and status = 1 order by id desc limit 1";
-		$query = $this->db->query($sql);
-		$tmp_arr = $query->result_array();
-		if(!empty($tmp_arr))
-		{
-			return $tmp_arr[0];
-		}
-		else
-		{
-			return array();	
-		}
-	}
-
 
 	function findAll($type_id = 0, $offset = 0, $limit = 10) 
 	{

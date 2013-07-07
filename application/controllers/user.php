@@ -33,7 +33,7 @@ class User extends CI_Controller {
 			); 
 		$this->User_Model->save($user);				
 		$this->session->set_flashdata('add_success', '申请成功，随后客服人员会跟您取得联系!');	
-		redirect('/user/form/#qq_online');
+		redirect('/item/show/online_userform/#qq_online');
 	}
 
 	public function edit()

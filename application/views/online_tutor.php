@@ -11,7 +11,7 @@
 				
 			<section class="grid-4 fr">
 				<div class="subbanner">
-					<img src="/resources/template/images/tutorial.jpg" alt="新手指南" />
+					<img class="top_img" src="/resources/template/images/zaixianzixun.jpg" alt="在线咨询" />
 				</div>
 
 				<div class="crumbs">
@@ -485,14 +485,12 @@
 						                <dl>
 						                    <dt>华夏银行申请表1</dt>
 						                    <dd>
-						                        <a href="/resources/template/images/contract/hx/hx_1.jpg" title="华夏银行申请表1" class="group1 cboxElement">
-						                            <img src="/resources/template/images/contract/hx/hx_1.jpg" alt="华夏银行申请表1"></a></dd>
+						                        <a href="/resources/template/images/contract/hx/hx_1.jpg" title="华夏银行申请表1" class="group1 cboxElement"><img src="/resources/template/images/contract/hx/hx_1.jpg" alt="华夏银行申请表1"></a></dd>
 						                </dl>
 						                <dl>
 						                    <dt>华夏银行申请表2</dt>
 						                    <dd>
-						                        <a href="/resources/template/images/contract/hx/hx_2.jpg" title="华夏银行申请表2" class="group1 cboxElement">
-						                            <img src="/resources/template/images/contract/hx/hx_2.jpg" alt="华夏银行申请表2"></a></dd>
+						                        <a href="/resources/template/images/contract/hx/hx_2.jpg" title="华夏银行申请表2" class="group1 cboxElement"><img src="/resources/template/images/contract/hx/hx_2.jpg" alt="华夏银行申请表2"></a></dd>
 						                </dl>
 					                </div>
 					                <h2 class="tutor-title2"><em class="link-blue"><a href="#">《华夏银行B2B大宗三方存管模式交易商使用手册》</a></em></h2>
@@ -522,6 +520,11 @@
 		</div>	
 	</div><!-- //container -->
 </div><!-- //main -->
+<script>
+$(function() {
+	$(".ui-tabs").tabs(".ui-tabs-panes > div");
+});
+</script>
 <?php
 	$this->load->view("_footer");
 ?>

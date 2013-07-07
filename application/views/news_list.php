@@ -31,52 +31,54 @@
 				
 			<section class="grid-4 fr">
 				<div class="subbanner">
-					<img src="/resources/template/images/online.jpg" alt="在线咨询" />
+					<img class="top_img" src="/resources/template/images/mintaiyanjiusuo.jpg" alt="在线咨询" />
 				</div>
 
 				<div class="crumbs">
-				本页位置：<a href="index.html">首页</a><span>&gt;&gt;</span><a href="/news">媒体报道</a><span>&gt;&gt;</span><?php echo $types['name'];?>
+				本页位置：<a href="/">首页</a><span>&gt;&gt;</span><a href="/item/show/research_analyst">民泰研究所</a><span>&gt;&gt;</span><?php echo $types['name'];?>
 	            </div>
 
 	            <div class="mod3">
 					<div class="hd3 cf">
-						<h2 class="fl">媒体报道</h2>
+					<h2 class="fl"><?php echo $types['name'];?></h2>
 					</div>
 			    	<div class="sub-news new-cont bd cf">
 			    		<div class="new-zy">
 			    			<div class="new-topwrap cf">
+								<?php
+									$i=0;
+									foreach($list as $news)
+									{
+										if($i == 0 )
+										{
+										?>
 				    			<div class="pic-news">
 				    				<img src="/resources/template/images/pic-news2.jpg" alt="pic-news2" />
 				    			</div>
 				    			<div class="top-news">
-						          	<h2><a title="黄金价格本周总结以及下周走势预测" href="/news/show/67">黄金价格本周总结以及下周走势预测</a></h2>
-									<div class="new-zycont">本周国际现货黄金以1363.46美元开盘，黄金价格最高上试1414.22美元，最低下探1338.04美元，现货金报收1386.15美元，较上个交易周上涨26.21美元，涨幅1.93%，周K线呈现一根下行抵抗的小阳线。本周数据面没有多少意外，但黄金价格受消息面影响明显。从总体数据来看，美国经济数据趋于向好... <span>[2013-5-27 9:59:24]</span> <a class="gary" title="晚评：伯南克讲话定调 黄金白银或重拾跌势" href="news1.html">全文</a> 
+								<h2><a title="<?php echo $news['title'];?>" href="/news/show/<?php echo $news['id'];?>"><?php echo $news['title'];?></a></h2>
+								<div class="new-zycont"><?php echo mb_strimwidth($news['outline'], 0, 265, "...", "utf8");?><span>[2013-5-27 9:59:24]</span> <a class="gary" title="<?php echo $news['title'];?>" href="/news/show/<?php echo $news['id'];?>">全文</a> 
 						            </div>
 					            </div>
 				            </div>
 				            <ul style="margin-top:6px;" class="news-list">
-								<?php
-									foreach($list as $news)
-									{
-										?>
-											<li><span><?php echo $news['post_time'];?></span><a title="<?php echo $news['title'];?>" target="_blank" href="/news/show/<?php echo $news['id'];?>"><?php echo $news['title'];?></a></li>
 										<?php
+										}
+										else
+										{
+											?>
+											<li><span><?php echo $news['post_time'];?></span><a title="<?php echo $news['title'];?>" target="_blank" href="/news/show/<?php echo $news['id'];?>"><?php echo $news['title'];?></a></li>
+											<?php
+										}
+										$i++;
 									}
 								?>
 				          	</ul>
 			          	</div>
 
 			          	<div class="paging">
-							<!--
 							<?php echo $this->pagination->create_links();?>
-							-->
-			          		<a href="#">首页</a>
-			          		<a class="on" href="#">1</a>
-			          		<a href="#">2</a>
-			          		<a href="#">3</a>
-			          		<a href="#">4</a>
-			          		<a href="#">尾页</a>
-			          		<span>共16条</span>
+							<span>共<?php echo $count;?>条</span>
 			          	</div>
 
 			    	</div>

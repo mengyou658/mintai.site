@@ -11,7 +11,7 @@
 				
 			<section class="grid-4 fr">
 				<div class="subbanner">
-					<img src="/resources/template/images/pro.jpg" alt="产品介绍" />
+					<img class="top_img" src="/resources/template/images/chanpingjieshao.jpg" alt="产品介绍" />
 				</div>
 
 				<div class="crumbs">

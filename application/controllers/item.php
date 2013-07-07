@@ -76,16 +76,27 @@ class Item extends CI_Controller {
 
 		foreach($items as $key => $value)
 		{
-			list($prefix, $name) = explode("_", $item);
-			if($prefix == $key)
+			if(strstr($item, "_"))
 			{
-				$data['items'] = $value;
-				$data['curr'] = $key;
-				$data['curr_sub'] = $item;
-				$data['curr_name'] = $item_name[$key];
+				list($prefix, $name) = explode("_", $item);
+				if($prefix == $key)
+				{
+					$data['items'] = $value;
+					$data['curr'] = $key;
+					$data['curr_sub'] = $item;
+					$data['curr_name'] = $item_name[$key];
+				}
+
+				if($item =="about_news")
+					redirect("/news/media");
+				if($item =="online_faq")
+					redirect("/news/wt_news");
+				if($item =="pro_case")
+					redirect("/news/case_news");
+
+
 			}
-			if($name == "news")
-				redirect("/news/media");
+
 		}
 
 		$this->load->view($item, $data);	

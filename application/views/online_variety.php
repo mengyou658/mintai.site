@@ -9,7 +9,7 @@
 				
 			<section class="grid-4 fr">
 				<div class="subbanner">
-					<img src="/resources/template/images/pro.jpg" alt="产品介绍" />
+					<img class="top_img" src="/resources/template/images/zaixianzixun.jpg" alt="在线咨询" />
 				</div>
 
 				<div class="crumbs">

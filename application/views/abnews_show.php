@@ -17,9 +17,9 @@
 				<div class="sidebar-menu">
 					<ul>
 						<li class="ksdh1"><a href="/item/show/online_account">预约开户</a></li>
-						<li class="ksdh2"><a href="/user/form">在线咨询</a></li>
-						<li class="ksdh3"><a href="/item/show/invest_imitate">注册模拟账户</a></li>
-						<li class="ksdh4"><a href="/item/show/sdownload">软件下载</a></li>
+						<li class="ksdh2"><a href="/item/show/online_userform">在线咨询</a></li>
+						<li class="ksdh3"><a href="/item/show/guide_imitate">注册模拟账户</a></li>
+						<li class="ksdh4"><a href="/item/show/sd_download">软件下载</a></li>
 						<li class="ksdh5"><a href="/item/show/app_ios">手机交易</a></li>
 					</ul>
 			    </div>
@@ -27,7 +27,7 @@
 				
 			<section class="grid-4 fr">
 				<div class="subbanner">
-					<img src="/resources/template/images/institute.jpg" alt="媒体报道" />
+					<img class="top_img" src="/resources/template/images/gongsizizhi.jpg" alt="媒体报道" />
 				</div>
 
 				<div class="crumbs">
@@ -77,7 +77,7 @@
 						if(isset($pre))
 						{
 							?>
-								<p>上一篇：<a href="/news/show/<?php echo $pre['id'];?>"><?php echo $pre['title']?></a></p>
+								<p>上一篇：<a href="/news/abshow/<?php echo $pre['id'];?>"><?php echo $pre['title']?></a></p>
 
 						<?php
 						}
@@ -86,7 +86,7 @@
 						if(isset($next))
 						{
 							?>
-								<p>下一篇：<a href="/news/show/<?php echo $next['id'];?>"><?php echo $next['title']?></a></p>
+								<p>下一篇：<a href="/news/abshow/<?php echo $next['id'];?>"><?php echo $next['title']?></a></p>
 
 						<?php
 						}

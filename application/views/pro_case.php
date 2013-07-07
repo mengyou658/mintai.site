@@ -4,13 +4,30 @@
 <div class="main-wrap wrapper cf">
 	<div id="container" class="gridsystem cf">
 		<div class="container-wrap cf">
-
-			<?php
-				$this->load->view("_left");
-			?>				
+			<section class="grid-1 fl">
+				<div class="topmenu">
+					<dl>
+						<dt>公司资质</dt>
+						<dd><a href="/item/show/pro_detail">产品详情</a></dd>
+						<dd><a href="/item/show/pro_features">投资特点</a></dd>
+						<dd><a href="/item/show/pro_trade">交易细则</a></dd>
+						<dd class="active"><a href="/news/case_news">投资案例</a></dd>
+						<dd><a href="/item/show/pro_guarantee">投资者权益保障</a></dd>
+					</dl>
+				</div>
+				<div class="sidebar-menu">
+					<ul>
+						<li class="ksdh1"><a href="/item/show/online_account">预约开户</a></li>
+						<li class="ksdh2"><a href="/item/show/online_userform">在线咨询</a></li>
+						<li class="ksdh3"><a href="/item/show/guide_imitate">注册模拟账户</a></li>
+						<li class="ksdh4"><a href="/item/show/sd_download">软件下载</a></li>
+						<li class="ksdh5"><a href="/item/show/app_ios">手机交易</a></li>
+					</ul>
+			    </div>
+			</section>
 			<section class="grid-4 fr">
 				<div class="subbanner">
-					<img src="/resources/template/images/pro.jpg" alt="产品介绍" />
+					<img class="top_img" src="/resources/template/images/chanpingjieshao.jpg" alt="产品介绍" />
 				</div>
 
 				<div class="crumbs">
@@ -62,16 +79,15 @@
 						</ul>
 						<div class="sub-news">
 							<ul class="news-list">
-				          		<li><span>2013-5-27 9:59:24</span><a title="恭喜实盘客户刘先生QE3一夜斩获30万！" target="_blank" href="#">恭喜实盘客户刘先生QE3一夜斩获30万！</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="恭喜杨建松先生不到2个月实现翻番" target="_blank" href="#">恭喜杨建松先生不到2个月实现翻番</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="恭喜实盘客户刘先生QE3一夜斩获30万！" target="_blank" href="#">恭喜实盘客户刘先生QE3一夜斩获30万！</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="恭喜杨建松先生不到2个月实现翻番" target="_blank" href="#">恭喜杨建松先生不到2个月实现翻番</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="恭喜实盘客户刘先生QE3一夜斩获30万！" target="_blank" href="#">恭喜实盘客户刘先生QE3一夜斩获30万！</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="恭喜杨建松先生不到2个月实现翻番" target="_blank" href="#">恭喜杨建松先生不到2个月实现翻番</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="恭喜实盘客户刘先生QE3一夜斩获30万！" target="_blank" href="#">恭喜实盘客户刘先生QE3一夜斩获30万！</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="恭喜杨建松先生不到2个月实现翻番" target="_blank" href="#">恭喜杨建松先生不到2个月实现翻番</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="恭喜实盘客户刘先生QE3一夜斩获30万！" target="_blank" href="#">恭喜实盘客户刘先生QE3一夜斩获30万！</a></li>
-				          		<li><span>2013-5-27 9:59:24</span><a title="恭喜杨建松先生不到2个月实现翻番" target="_blank" href="#">恭喜杨建松先生不到2个月实现翻番</a></li>
+							<?php
+								if(!empty($articles))
+								{
+									foreach($articles as $article)
+									?>
+									<li><span>2013-5-27 9:59:24</span><a title="<?php echo $article['title']?>" target="_blank" href="/news/caseshow/<?php echo $article['id'];?>"><?php echo $article['title'];?></a></li>
+									<?php
+								}
+							?>
 				          	</ul>
 			          	</div>
 		            </div>

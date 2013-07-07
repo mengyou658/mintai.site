@@ -46,7 +46,14 @@ $route['admin/signin_do'] = "admin/welcome/signin_do";
 $route['admin/signout'] = "admin/welcome/signout";
 $route['WEB/MobileApp_android.html'] = "item/show/app_android";
 $route['WEB/MobileApp_ios.html'] = "item/show/app_ios";
-$route['web/pages/cpmm/Default.aspx'] = "item/show/trader";
+$route['web/pages/cpmm/Default.aspx'] = "item/show/trader_trader";
+
+//$route['WEB/ArticleShow.aspx?ID=(:num)'] = "WEB/ArticleShow/$1";
+//$route['WEB/ArticleShow.aspx?ID=11903'] = "news/xyshow/352";
+//$route['WEB/ArticleShow.aspx?ID=110907'] = "news/xyshow/354";
+//$route['WEB/ArticleShow.aspx?ID=714'] = "news/xyshow/345";
+//$route['WEB/ArticleShow.aspx?ID=1936'] = "news/xyshow/342";
+//$route['web/Deal.aspx'] = "http://www.mintai166.com/web/Deal.aspx";
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
