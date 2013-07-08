@@ -842,10 +842,10 @@
 								<div class="item">
 									<dl>
 								       <dd>
-										   <span class="dd-img"><a target="_blank" href="/news/show/226" title="开户须知视频"><img src="/resources/template/images/mtkaihu.jpg" alt="开户须知视频" title="开户须知视频" /></a></span>
+										   <span class="dd-img"><a target="_blank" href="/news/mdshow/229" title="开户须知视频"><img src="/resources/template/images/mtkaihu.jpg" alt="开户须知视频" title="开户须知视频" /></a></span>
 									    </dd>
 									    <dt>
-											<a target="_blank" href="/news/show/226" title="开户须知视频"><span class="l_video">开户须知视频</span></a>
+											<a target="_blank" href="/news/mdshow/229" title="开户须知视频"><span class="l_video">开户须知视频</span></a>
 									    </dt>
 							        </dl>									
 								</div>

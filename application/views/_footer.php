@@ -107,9 +107,9 @@
 	<div id="onLineService" class="service-box-list">
 		<dl>
 			<dt class="pngfix">在线咨询</dt>
-			<dd><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=123456780&amp;site=qq&amp;menu=yes" target="_blank"><img border="0" title="点击这里给我发消息" alt="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:12345678:51" /></a></dd>
-			<dd><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=123456780&amp;site=qq&amp;menu=yes" target="_blank"><img border="0" title="点击这里给我发消息" alt="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:12345678:51" /></a></dd>
-			<dd><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=123456780&amp;site=qq&amp;menu=yes" target="_blank"><img border="0" title="点击这里给我发消息" alt="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:12345678:51" /></a></dd>
+			<dd><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2355428577&amp;site=qq&amp;menu=yes" target="_blank"><img border="0" title="点击这里给我发消息" alt="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:12345678:51" /></a></dd>
+			<dd><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2355428533&amp;site=qq&amp;menu=yes" target="_blank"><img border="0" title="点击这里给我发消息" alt="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:12345678:51" /></a></dd>
+			<dd><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2355428534&amp;site=qq&amp;menu=yes" target="_blank"><img border="0" title="点击这里给我发消息" alt="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:12345678:51" /></a></dd>
 		</ul>
 	</div>
 	<a id="serviceBtn" class="service-box-btn" href="javascript:void(0);" style="display:block;">在线客服</a>
