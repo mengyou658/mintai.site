@@ -119,7 +119,7 @@ a:hover{color:red; text-decoration:underline;}
          <td style="padding:10px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
            <tr>
 			<a name="lina"></a>
-             <td width="230" style="padding:5px; background:#F8EBB1;"><img src="/resources/template/images/analyze_1.jpg" width="230" height="175" /></td>
+             <td width="230" style="padding:5px; background:#F8EBB1;"><img src="/resources/template/images/wangna.jpg" width="230" height="175" /></td>
              <td width="10">&nbsp;</td>
              <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                <tr>
@@ -137,7 +137,7 @@ a:hover{color:red; text-decoration:underline;}
            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:10px;">
              <tr>
 				<a name="wangshaixu"></a>
-               <td width="230" style="padding:5px; background:#F8EBB1;"><img src="/resources/template/images/analyze_2.jpg" width="230" height="175" /></td>
+               <td width="230" style="padding:5px; background:#F8EBB1;"><img src="/resources/template/images/wangsz_2.jpg" width="230" height="175" /></td>
                <td width="10">&nbsp;</td>
                <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                  <tr>

@@ -4,8 +4,8 @@
 				<div class="widget_container">
 					<div class="well nomargin">
 						<ul class="breadcrumbs-custom in-well">
-							<li><a href="javascript:void(0);">注册管理</a></li>
-							<li class="active">注册列表</li>
+							<li><a href="javascript:void(0);">总揽</a></li>
+							<li class="active">数据统计</li>
 						</ul>
 					</div>
 				</div>	
@@ -16,29 +16,18 @@
 							<div class="navbar navbar-static navbar_as_heading">
 								<div class="navbar-inner">
 									<div class="container" style="width: auto;">
-										<a class="brand">注册列表</a>
+										<a class="brand">统计列表</a>
 									</div>
 								</div>
 							</div>
 												
 							<div class="subnav nobg">
 								<form action="/index.php" method="get">
-								<div class="span2">
-									<select name="type" id="cat" class="postform">
-									<option value='0' <?php if($type_id == 0) echo "selected";?>>全部</option>
-									<option value='1' <?php if($type_id == 1) echo "selected";?>>机器人</option>
-									<option value='2' <?php if($type_id == 2) echo "selected";?>>BS指标</option>
-									<option value='3' <?php if($type_id == 3) echo "selected";?>> 百万实盘 </option>
-									<option value='4' <?php if($type_id == 3) echo "selected";?>>银如意</option>
-									</select>
-								</div>
 								<div class="span1">
 								<input type="hidden" name="d" value="admin">
 								<input type="hidden" name="c" value="register">
 								<input type="hidden" name="m" value="index">
 								<input type="hidden" name="per_page" value="1">
-
-									<button type="submit" class="btn btn-small btn-duadua">搜索</button>
 								</div>
 								<div class="span2">
 								</div>
@@ -60,32 +49,30 @@
 							<table class="table smallfont">
 								<thead>
 									<tr>
-										<td>ID</td>
-										<td>名字</td>
-										<td>手机号</td>
-										<td>注册类型</td>
-										<td>注册时间</td>
-										<td>来源</td>
-										<td>来源网站</td>
-										<td>来源ip</td>
+										<td>id</td>
+										<td>日期</td>
+										<td>类型</td>
+										<td>pre_refer</td>
+										<td>refer</td>
+										<td>注册数</td>
+										<td>点击数</td>
 									</tr>
 								</thead>
 								<tbody>
 							<?php
-								if(!empty($registers))
+								if(!empty($partner))
 								{
-									foreach($registers as $reg)
+									foreach($partner as $reg)
 									{
 										?>
 									<tr>
 									<td><?php echo $reg['id'];?></td>
-									<td><?php echo $reg['name'];?></td>
-									<td><?php echo $reg['phone'];?></td>
-									<td><span class="label label-info"><?php echo $reg['typename'];?></td>
 									<td><?php echo $reg['createtime'];?></td>
+									<td><span class="label label-info"><?php if($reg['type'] == 'mintai') {echo "银如意";} if($reg['type'] == 'robot_robot') {echo " 机器人喊单";} if($reg['type'] == 'trader_master') {echo "模拟帐户";} if($reg['type'] == 'trader_trader') {echo "BS指标";}?></span></td>
+									<td><?php echo $reg['pre_refer'];?></td>
 									<td><?php echo $reg['refer'];?></td>
-									<td><?php echo $reg['host_refer'];?></td>
-									<td><?php echo $reg['ip'];?></td>
+									<td><span class="label label-info"><?php echo $reg['register_count'];?></span></td>
+									<td><span class="label label-info"><?php echo $reg['count'];?></span></td>
 									</tr>
 
 										<?php

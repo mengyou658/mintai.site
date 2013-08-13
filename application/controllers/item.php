@@ -5,6 +5,7 @@ class Item extends CI_Controller {
 	function __construct()
 	{
 		parent::__construct();	
+		$this->load->model("Partner_Model");
 	}
 
 	public function show($item)
@@ -55,6 +56,13 @@ class Item extends CI_Controller {
 			"online_faq" => "常见问题",
 		);
 
+		$mintai = array(
+			"mintai_important" => "重要公告",
+			"mintai_mianze" => "免责声明",
+			"mintai_contact" => "联系我们",
+			"mintai_secret" => "隐私保护条款"
+			);
+
 		$items = array(
 			"pro" => $pro,
 			"about" => $about,
@@ -93,11 +101,86 @@ class Item extends CI_Controller {
 					redirect("/news/wt_news");
 				if($item =="pro_case")
 					redirect("/news/case_news");
+				if($item =="mintai_important")
+					redirect("/news/important_news");
+				if($item =="mintai_mianze")
+					redirect("/news/mintai_show/387");
+				if($item =="mintai_contact")
+					redirect("/news/mintai_show/388");
+				if($item =="mintai_secret")
+					redirect("/news/mintai_show/389");
+
+				if($item == "guide_notice")
+				{
+					$data['t1'] = $this->input->get("t1");
+					$data['t2'] = $this->input->get("t2");
+				}
 
 
 			}
 
 		}
+
+		if($item == "trader_trader" || $item == "robot_robot" || $item == "trader_master")
+				{
+					$refer = $this->input->get("refer");
+					if(!empty($_SERVER['HTTP_REFERER']))
+					{
+						$host_refer = $_SERVER['HTTP_REFERER'];
+					}
+					if(!empty($refer))
+					{
+						$data['refer'] = $refer;
+					}
+					else
+					{
+						$data['refer'] = "";
+					}
+
+					if(!empty($host_refer))
+					{
+						$data['host_refer'] = $host_refer;	
+					}
+					else
+					{
+						$data['host_refer'] = "";	
+					}
+					
+					if(!empty($refer) && !empty($host_refer))
+					{
+						$partner = array();
+						$refer_arr = explode("_", $refer);
+						$pre_refer = $refer_arr[0] ."_". $refer_arr[1] ."_". $refer_arr[2];
+						
+						$cur_date = date('Y-m-d');
+						$find_partner = $this->Partner_Model->findbyrefer($pre_refer, $cur_date, $item);						
+
+						if(!empty($find_partner)) 
+						{
+							foreach($find_partner as $value)	
+							{
+								if($value['refer'] == $refer)	
+								{
+									$partner = $value;
+								}
+							}
+						}	
+
+						if(!empty($partner))
+						{
+							$partner['count']++;
+						}else{
+							$partner = array(
+								'pre_refer'	 => $pre_refer,
+								'refer' => $refer,
+								'count' => 1,
+								'createtime' => $cur_date,
+								'type' => $item,
+								);	
+						}
+						$this->Partner_Model->save($partner);
+					}
+				}
 
 		$this->load->view($item, $data);	
 	}

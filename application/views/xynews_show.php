@@ -67,8 +67,8 @@
 					</div>
 
 					<div class="statement css3">
-						<strong><a target="_blank" href="#">民泰贵金属网</a>声明：</strong>
-						<p>本文观点、结论和建议仅供参考，并不构成投资依据，投资者据此做出的任何投资决策与本网站和作者无关，风险自担。<a target="_blank" href="#">天通金、</a><a target="_blank" href="#">天通银、</a><a target="_blank" href="#">贵金属投资</a>首选民泰贵金属。</p>
+						<strong><a target="_blank" href="/">民泰贵金属</a>声明：</strong>
+						<p>本文观点、结论和建议仅供参考，并不构成投资依据，投资者据此做出的任何投资决策与本网站和作者无关，风险自担。<a target="_blank" href="/">天通金、</a><a target="_blank" href="/">天通银、</a><a target="_blank" href="/">贵金属投资</a>首选民泰贵金属。</p>
 					</div>
 
 					<div class="pages">

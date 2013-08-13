@@ -8,6 +8,7 @@
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <title>民泰贵金属</title>
+<meta name="keywords" content="天交所,纸白银价格走势,纸白银论坛,纸白银吧,现货白银,纸黄金价格走势,交易通,中国纸黄金网,上海黄金交易所,天津贵金属交易所,天通金开户,天通金模拟账户,天通金代理,天通金行情,天通金手机行情,天交所会员单位,天津贵金属交易所166号会员单位,天通金每日解盘,天通金开户,天通金模拟账户,天通金代理,天通金行情,天通金手机行情,天交所会员单位,天津贵金属交易所166号会员单位,天通金每日解盘" /><meta name="Description" content="天交所,公司致力为客户提供纸白银价格走势,纸白银论坛,纸白银吧,现货白银,纸黄金价格走势,交易通服务。中国纸黄金网,上海黄金交易所,天津贵金属交易所以客户的资产增值为最高目标,全力构建国内贵金属的五星级综合投资交易服务平台。民泰(天津)贵金属经营有限公司为天津贵金属交易所166号综合会员。天通金开户,天通金模拟账户,天通金代理,天通金行情,天通金手机行情,天交所会员单位,天津贵金属交易所166号会员单位,天通金每日解盘" />
 <link rel="shortcut icon" href="/resources/template/favicon.ico" />
 <link rel="stylesheet" href="/resources/template/css/reset.css" />
 <link rel="stylesheet" href="/resources/template/css/public.css" />
@@ -92,7 +93,8 @@ body {
 <body>
 <div class="ads-wrap cf">
 	<div class="gridsystem cf">
-		<div class="ad">
+		<div class="ad" style="position: relative;">
+<a href="/item/show/trader_trader" target="_blank" style="position: absolute; top: 0px; left: 0px; width: 980px; height: 90px;"></a>
 			<object id="flashSeg" data="/resources/template/images/swf/topBanner3.swf" type="application/x-shockwave-flash" width="980" height="90">           
 				<param name="movie" value="/resources/template/images/swf/topBanner3.swf" />
 				<param name="quality" value="high" />

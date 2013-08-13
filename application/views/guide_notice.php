@@ -3,7 +3,13 @@
 ?>
 <script type="text/javascript" charset="utf-8">
 $(function() {
-	$(".ui-tabs").tabs(".ui-tabs-panes > div");
+	var t1_val = 0;
+	if($("#t1"))
+	{
+		t1_val = $("#t1").val();	
+	}
+	
+	$(".ui-tabs").tabs(".ui-tabs-panes > div", { initialIndex: t1_val.split("_")[1] - 1 });
 	$("#ui-tabs2").tabs(".ui-tabs-panes2 > div");
 	$("#ui-tabs3").tabs(".ui-tabs-panes3 > div");
 	$("#ui-tabs4").tabs(".ui-tabs-panes4 > div");
@@ -11,6 +17,15 @@ $(function() {
 });
 
 </script>
+
+<?php
+	if(isset($t1))
+	{
+		?>
+			<input type="hidden" id="t1" value="<?php echo $t1;?>">
+		<?php
+	}
+?>
 <div class="main-wrap wrapper cf">
 	<div id="container" class="gridsystem cf">
 		<div class="container-wrap cf">
@@ -33,16 +48,16 @@ $(function() {
 					<div class="content-wrap">
 						<div class="border-gray guide-notice mt-20">
 							<ul class="ui-tabs">
-								<li><a href="#">交易产品及规则</a></li>
+								<li><a href="#" <?php if(!isset($t1)) echo "class=''";?> >交易产品及规则</a></li>
 								<li><a href="#">资金存取</a></li>
 								<li><a href="#">现货交割</a></li>
-								<li><a href="#">风险控制</a></li>
+								<li><a href="#" <?php if($t1 == 't1_4') echo "class='current'";?> >风险控制</a></li>
 							</ul>
 							<div class="ui-tabs-panes">
 								<div class="ui-tabs-panes-wrap">
 									<div class="hd5 cf">
 										<ul id="ui-tabs2" class="ui-tabs2">
-											<li><a href="#">交易细则</a></li>
+											<li><a href="#" <?php if(!isset($t2))echo "class=''"?>>交易细则</a></li>
 											<li><a href="#">交易方式</a></li>
 											<li><a href="#">交易词汇</a></li>
 											<li><a href="#">清算规则</a></li>

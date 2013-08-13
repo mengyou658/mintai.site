@@ -289,11 +289,14 @@ function checkForm() {
 				              <td align="left" colspan="3"><input type="text" size="20" id="tb_name" class="inputText" name="name"></td>
 				              <td width="110" valign="middle" align="center" rowspan="3">
 				                  <input type="image" onclick="return checkForm();" src="/resources/template/images/robot/mftyan.jpg" id="ContentPlaceHolder1_btn_ok" name="ctl00$ContentPlaceHolder1$btn_ok">
-				                  <input type="hidden" value="体验-1" id="id" name="type">
+				                  <input type="hidden" value="机器人-1" id="id" name="type">
 				            </tr>
 				            <tr>
 				              <td height="35" align="left" style="font-size:16px; font-family:'微软雅黑';">手机号码：</td>
-				              <td align="left" colspan="3"><input type="text" size="20" value="" id="tb_phone" class="inputText" name="phone"></td>
+							  <td align="left" colspan="3"><input type="text" size="20" value="" id="tb_phone" class="inputText" name="phone">
+							  <input type="hidden" name="refer" value="<?php echo $refer;?>"/>
+							  <input type="hidden" name="host_refer" value="<?php echo $host_refer;?>"/>
+								</td>
 				            </tr>
 				            <tr>
 							  <td height="20" align="left" style="font-size:12px; font-family:'微软雅黑'; text-align:center;" colspan="4">请填写真实手机号码以便接收短信
@@ -517,14 +520,14 @@ function checkForm() {
 		        <tr>
 		        <td><img border="0" usemap="#Map" src="/resources/template/images/robot/bank.jpg">
 		<map name="Map">
-		  <area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-5" coords="25,46,206,106" shape="rect">
-		  <area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-2" coords="270,45,450,105" shape="rect">
-		  <area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-4" coords="521,45,701,105" shape="rect">
-		  <area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-3" coords="778,45,958,105" shape="rect">
-		  <area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-6" coords="24,122,204,183" shape="rect">
-		  <area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-8" coords="269,122,450,182" shape="rect">
-		  <area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-7" coords="521,122,701,182" shape="rect">
-		  <area target="_blank" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-9" coords="778,123,960,183" shape="rect">
+				<area target="_blank" href="/news/xyshow/348" coords="25,46,206,106" shape="rect">
+				<area target="_blank" href="/news/xyshow/349" coords="270,45,450,105" shape="rect">
+				<area target="_blank" href="/news/xyshow/350" coords="521,45,701,105" shape="rect">
+				<area target="_blank" href="/news/xyshow/344" coords="778,45,958,105" shape="rect">
+				<area target="_blank" href="/news/xyshow/343" coords="24,122,204,183" shape="rect">
+				<area target="_blank" href="/news/xyshow/346" coords="269,122,450,182" shape="rect">
+				<area target="_blank" href="/news/xyshow/351" coords="521,122,701,182" shape="rect">
+				<area target="_blank" href="/news/xyshow/353" coords="778,123,960,183" shape="rect">
 		</map></td>
 		      </tr>
 		    </tbody>

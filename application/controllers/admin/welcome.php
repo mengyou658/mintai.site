@@ -32,7 +32,7 @@ class Welcome extends CI_Controller {
 
 		if(!empty($employer))
 		{
-			if($password == $employer['password'])
+			if($password == $employer['password'] && $employer['type'] == "empoyer")
 			{
 				$this->session->set_userdata('employer', $employer);
 				redirect('/admin/welcome');
@@ -43,7 +43,8 @@ class Welcome extends CI_Controller {
 
 	public function signout()
 	{
-		$this->session->sess_destroy();
+	//	$this->session->sess_destroy();
+		$this->session->unset_userdata('employer');
 		redirect('/admin/signin');
 	}
 

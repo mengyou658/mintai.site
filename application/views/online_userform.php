@@ -31,12 +31,13 @@
 					<a name="qq_online"></a>
 	            	<dl>
 	            		<dt><strong>企业QQ在线</strong></dt>
-	            		<dd>
-	            			咨询1：<a href="#"><img src="/resources/template/images/icon-qq.png" alt="qq" /></a> 
-	            			咨询2：<a href="#"><img src="/resources/template/images/icon-qq.png" alt="qq" /></a>
-	            			咨询3：<a href="#"><img src="/resources/template/images/icon-qq.png" alt="qq" /></a> 
-	            			咨询4：<a href="#"><img src="/resources/template/images/icon-qq.png" alt="qq" /></a>
+	<dd>
+	            			咨询1：<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2355428577&amp;site=qq&amp;menu=yes"><img src="/resources/template/images/icon-qq.png" alt="qq" /></a> 
+	            			咨询2：<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2355428533&amp;site=qq&amp;menu=yes"><img src="/resources/template/images/icon-qq.png" alt="qq" /></a>
+	            			咨询3：<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2355428534&amp;site=qq&amp;menu=yes"><img src="/resources/template/images/icon-qq.png" alt="qq" /></a> 
+	            			咨询4：<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2355428577&amp;site=qq&amp;menu=yes"><img src="/resources/template/images/icon-qq.png" alt="qq" /></a>
 	            		</dd>
+
 	            	</dl>
 	            </div>
 

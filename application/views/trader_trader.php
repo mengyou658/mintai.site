@@ -234,7 +234,7 @@ body {
 	                                </tr>
 	                                <tr>
 	                                    <td height="25">&nbsp;</td>
-	                                    <td align="center"><a href="http://www.mintai166.com/Default.aspx?kind=首页操盘密码" target="_blank" style="font-size:14px;">贵金属手机行情、模拟交易、实盘喊单--访问民泰官方网站，解决您所有交易问题</a></td>
+	                                    <td align="center"><a href="/" target="_blank" style="font-size:14px;">贵金属手机行情、模拟交易、实盘喊单--访问民泰官方网站，解决您所有交易问题</a></td>
 	                                    <td>&nbsp;</td>
 	                                </tr>
 	                            </table>
@@ -247,8 +247,11 @@ body {
 	                    </tr>
 	                    <tr>
 							<td height="44">&nbsp;</td><td>
-<input name="type" type="hidden" value="使用-2" class="input" type="text" />
+<input name="type" type="hidden" value="BS指标-2" class="input" type="text" />
 <input id="tb_phone" name="phone" class="input" type="text" /></td>
+							  <input type="hidden" name="refer" value="<?php echo $refer;?>"/>
+							  <input type="hidden" name="host_refer" value="<?php echo $host_refer;?>"/>
+
 	                    </tr>
 	                    <tr>
 	                        <td height="85" colspan="2" valign="bottom">
@@ -261,7 +264,7 @@ body {
 	                        </td>
 	                    </tr>
 	                    <tr>
-	                    	<td height="19"></td><td height="19"><a href="#" target="_blank" style="width:160px; height:19px; display:block;"></a></td>  
+	                    	<td height="19"></td><td height="19"><a href="http://166mintai.com/news/xyshow/763" target="_blank" style="width:160px; height:19px; display:block;"></a></td>  
 	          			</tr>
 					</form>
 	            	</table>
@@ -295,25 +298,9 @@ body {
 	            <td><img alt="" src="/resources/template/images/trader/4.jpg" /></td>
 	        </tr>
 	    </table>
-	    <table class="s-table s-footer">
-	        <tr>
-	            <td style="line-height:24px; text-align:center;"><a href="/WEB/AboutUs.aspx" target="_blank">关于我们</a> | <a href="/WEB/ArticleList.aspx?CID=33" target="_blank">常见问题</a> | <a href="/WEB/RisksPrompt.aspx" target="_blank">风险提示</a> | <a href="/WEB/ArticleShow.aspx?ID=42" target="_blank">免责声明</a> | <a href="/WEB/AboutUs.aspx?ID=5" target="_blank">联系我们</a> | <a href="/WEB/ArticleShow.aspx?ID=41" target="_blank">隐私保密条款</a> | <a href="http://mail.dxdmc.com/" target="_blank">交易查证</a></td>
-	        </tr>
-	        <tr>
-	            <td align="center" height="50"><img src="/resources/template/images/trader/tip2.jpg" alt="" /></td>
-	        </tr>
-	        <tr>
-	            <td style="height:80px; line-height:24px; text-align:center; color:#666;">
-	                Copyright(C)2011-2012. <a href="http://www.166jin.com" title="民泰贵金属|黄金,白银,铂金,钯金贵金属现货交易">166jin.com.</a> ALL RIGHT RESERVED.<br />
-	            <a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备13028347号-1</a><br />
-	            </td>
-	        </tr>
-	        <tr>
-	            <td>&nbsp;</td>
-	        </tr>
-	    </table>
 
 	</div><!-- //container -->
 </div><!-- //main -->
-</body>
-</html>
+<?php
+	$this->load->view("_footer");
+?>

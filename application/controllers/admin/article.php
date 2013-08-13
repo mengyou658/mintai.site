@@ -110,8 +110,7 @@ class Article extends CI_Controller {
 		$status = ($status == 'yes') ? 1 : 0;
 
 		$type = $this->input->post('type_id');
-		$type_id = split("_", $type)[0];
-		$typename = split("_", $type)[1];
+		list($type_id, $typename) = explode("_", $type);
 
 		$article = array(
 			'title'	=> $title,
@@ -206,8 +205,7 @@ class Article extends CI_Controller {
 
 
 		$type = $this->input->post('type_id');
-		$type_id = split("_", $type)[0];
-		$typename = split("_", $type)[1];
+		list($type_id, $typename) = explode("_", $type);
 		$article = $this->Article_Model->findById($news_id);
 		$article = array(
 			'title'	=> $title,

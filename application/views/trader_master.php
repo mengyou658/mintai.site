@@ -206,7 +206,10 @@ function checkForm() {
 	                <td width="155"><input name="name" type="text" class="input" id="tb_name" /></td>
 	                <td width="80">手机号码：</td>
 	                <td><input name="phone" type="text" class="input" id="tb_phone" />
-	                <input type="hidden" name="type" value="模拟-3" class="input"/></td>
+							  <input type="hidden" name="refer" value="<?php echo $refer;?>"/>
+							  <input type="hidden" name="host_refer" value="<?php echo $host_refer;?>"/>
+
+	                <input type="hidden" name="type" value="百万实盘-3" class="input"/></td>
 	              </tr>
 	            </table></td>
 				<td><input type="image" name="ctl00$ContentPlaceHolder1$btn_ok" id="ContentPlaceHolder1_btn_ok" src="/resources/template/images/tradermaster/btn.png" onclick="return checkForm();" />
@@ -335,27 +338,10 @@ function checkForm() {
 	      <tr>
 	        <td>&nbsp;</td>
 	      </tr>
-	      <tr>
-	        <td><img src="/resources/template/images/tradermaster/tradermaster/bank.jpg" usemap="#Map" border="0" />
-			<map name="Map">
-			  <area shape="rect" coords="25,46,206,106" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-5" target="_blank">
-			  <area shape="rect" coords="270,45,450,105" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-2" target="_blank">
-			  <area shape="rect" coords="521,45,701,105" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-4" target="_blank">
-			  <area shape="rect" coords="778,45,958,105" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-3" target="_blank">
-			  <area shape="rect" coords="24,122,204,183" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-6" target="_blank">
-			  <area shape="rect" coords="269,122,450,182" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-8" target="_blank">
-			  <area shape="rect" coords="521,122,701,182" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-7" target="_blank">
-			  <area shape="rect" coords="778,123,960,183" href="http://www.mintai166.com/WEB/Fanli.aspx#tabs-9" target="_blank">
-			</map></td>
-	      </tr>
-	      <tr>
-	        <td height="100" align="center"><span style="line-height:26px; color:#999;">Copyright(C)2011-2012. <a href="http://www.166jin.com" title="民泰贵金属|黄金,白银,铂金,钯金贵金属现货交易" style="color:#999;">166jin.com.</a> ALL RIGHT RESERVED.<br />
-	        <a href="http://www.miitbeian.gov.cn/" target="_blank" style="color:#999;">京ICP备13028347号-1</a>
-			</span></td>
-	      </tr>
 	    </table>
 
 	</div><!-- //container -->
 </div><!-- //main -->
-</body>
-</html>
+	<?php
+		$this->load->view("_footer");
+	?>

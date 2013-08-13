@@ -7,7 +7,7 @@
 			<section class="grid-1 fl">
 				<div class="topmenu">
 					<dl>
-						<dt>公司资质</dt>
+						<dt>产品介绍</dt>
 						<dd><a href="/item/show/pro_detail">产品详情</a></dd>
 						<dd><a href="/item/show/pro_features">投资特点</a></dd>
 						<dd><a href="/item/show/pro_trade">交易细则</a></dd>
@@ -83,9 +83,11 @@
 								if(!empty($articles))
 								{
 									foreach($articles as $article)
+									{
 									?>
-									<li><span>2013-5-27 9:59:24</span><a title="<?php echo $article['title']?>" target="_blank" href="/news/caseshow/<?php echo $article['id'];?>"><?php echo $article['title'];?></a></li>
+									<li><span><?php echo $article['post_time'];?></span><a title="<?php echo $article['title']?>" target="_blank" href="/news/caseshow/<?php echo $article['id'];?>"><?php echo $article['title'];?></a></li>
 									<?php
+									}
 								}
 							?>
 				          	</ul>

@@ -220,13 +220,25 @@ body {
 				</tr>
 	    	</table>
 	    	<div class="ansys-loginbox">
+				<a name="reg"></a>
 	        	<div style="height:30px; line-height:30px; background:#EFEFEF; padding-left:8px; font-size:14px;">免费获取账号密码</div>
 	            <div class="phone">
-	                <div><span class="title">姓&nbsp;&nbsp;&nbsp;名：</span><span class="cone"><input type="text" class="input-txt" id="ContentPlaceHolder1_username" name="ctl00$ContentPlaceHolder1$username"></span></div>
-	                <div><span class="title">手机号码：</span><span class="cone"><input type="text" maxlength="11" class="input-txt" id="ContentPlaceHolder1_mobilePhone" name="ctl00$ContentPlaceHolder1$mobilePhone"></span></div>
+					<form action="/register/mintaiReg" method="post">
+	                <div><span class="title">姓&nbsp;&nbsp;&nbsp;名：</span><span class="cone"><input type="text" class="input-txt" id="ContentPlaceHolder1_username" name="name"></span></div>
+	                <div><span class="title">手机号码：</span><span class="cone"><input type="text" maxlength="11" class="input-txt" id="ContentPlaceHolder1_mobilePhone" name="phone"></span></div>
+
+				                  <input type="hidden" value="银如意-4" id="id" name="type">
 	                <div style="line-height:22px; padding:10px 15px;">&nbsp;&nbsp;&nbsp;&nbsp;请注意填写真实手机号码，以便接收账号密码以及在您忘记账号密码后可以通过点击找回密码，我们系统将给您重新发送账号密码短信</div>
 	                <div style="text-align:center; padding: 20px 0;">
-	                <input type="submit" class="button" id="ContentPlaceHolder1_Button3" onclick="return validate_1();" value="确定" name="ctl00$ContentPlaceHolder1$Button3">&nbsp;<a target="_blank" href="#">提交申请找回密码</a></div>
+	                <input type="submit" class="button" id="ContentPlaceHolder1_Button3" value="提交" name="ctl00$ContentPlaceHolder1$Button3"></div>
+					</form>
+							<?php
+								if($this->session->flashdata('success'))
+								{
+									echo "<br/><span style='color:red;'>" . $this->session->flashdata('success') . "</span>";		
+								}
+							?>
+
 	        	</div>
             </div>
 		</div>

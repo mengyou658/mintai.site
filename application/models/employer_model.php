@@ -15,4 +15,13 @@ class Employer_Model extends CI_Model {
 		$query = $this->db->get("employer");
 		return $query->row_array();
 	}
+
+	//根据username查询员工
+	function findEmployerByUsername($username) 
+	{
+		$this->db->where('username', $username);	
+		$query = $this->db->get("employer");
+		return $query->row_array();
+	}
+
 }

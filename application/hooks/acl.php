@@ -19,6 +19,7 @@ class Acl {
 	function auth(){
 
 		$employer = $this->CI->session->userdata('employer');
+		$partner = $this->CI->session->userdata('partner');
 
 		if("admin" == $this->uri_prefix1 && 
 			"signin" != $this->uri_prefix2 && 
@@ -37,6 +38,25 @@ class Acl {
 				redirect('/admin/welcome');
 			}
 		}
+
+		if("partner" == $this->uri_prefix1 && 
+			"signin" != $this->uri_prefix2 && 
+			"signin_do" != $this->uri_prefix2 &&
+			"signout" != $this->uri_prefix2){
+
+			if(empty($partner)){
+				redirect("/partner/signin");
+			}
+		}
+
+		if("partner" == $this->uri_prefix1 && 
+			"signin" == $this->uri_prefix2 ){
+
+			if(!empty($partner)){
+				redirect('/partner');
+			}
+		}
+
 
 	}
 

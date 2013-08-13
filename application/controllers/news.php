@@ -31,6 +31,31 @@ class News extends CI_Controller {
 		$this->load->view('news_show', $data);	
 	}
 
+	public function mintai_show($id)
+	{
+
+		$data['sub'] = $id;
+		$result = $this->Article_Model->findById($id);
+		$type = $this->Articletype_Model->findById($result['curr']['type_id']);
+		$data['types'] = $type[0];
+		if($type[0]['id'] == 13) 
+		{
+			$data['sub'] = 13;
+			$data['sub_url'] = 13;
+		}
+		else
+		{
+			$data['sub_url'] = 19;
+		}
+
+
+		$data['article'] = $result['curr'];
+		if(!empty($result['pre'])) $data['pre'] = $result['pre'];
+		if(!empty($result['next'])) $data['next'] = $result['next'];
+		$this->load->view('mintai_news_show', $data);	
+	}
+
+
 	public function wtshow($id)
 	{
 		$data['curr'] = 'online';
@@ -84,6 +109,20 @@ class News extends CI_Controller {
 		$this->load->view('abnews_show', $data);	
 	}
 
+	public function rumen_show($id)
+	{
+		$data['curr'] = 'guide';
+		$result = $this->Article_Model->findById($id);
+		$type = $this->Articletype_Model->findById($result['curr']['type_id']);
+		$data['types'] = $type[0];
+
+		$data['article'] = $result['curr'];
+		if(!empty($result['pre'])) $data['pre'] = $result['pre'];
+		if(!empty($result['next'])) $data['next'] = $result['next'];
+		$this->load->view('rumen_news_show', $data);	
+	}
+
+
 
 	public function mdshow($id)
 	{
@@ -101,7 +140,7 @@ class News extends CI_Controller {
 	public function case_news($type_id = 18)
 	{
 
-		$data['curr'] = "about";
+		$data['curr'] = "pro";
 		$limit = 10;
 		$offset = 0;
 		$num = $this->input->get('per_page');
@@ -191,6 +230,50 @@ class News extends CI_Controller {
 		$this->load->view('wt_news', $data);	
 	}
 
+	public function important_news($type_id = 13)
+	{
+
+		$limit = 10;
+		$offset = 0;
+		$num = $this->input->get('per_page');
+		$type_id = empty($type_id) ?  $this->input->get('type_id') : $type_id;
+		$count = $this->Article_Model->findCount($type_id);
+		$data['num'] = $num;
+		$data['type_id'] = $type_id;
+
+		//分页配置
+		$config['base_url'] = '/index.php?c=news&m=important_news&type_id=' . $type_id;
+		$config['total_rows'] = $count[0]['count'];
+		$config['per_page'] = $limit;
+		$config['uri_segment'] = $this->input->get('per_page');
+		$config['cur_tag_open'] = '<a class="on" href="javascript:void(0);">';
+		$config['cur_tag_close'] = '</a>';
+		$config['last_link'] = '尾页';
+		$config['first_link'] = '首页';
+		$config['next_link'] = false;
+		$config['prev_link'] = false;
+		$config['use_page_numbers'] = TRUE;
+	
+		$this->pagination->initialize($config);
+
+		if(empty($num))
+		{
+			$num = 0;	
+			$offset = 0;
+		}
+		else
+		{
+			$offset = ($num - 1 ) * $limit;	
+		}
+		
+		$articles = $this->Article_Model->findAll($type_id, $offset, $limit);
+		$data['count'] = $count[0]['count'];
+		$data['articles'] = $articles;
+		$type = $this->Articletype_Model->findById($type_id);
+		$data['list'] = $articles;
+		$data['types'] = $type[0];
+		$this->load->view('mintai_news', $data);	
+	}
 
 	public function media_news($type_id = 17)
 	{

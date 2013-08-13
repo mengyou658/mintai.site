@@ -8,14 +8,14 @@
 			<div class="cf">
 				<img src="/resources/template/images/icon-bank.png" alt="bank" usemap="#Map" />
 				<map name="Map">
-				<area target="_blank" href="http://166jin.com/news/xyshow/348" coords="11,9,192,69" shape="rect">
-				<area target="_blank" href="http://166jin.com/news/xyshow/349" coords="260,10,440,70" shape="rect">
-				<area target="_blank" href="http://166jin.com/news/xyshow/350" coords="514,7,694,67" shape="rect">
-				<area target="_blank" href="http://166jin.com/news/xyshow/344" coords="774,7,954,67" shape="rect">
-				<area target="_blank" href="http://166jin.com/news/xyshow/343" coords="10,85,190,146" shape="rect">
-				<area target="_blank" href="http://166jin.com/news/xyshow/346" coords="258,83,439,143" shape="rect">
-				<area target="_blank" href="http://166jin.com/news/xyshow/351" coords="514,87,694,147" shape="rect">
-				<area target="_blank" href="http://166jin.com/news/xyshow/353" coords="772,84,954,144" shape="rect">
+				<area target="_blank" href="/news/xyshow/348" coords="11,9,192,69" shape="rect">
+				<area target="_blank" href="/news/xyshow/349" coords="260,10,440,70" shape="rect">
+				<area target="_blank" href="/news/xyshow/350" coords="514,7,694,67" shape="rect">
+				<area target="_blank" href="/news/xyshow/344" coords="774,7,954,67" shape="rect">
+				<area target="_blank" href="/news/xyshow/343" coords="10,85,190,146" shape="rect">
+				<area target="_blank" href="/news/xyshow/346" coords="258,83,439,143" shape="rect">
+				<area target="_blank" href="/news/xyshow/351" coords="514,87,694,147" shape="rect">
+				<area target="_blank" href="/news/xyshow/353" coords="772,84,954,144" shape="rect">
 				</map>
 			</div>
 		</div>
@@ -92,11 +92,11 @@
 <footer id="footer" class="wrapper cf">
 	<div class="gridsystem cf">
     	<div id="about">
-			<a target="_blank" href="/WEB/AboutUs.aspx">关于我们</a> | <a target="_blank" href="/WEB/ArticleList.aspx?CID=33">常见问题</a> | <a target="_blank" href="/WEB/RisksPrompt.aspx">风险提示</a> | <a target="_blank" href="/WEB/ArticleShow.aspx?ID=42">免责声明</a> | <a target="_blank" href="/WEB/AboutUs.aspx?ID=5">联系我们</a> | <a target="_blank" href="/WEB/ArticleShow.aspx?ID=41">隐私保密条款</a> | <a target="_blank" href="http://mail.dxdmc.com/">交易查证</a> | <a target="_blank" href="#">OA系统</a>
+			<a target="_blank" href="/item/show/about_us">关于我们</a> | <a target="_blank" href="/news/wt_news">常见问题</a> | <a target="_blank" href="/item/show/guide_notice?t1=t1_4&t2=t1_4_t2_1">风险提示</a> | <a target="_blank" href="/item/show/mintai_mianze">免责声明</a> | <a target="_blank" href="/item/show/mintai_contact">联系我们</a> | <a target="_blank" href="/item/show/mintai_secret">隐私保密条款</a> | <a target="_blank" href="http://mail.dxdmc.com/">交易查证</a> | <a target="_blank" href="/news/show/489">网站地图</a>
 		</div>
 		<p class="tips">贵金属交易有风险，入市需谨慎</p>
     	<div id="copyright">
-			<p>Copyright(C)2011-2013. <a title="民泰贵金属|黄金,白银,铂金,钯金贵金属现货交易" href="http://www.166jin.com">166jin.com.</a>&nbsp;<a title="民泰贵金属|黄金,白银,铂金,钯金贵金属现货交易" href="http://www.166jin.com">166jin.com.</a> ALL RIGHT RESERVED.</p>
+			<p>Copyright(C)2011-2013. <a title="民泰贵金属|黄金,白银,铂金,钯金贵金属现货交易" href="http://166mintai.com">166mintai.com.</a>&nbsp;<a title="民泰贵金属|黄金,白银,铂金,钯金贵金属现货交易" href="http://www.166jin.com">166jin.com.</a> ALL RIGHT RESERVED.</p>
 			<p><a target="_blank" href="http://www.miitbeian.gov.cn/">京ICP备13028347号-1</a></p>
     	</div><!-- /copyright -->
     </div>
@@ -129,5 +129,11 @@ $(function() {
 	});
 });
 </script>
+<div style="display:none;">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F0b15ca9a3d17751a5ceb4aba2cfe698e' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div>
 </body>
 </html>

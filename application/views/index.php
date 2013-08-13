@@ -24,7 +24,7 @@
 				</ul>
 				<ul id="idNum" class="num">
 					<?php
-						for($i=0; $i<count($focus); $i++)
+						for($i=1; $i<=count($focus); $i++)
 						{
 							?>
 								<li><a href="#"><?php echo $i;?></a></li>
@@ -66,7 +66,7 @@
 								<?php
 								foreach($notice['n1'] as $not){
 								?>
-									<span><a target="_blank" href="/news/show/<?php echo $not['id'];?>"><?php echo $not['title'];?>[<?php echo $not['sp_date'];?>]</a></span>
+									<span><a target="_blank" href="/news/mintai_show/<?php echo $not['id'];?>"><?php echo $not['title'];?>[<?php echo $not['sp_date'];?>]</a></span>
 								<?php
 								}
 
@@ -83,7 +83,7 @@
 								<?php
 								foreach($notice['n2'] as $not){
 								?>
-									<span><a target="_blank" href="/news/show/<?php echo $not['id'];?>"><?php echo $not['title'];?>[<?php echo $not['sp_date'];?>]</a></span>
+									<span><a target="_blank" href="/news/mintai_show/<?php echo $not['id'];?>"><?php echo $not['title'];?>[<?php echo $not['sp_date'];?>]</a></span>
 								<?php
 								}
 
@@ -100,7 +100,7 @@
 								<?php
 								foreach($notice['n3'] as $not){
 								?>
-									<span><a target="_blank" href="/news/show/<?php echo $not['id'];?>"><?php echo $not['title'];?>[<?php echo $not['sp_date'];?>]</a></span>
+									<span><a target="_blank" href="/news/mintai_show/<?php echo $not['id'];?>"><?php echo $not['title'];?>[<?php echo $not['sp_date'];?>]</a></span>
 								<?php
 								}
 
@@ -114,7 +114,7 @@
 					  </div>
 					</div>
 			    </div>
-			    <div class="scrollmore fl"><a href="/news/more/13">更多&gt;&gt;</a></div>
+			    <div class="scrollmore fl"><a href="/item/show/mintai_important">更多&gt;&gt;</a></div>
 		    </div>
 		</section><!-- /infobar -->
 	</div>
@@ -127,6 +127,7 @@
 		
 		<section class="grid-3 fr">
 			<div class="cf mb-12">
+				
 				<div class="grid-2 fl">
 					<div class="mod3">
 						<div class="hd3 cf">
@@ -174,6 +175,105 @@
 				    	</div>
 				    </div>
 			    </div>
+			
+			
+				<div class="grid-2 fr">
+					<div class="mod3">
+						<div class="hd3 cf">
+							<h2 class="fl">市场要闻</h2>
+				    		<span class="more fr"><a href="/news/more/4" title="更多">更多&gt;&gt;</a></span>
+						</div>
+				    	<div class="new-cont bd cf">
+				    		<div class="new-zy">
+				    			<div class="new-topwrap cf">
+								<?php
+									if(!empty($data4)){
+										$i=0;
+									foreach($data4 as $news)
+									{
+										if($i==0)
+										{
+										?>
+
+						  			<div class="pic-news">
+					    				<img src="/resources/template/images/88485289.jpg" alt="pic-news" />
+					    			</div>
+
+											<h2><a title="<?php echo $news['title']?>" href="/news/show/<?php echo $news['id'];?>"><?php echo $news['title'];?></a></h2>
+											<div class="new-zycont"><?php echo mb_strimwidth($news['outline'], 0, 90, "...", "utf8");?><span>[<?php echo $news['sp_date']?>]</span> <a title="<?php echo $news['title'];?>" href="/news/show/<?php echo $news['id'];?>">全文</a> 
+									</div>
+
+
+								</div>
+					            <ul class="news-list">
+										<?php	
+										}
+										else
+										{
+											?>
+											<li><span>[<?php echo $news['sp_date'];?>]</span><a title="<?php echo $news['title'];?>" target="_blank" href="/news/show/<?php echo $news['id'];?>"><?php echo mb_strimwidth($news['title'], 0, 44, "", "utf8");?></a></li>
+										<?php
+										}
+										$i++;
+									}
+									}
+								?>
+					          	</ul>
+				          	</div>
+				    	</div>
+
+					</div>
+			    </div>
+
+		    </div>
+
+		    <div class="cf mb-12">
+				<div class="grid-2 fl">
+					<div class="mod3">
+						<div class="hd3 cf">
+							<h2 class="fl">分析评论</h2>
+				    		<span class="more fr"><a href="/news/more/3" title="更多">更多&gt;&gt;</a></span>
+						</div>
+				    	<div class="new-cont bd cf">
+				    		<div class="new-zy">
+				    			<div class="new-topwrap cf">
+								<?php
+									if(!empty($data3)){
+										$i=0;
+									foreach($data3 as $news)
+									{
+										if($i==0)
+										{
+										?>
+
+					    			<div class="pic-news">
+					    				<img src="/resources/template/images/88459943.jpg" alt="pic-news" />
+					    			</div>
+
+											<h2><a title="<?php echo $news['title']?>" href="/news/show/<?php echo $news['id'];?>"><?php echo $news['title'];?></a></h2>
+											<div class="new-zycont"><?php echo mb_strimwidth($news['outline'], 0, 90, "...", 'utf8');?><span>[<?php echo $news['sp_date']?>]</span> <a title="<?php echo $news['title'];?>" href="/news/show/<?php echo $news['id'];?>">全文</a> 
+									</div>
+						  		</div>
+					            <ul class="news-list">
+										<?php	
+										}
+										else
+										{
+											?>
+
+											<li><span>[<?php echo $news['sp_date'];?>]</span><a title="<?php echo $news['title'];?>" target="_blank" href="/news/show/<?php echo $news['id'];?>"><?php echo mb_strimwidth($news['title'], 0, 44, "", "utf8");?></a></li>
+										<?php
+										}
+										$i++;
+									}
+									}
+								?>
+					          	</ul>
+				          	</div>
+				    	</div>
+				    </div>
+			    </div>
+
 			    <div class="grid-2 fr">
 					<div class="mod3">
 						<div class="hd3 cf">
@@ -223,102 +323,8 @@
 				    </div>
 
 				    </div>
-		    </div>
-
-		    <div class="cf mb-12">
-				<div class="grid-2 fl">
-					<div class="mod3">
-						<div class="hd3 cf">
-							<h2 class="fl">分析评论</h2>
-				    		<span class="more fr"><a href="/news/more/3" title="更多">更多&gt;&gt;</a></span>
-						</div>
-				    	<div class="new-cont bd cf">
-				    		<div class="new-zy">
-				    			<div class="new-topwrap cf">
-								<?php
-									if(!empty($data3)){
-										$i=0;
-									foreach($data3 as $news)
-									{
-										if($i==0)
-										{
-										?>
-
-					    			<div class="pic-news">
-					    				<img src="/resources/template/images/88459943.jpg" alt="pic-news" />
-					    			</div>
-
-											<h2><a title="<?php echo $news['title']?>" href="/news/show/<?php echo $news['id'];?>"><?php echo $news['title'];?></a></h2>
-											<div class="new-zycont"><?php echo mb_strimwidth($news['outline'], 0, 90, "...", 'utf8');?><span>[<?php echo $news['sp_date']?>]</span> <a title="<?php echo $news['title'];?>" href="/news/show/<?php echo $news['id'];?>">全文</a> 
-									</div>
-						  		</div>
-					            <ul class="news-list">
-										<?php	
-										}
-										else
-										{
-											?>
-
-											<li><span>[<?php echo $news['sp_date'];?>]</span><a title="<?php echo $news['title'];?>" target="_blank" href="/news/show/<?php echo $news['id'];?>"><?php echo mb_strimwidth($news['title'], 0, 44, "", "utf8");?></a></li>
-										<?php
-										}
-										$i++;
-									}
-									}
-								?>
-					          	</ul>
-				          	</div>
-				    	</div>
-				    </div>
-			    </div>
-			
-				<div class="grid-2 fr">
-					<div class="mod3">
-						<div class="hd3 cf">
-							<h2 class="fl">市场要闻</h2>
-				    		<span class="more fr"><a href="/news/more/4" title="更多">更多&gt;&gt;</a></span>
-						</div>
-				    	<div class="new-cont bd cf">
-				    		<div class="new-zy">
-				    			<div class="new-topwrap cf">
-								<?php
-									if(!empty($data4)){
-										$i=0;
-									foreach($data4 as $news)
-									{
-										if($i==0)
-										{
-										?>
-
-						  			<div class="pic-news">
-					    				<img src="/resources/template/images/88485289.jpg" alt="pic-news" />
-					    			</div>
-
-											<h2><a title="<?php echo $news['title']?>" href="/news/show/<?php echo $news['id'];?>"><?php echo $news['title'];?></a></h2>
-											<div class="new-zycont"><?php echo mb_strimwidth($news['outline'], 0, 90, "...", "utf8");?><span>[<?php echo $news['sp_date']?>]</span> <a title="<?php echo $news['title'];?>" href="/news/show/<?php echo $news['id'];?>">全文</a> 
-									</div>
 
 
-								</div>
-					            <ul class="news-list">
-										<?php	
-										}
-										else
-										{
-											?>
-											<li><span>[<?php echo $news['sp_date'];?>]</span><a title="<?php echo $news['title'];?>" target="_blank" href="/news/show/<?php echo $news['id'];?>"><?php echo mb_strimwidth($news['title'], 0, 44, "", "utf8");?></a></li>
-										<?php
-										}
-										$i++;
-									}
-									}
-								?>
-					          	</ul>
-				          	</div>
-				    	</div>
-
-					</div>
-			    </div>
 			</div>
 		</section>
 
@@ -416,7 +422,7 @@
 					<iframe width="100%" scrolling="no" height="316" frameborder="0" name="I5" id="I5" src="http://goldchart.gold678.com/html/mintai/quotes.htm"></iframe>
 				</div>
 				<div class="mb-8">
-					<a href="/item/show/product_detail"><img src="/resources/template/images/ads/pinzhong_btn.jpg" alt="了解天交所上市品种"></a>
+					<a href="/item/show/pro_detail"><img src="/resources/template/images/ads/pinzhong_btn.jpg" alt="了解天交所上市品种"></a>
 				</div>
 				<div>
 					<a href="/item/show/research_price"><img src="/resources/template/images/ads/hangqing_btn.jpg" alt="最齐全的行情频道"></a>
@@ -450,7 +456,7 @@
 					<ul>
 						<li>
 							<div class="pic-analyst">
-			    				<a target="_blank" href="/item/show/research_analyst#lina"><img class="analyze_img" src="/resources/template/images/analyze_1.jpg" alt="李娜" /></a>
+			    				<a target="_blank" href="/item/show/research_analyst#lina"><img class="analyze_img" src="/resources/template/images/wangna.jpg" alt="李娜" /></a>
 			    			</div>
 			    			<dl>
 			    				<dt><strong><a target="_blank" href="/item/show/research_analyst#lina">李娜</a></strong></dt>
@@ -459,7 +465,7 @@
 						</li>
 						<li>
 							<div class="pic-analyst">
-			    				<a target="_blank" href="/item/show/research_analyst#wangshaixu"><img class="analyze_img" src="/resources/template/images/analyze_2.jpg" alt="王哂旭" /></a>
+			    				<a target="_blank" href="/item/show/research_analyst#wangshaixu"><img class="analyze_img" src="/resources/template/images/wangsz_2.jpg" alt="王哂旭" /></a>
 			    			</div>
 			    			<dl>
 			    				<dt><strong><a target="_blank" href="/item/show/research_analyst#wangshaixu">王哂旭</a></strong></dt>
@@ -862,10 +868,10 @@
 								<div class="item">
 									<dl>
 								       <dd>
-										   <span class="dd-img"><a href="/item/show/svideo" target="_blank" title="软件操作演示"><img src="/resources/template/images/svideo.jpg" alt="软件操作演示" title="软件操作演示" /></a></span>
+										   <span class="dd-img"><a href="/item/show/sd_video" target="_blank" title="软件操作演示"><img src="/resources/template/images/svideo.jpg" alt="软件操作演示" title="软件操作演示" /></a></span>
 									    </dd>
 									    <dt>
-											<a href="/item/show/svideo" target="_blank" title="软件操作演示"><span class="l_video">软件操作演示</span></a>
+											<a href="/item/show/sd_video" target="_blank" title="软件操作演示"><span class="l_video">软件操作演示</span></a>
 									    </dt>
 							        </dl>									
 								</div>
@@ -907,10 +913,10 @@
 								<div class="item">
 									<dl>
 								       <dd>
-										   <span class="dd-img"><a href="/item/show/guide" target="_blank" title="贵金属交易规则"><img src="/resources/template/images/new_rumen.jpg" alt="新手入门三部曲" title="新手入门三部曲"  /></a></span>
+										   <span class="dd-img"><a href="/item/show/guide_guide" target="_blank" title="贵金属交易规则"><img src="/resources/template/images/new_rumen.jpg" alt="新手入门三部曲" title="新手入门三部曲"  /></a></span>
 									    </dd>
 									    <dt>
-											<a href="/item/show/guide" target="_blank" title="贵金属交易规则">新手入门三部曲</a>
+											<a href="/item/show/guide_guide" target="_blank" title="贵金属交易规则">新手入门三部曲</a>
 									    </dt> 
 							        </dl>									
 								</div>								
