@@ -106,7 +106,7 @@ window.onload=function(){
 	
 	var objs2 = Jbanner("idNum").getElementsByTagName("li");
 	
-	var tv2 = new TransformView("idTransformView", "idSlider", 966, 4, {
+	var tv2 = new TransformView("idTransformView", "idSlider", 966, 5, {
 		onStart: function(){ Each(objs2, function(o, i){ o.className = tv2.Index == i ? "on" : ""; }) },//按钮样式
 		Up: false
 	});
